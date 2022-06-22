@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
+$primary: #5b58a5;
+$secondary: #cb76cb;
+$white: #ffffff;
+
 *,
 *::after,
 *::before {
@@ -9,4 +13,181 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
+}
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.header__content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__content__left {
+  display: flex;
+  align-items: center;
+}
+.header__content__left__logo {
+  margin-right: 1em;
+}
+.header__content__left__logo__img {
+  width: 150px;
+}
+.header__content__left__nav {
+  display: flex;
+  align-items: center;
+}
+.header__content__left__nav__link {
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0.5em 1em;
+}
+.header__content__left__nav__link:hover {
+  transition: 300ms ease-in-out;
+  color: $primary;
+}
+.header__content__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header__content__right__menu {
+  width: 38px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0em;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  margin-left: 1em;
+  transition: 300ms ease-in-out;
+}
+.header__content__right__menu:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: $white;
+}
+.header__content__right__button {
+  height: 38px;
+  padding: 0em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.header__content__right__button__primary {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+.header__content__right__button__primary:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+}
+.header__content__right__button__secondary {
+  background-color: $secondary;
+  color: white;
+  margin-left: 1em;
+}
+.header__content__right__button__secondary:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+}
+.header__content__right__button__icon {
+  margin-right: 2em;
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  color: $white;
+  border: none;
+}
+.header__content__right__button__icon:hover {
+  transition: 300ms ease-in-out;
+  color: $primary;
+}
+.header__content__right__button__avatar {
+  padding: 0em;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+.header__content__right__button__avatar__img {
+  width: 100%;
+  height: 100%;
+}
+.header__content__right__button__outline {
+  border-color: $white;
+  margin-right: 2em;
+  color: $white;
+}
+.header__content__right__button__outline:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+}
+@media (max-width: 1000px) {
+  .header__content__right__menu {
+    display: flex;
+  }
+  .header {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .header__content__left__nav {
+    position: absolute;
+    top: 5.6em;
+    left: 0px;
+    padding: 1em 2em;
+    padding-top: 0em;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .header__content__right__button__avatar {
+    margin-right: 0.5em;
+  }
+}
+@media (max-width: 800px) {
+  .header__content {
+    flex-direction: column;
+  }
+  .header__content__right {
+    margin-top: 1em;
+  }
+  .header__content__left__nav {
+    top: 9em;
+  }
+}
+@media (max-width: 500px) {
+  .header__content__right__button__outline {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .header__content {
+    padding: 1.5em;
+  }
 }
