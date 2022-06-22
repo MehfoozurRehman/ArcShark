@@ -8,7 +8,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [isMessagePanelOpen, setIsMessagePanelOpen] = useState(false);
   const [isNotificationPanelOpen, setIsNotificationPanelOpen] = useState(false);
-  const [isUserPanelOpen, setIsUserPanelOpen] = useState(true);
+  const [isUserPanelOpen, setIsUserPanelOpen] = useState(false);
 
   useLayoutEffect(() => {
     function navStatus() {
