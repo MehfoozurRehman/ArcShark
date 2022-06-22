@@ -1,10 +1,14 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
+import OutsideClickHandler from "react-outside-click-handler";
 import { X, Menu } from "react-feather";
 import { logo, user } from "../assets";
 
 export default function Header() {
   const [isUser, setIsUser] = useState(true);
   const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isMessagePanelOpen, setIsMessagePanelOpen] = useState(false);
+  const [isNotificationPanelOpen, setIsNotificationPanelOpen] = useState(false);
+  const [isUserPanelOpen, setIsUserPanelOpen] = useState(true);
 
   useLayoutEffect(() => {
     function navStatus() {
@@ -49,7 +53,12 @@ export default function Header() {
               >
                 Share your work
               </a>
-              <button className="header__content__right__button__icon">
+              <button
+                className="header__content__right__button__icon"
+                onClick={() => {
+                  setIsMessagePanelOpen(!isMessagePanelOpen);
+                }}
+              >
                 <svg
                   id="Icon_ionic-ios-mail-unread"
                   data-name="Icon ionic-ios-mail-unread"
@@ -87,7 +96,37 @@ export default function Header() {
                   </g>
                 </svg>
               </button>
-              <button className="header__content__right__button__icon">
+              {isMessagePanelOpen ? (
+                <OutsideClickHandler
+                  onOutsideClick={() => {
+                    setIsMessagePanelOpen(false);
+                  }}
+                >
+                  <div className="header__content__right__panel header__content__right__panel__message">
+                    <div className="header__content__right__panel__header">
+                      <div className="header__content__right__panel__header__heading">
+                        Messages
+                      </div>
+                      <button className="header__content__right__panel__header__button">
+                        Clear All
+                      </button>
+                    </div>
+                    <div className="header__content__right__panel__content">
+                      <PanelEntry />
+                      <PanelEntry />
+                      <PanelEntry />
+                      <PanelEntry />
+                      <PanelEntry />
+                    </div>
+                  </div>
+                </OutsideClickHandler>
+              ) : null}
+              <button
+                className="header__content__right__button__icon"
+                onClick={() => {
+                  setIsNotificationPanelOpen(!isNotificationPanelOpen);
+                }}
+              >
                 <svg
                   id="Icon_ionic-ios-notifications"
                   data-name="Icon ionic-ios-notifications"
@@ -112,13 +151,64 @@ export default function Header() {
                   />
                 </svg>
               </button>
-              <button className="header__content__right__button__avatar">
+              {isNotificationPanelOpen ? (
+                <OutsideClickHandler
+                  onOutsideClick={() => {
+                    setIsNotificationPanelOpen(false);
+                  }}
+                >
+                  <div className="header__content__right__panel header__content__right__panel__notifications">
+                    <div className="header__content__right__panel__header">
+                      <div className="header__content__right__panel__header__heading">
+                        Notifications
+                      </div>
+                      <button className="header__content__right__panel__header__button">
+                        Clear All
+                      </button>
+                    </div>
+                    <div className="header__content__right__panel__content">
+                      <PanelEntry />
+                      <PanelEntry />
+                      <PanelEntry />
+                      <PanelEntry />
+                      <PanelEntry />
+                    </div>
+                  </div>
+                </OutsideClickHandler>
+              ) : null}
+              <button
+                className="header__content__right__button__avatar"
+                onClick={() => {
+                  setIsUserPanelOpen(!isUserPanelOpen);
+                }}
+              >
                 <img
                   src={user}
                   alt="user"
                   className="header__content__right__button__avatar__img"
                 />
               </button>
+              {isUserPanelOpen ? (
+                <OutsideClickHandler
+                  onOutsideClick={() => {
+                    setIsUserPanelOpen(false);
+                  }}
+                >
+                  <div className="header__content__right__panel header__content__right__panel__user">
+                    <div className="header__content__right__panel__content">
+                      <a
+                        href="#"
+                        className="header__content__right__panel__content__button"
+                      >
+                        Profile
+                      </a>
+                      <button className="header__content__right__panel__content__button">
+                        Logout
+                      </button>
+                    </div>
+                  </div>
+                </OutsideClickHandler>
+              ) : null}
             </>
           ) : (
             <>
@@ -151,5 +241,19 @@ export default function Header() {
         </div>
       </div>
     </div>
+  );
+}
+
+function PanelEntry({}) {
+  return (
+    <a href="#" className="header__content__right__panel__content__entry">
+      <div className="header__content__right__panel__content__entry__heading">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div className="header__content__right__panel__content__entry__info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed
+        maxime veniam at sint vel inventore ex cum excepturi ullam?
+      </div>
+    </a>
   );
 }
