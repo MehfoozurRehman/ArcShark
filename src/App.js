@@ -1,6 +1,15 @@
 import React from "react";
-import "./App.scss";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import HomeScreen from "./screens/HomeScreen";
 
 export default function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+      </Routes>
+    </>
+  );
 }
