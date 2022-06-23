@@ -1,59 +1,107 @@
-import React from "react";
-import { homebanner } from "../assets";
+import React, { useState } from "react";
+import { homebanner, project } from "../assets";
 import Select from "react-select";
 
 export default function HomeScreen() {
+  return (
+    <>
+      <HomeJumbotron />
+      <HomeContent />
+    </>
+  );
+}
+
+function HomeContent() {
+  return (
+    <div className="home__content">
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+      <HomeContentCard />
+    </div>
+  );
+}
+
+function HomeJumbotron() {
   const options = [
     { value: "chocolate", label: "Chocolate" },
     { value: "strawberry", label: "Strawberry" },
     { value: "vanilla", label: "Vanilla" },
   ];
-
   return (
     <div className="home__jumbotron">
       <img src={homebanner} alt="homebanner" className="home__jumbotron__img" />
       <div className="home__jumbotron__overlay">
         <form action="" className="home__jumbotron__overlay__form">
           <div className="home__jumbotron__overlay__form__top">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25.621"
-              height="25.621"
-              viewBox="0 0 30.621 30.621"
-            >
-              <g
-                id="Icon_feather-search"
-                data-name="Icon feather-search"
-                transform="translate(-3 -3)"
+            <div className="home__jumbotron__overlay__form__top__input">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25.621"
+                height="25.621"
+                viewBox="0 0 30.621 30.621"
               >
-                <path
-                  id="Path_7"
-                  data-name="Path 7"
-                  d="M28.5,16.5a12,12,0,1,1-12-12A12,12,0,0,1,28.5,16.5Z"
-                  fill="none"
-                  stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
-                />
-                <path
-                  id="Path_8"
-                  data-name="Path 8"
-                  d="M31.5,31.5l-6.525-6.525"
-                  fill="none"
-                  stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
-                />
-              </g>
-            </svg>
-            <input
-              type="search"
-              autoFocus
-              className="home__jumbotron__overlay__form__top__input"
-              placeholder="Search for best architecture projects & Jobs"
-            />
+                <g
+                  id="Icon_feather-search"
+                  data-name="Icon feather-search"
+                  transform="translate(-3 -3)"
+                >
+                  <path
+                    id="Path_7"
+                    data-name="Path 7"
+                    d="M28.5,16.5a12,12,0,1,1-12-12A12,12,0,0,1,28.5,16.5Z"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                  />
+                  <path
+                    id="Path_8"
+                    data-name="Path 8"
+                    d="M31.5,31.5l-6.525-6.525"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                  />
+                </g>
+              </svg>
+              <input
+                type="search"
+                autoFocus
+                className="home__jumbotron__overlay__form__top__input__field"
+                placeholder="Search for best architecture projects & Jobs"
+              />
+            </div>
             <HomeScreenRoleFilter label="People" defaultChecked />
             <HomeScreenRoleFilter label="Projects" />
           </div>
@@ -196,10 +244,82 @@ function HomeScreenRoleFilter({ label, ...props }) {
 }
 
 function HomeScreenFilterSelect({ options, svg, ...props }) {
+  const [focus, setFocus] = useState(false);
   return (
-    <div className="home__jumbotron__overlay__form__bottom__entry">
+    <button
+      className="home__jumbotron__overlay__form__bottom__entry"
+      onClick={() => {
+        setFocus(!focus);
+      }}
+      onBlur={() => {
+        setFocus(false);
+      }}
+      type="button"
+    >
       {svg}
-      <Select options={options} isMulti {...props} />
-    </div>
+      <Select options={options} isMulti {...props} menuIsOpen={focus} />
+    </button>
+  );
+}
+
+function HomeContentCard({}) {
+  return (
+    <a href="#" className="home__content__entry">
+      <img src={project} alt="project" className="home__content__entry__img" />
+      <div className="home__content__entry__overlay">
+        <div className="home__content__entry__overlay__header">
+          <div className="home__content__entry__overlay__header__heading">
+            Project Name Here
+          </div>
+          <div className="home__content__entry__overlay__header__row">
+            <div className="home__content__entry__overlay__header__row__name">
+              Arslan Goursi
+            </div>
+            <div className="home__content__entry__overlay__header__row__stats">
+              <div className="home__content__entry__overlay__header__row__stats__entry">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14.196"
+                  height="14.196"
+                  viewBox="0 0 14.196 14.196"
+                >
+                  <path
+                    id="Icon_awesome-thumbs-up"
+                    data-name="Icon awesome-thumbs-up"
+                    d="M2.883,6.211H.665A.665.665,0,0,0,0,6.876V13.53a.665.665,0,0,0,.665.665H2.883a.665.665,0,0,0,.665-.665V6.876A.665.665,0,0,0,2.883,6.211ZM1.774,13.087a.665.665,0,1,1,.665-.665A.665.665,0,0,1,1.774,13.087ZM10.647,2.258c0,1.176-.72,1.836-.923,2.621h2.82A1.657,1.657,0,0,1,14.2,6.491a2.007,2.007,0,0,1-.539,1.364l0,0a2.316,2.316,0,0,1-.258,2.2,2.192,2.192,0,0,1-.454,2.073,1.472,1.472,0,0,1-.17,1.237c-.566.813-1.968.824-3.154.824H9.537a7.959,7.959,0,0,1-3.315-.88,4.363,4.363,0,0,0-1.46-.449.333.333,0,0,1-.327-.333V6.608a.332.332,0,0,1,.1-.236c1.1-1.085,1.571-2.234,2.471-3.136A3.358,3.358,0,0,0,7.71,1.6c.123-.513.381-1.6.941-1.6C9.316,0,10.647.222,10.647,2.258Z"
+                    fill="#fff"
+                  />
+                </svg>
+                90k
+              </div>
+              <div className="home__content__entry__overlay__header__row__stats__entry">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15.049"
+                  height="10.033"
+                  viewBox="0 0 15.049 10.033"
+                >
+                  <path
+                    id="Icon_awesome-eye"
+                    data-name="Icon awesome-eye"
+                    d="M14.958,9.135A8.38,8.38,0,0,0,7.525,4.5,8.381,8.381,0,0,0,.091,9.135a.845.845,0,0,0,0,.763,8.38,8.38,0,0,0,7.434,4.635A8.381,8.381,0,0,0,14.958,9.9.845.845,0,0,0,14.958,9.135ZM7.525,13.279a3.762,3.762,0,1,1,3.762-3.762A3.762,3.762,0,0,1,7.525,13.279Zm0-6.27a2.49,2.49,0,0,0-.661.1A1.25,1.25,0,0,1,5.115,8.855,2.5,2.5,0,1,0,7.525,7.008Z"
+                    transform="translate(0 -4.5)"
+                    fill="#fff"
+                  />
+                </svg>
+                120k
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="home__content__entry__overlay__info">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s
+        </div>
+      </div>
+    </a>
   );
 }

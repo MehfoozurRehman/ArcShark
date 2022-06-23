@@ -1,11 +1,11 @@
 .home__jumbotron {
   width: 100%;
   position: relative;
-  height: 600px;
+  height: 650px;
 }
 .home__jumbotron__img {
   width: 100%;
-  height: 600px;
+  height: 650px;
 }
 .home__jumbotron__overlay {
   position: absolute;
@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #df2cdca6, #8041b3a6, #2b25a5a6);
+  padding-bottom: 5em;
 }
 
 .home__jumbotron__overlay__form {
@@ -28,7 +29,6 @@
 }
 .home__jumbotron__overlay__form__top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
@@ -36,6 +36,11 @@
   border: 1px solid transparent;
 }
 .home__jumbotron__overlay__form__top__input {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.home__jumbotron__overlay__form__top__input__field {
   flex: 1;
   height: 55px;
   background-color: transparent;
@@ -45,7 +50,7 @@
   padding: 0em 1.2em;
   font-size: 18px;
 }
-.home__jumbotron__overlay__form__top__input::placeholder {
+.home__jumbotron__overlay__form__top__input__field::placeholder {
   color: $white;
 }
 .home__jumbotron__overlay__form__top__role {
@@ -121,6 +126,8 @@
   background-color: $primary;
   margin-right: 0.5em;
   margin-top: 1em;
+  text-align: left;
+  border: none;
 }
 .home__jumbotron__overlay__form__bottom__entry * {
   font-size: 14px !important;
@@ -132,18 +139,21 @@
 .home__jumbotron__overlay__form__bottom__entry .css-1s2u09g-control {
   background-color: transparent !important;
   border: none !important;
-  min-height: 45px;
+  min-height: 42px;
   box-shadow: none !important;
 }
 .home__jumbotron__overlay__form__bottom__entry .css-1pahdxg-control {
   background-color: transparent !important;
   border: none !important;
-  min-height: 45px;
+  min-height: 42px;
   box-shadow: none !important;
 }
 .home__jumbotron__overlay__form__bottom__entry .css-14el2xx-placeholder {
   color: $white !important;
   white-space: nowrap;
+}
+.home__jumbotron__overlay__form__bottom__entry input {
+  color: $white !important;
 }
 .home__jumbotron__overlay__form__bottom__entry .css-1okebmr-indicatorSeparator {
   display: none !important;
@@ -155,13 +165,144 @@
 .home__jumbotron__overlay__form__bottom__entry .css-1rhbuit-multiValue {
   background-color: transparent !important;
   color: $white !important;
+  border: 1px solid $white;
+  padding: 0.2em 0.5em;
+  border-radius: 50px;
+}
+.home__jumbotron__overlay__form__bottom__entry .css-1rhbuit-multiValue:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
 .home__jumbotron__overlay__form__bottom__entry .css-1rhbuit-multiValue * {
   background-color: transparent !important;
   color: $white !important;
 }
 .home__jumbotron__overlay__form__bottom__entry
-  .css-1rhbuit-multiValue:hover
+  .css-1rhbuit-multiValue
   .css-tj5bde-Svg {
-  fill: red;
+  margin-right: 0em;
+}
+.home__jumbotron__overlay__form__bottom__entry
+  .css-1rhbuit-multiValue
+  .css-tj5bde-Svg:hover {
+  background-color: rgb(255, 71, 71) !important;
+}
+.home__content {
+  position: relative;
+  z-index: 999;
+  margin: 0em auto;
+  margin-top: -7em;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 7em;
+}
+.home__content__entry {
+  width: 31%;
+  margin: 1%;
+  position: relative;
+  border-radius: 10px;
+  height: 100%;
+}
+.home__content__entry__img {
+  width: 100%;
+  min-height: 280px;
+  border-radius: 10px;
+}
+.home__content__entry__overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 98%;
+  border-radius: 10px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  justify-content: flex-end;
+}
+.home__content__entry__overlay__header {
+  display: flex;
+  flex-direction: column;
+}
+.home__content__entry__overlay__header__heading {
+  font-size: 20px;
+  color: $white;
+  font-weight: bold;
+}
+.home__content__entry__overlay__header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.3em;
+}
+.home__content__entry__overlay__header__row__name {
+  font-size: 16px;
+  color: $white;
+}
+.home__content__entry__overlay__header__row__stats {
+  display: flex;
+  align-items: center;
+}
+.home__content__entry__overlay__header__row__stats__entry {
+  display: flex;
+  align-items: center;
+  color: $white;
+  margin-left: 1em;
+}
+.home__content__entry__overlay__header__row__stats__entry svg {
+  margin-right: 0.5em;
+}
+.home__content__entry__overlay__info {
+  display: none;
+  font-size: 14px;
+  color: white;
+  margin-top: 1em;
+  flex: 1 1;
+  transition: 300ms ease-in-out;
+}
+.home__content__entry:hover .home__content__entry__overlay {
+  transition: 300ms ease-in-out;
+  background: linear-gradient(135deg, #df2cdca6, #8041b3a6, #2b25a5a6);
+  backdrop-filter: blur(4);
+  -webkit-backdrop-filter: blur(4);
+}
+.home__content__entry:hover
+  .home__content__entry__overlay
+  .home__content__entry__overlay__info {
+  transition: 300ms ease-in-out;
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .home__content__entry {
+    width: 48%;
+  }
+}
+@media (max-width: 750px) {
+  .home__content__entry {
+    width: 100%;
+  }
+  .home__jumbotron__overlay__form__top {
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 0em;
+    background-color: transparent;
+  }
+  .home__jumbotron__overlay__form__top__input {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    padding: 0em 1.2em;
+    border: 1px solid transparent;
+    margin-bottom: 1em;
+  }
+  .home__jumbotron__overlay__form__top__role {
+    margin: 0em 0.5em;
+  }
 }
