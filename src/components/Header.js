@@ -112,11 +112,7 @@ export default function Header() {
                       </button>
                     </div>
                     <div className="header__content__right__panel__content">
-                      <PanelEntry />
-                      <PanelEntry />
-                      <PanelEntry />
-                      <PanelEntry />
-                      <PanelEntry />
+                      
                     </div>
                   </div>
                 </OutsideClickHandler>
