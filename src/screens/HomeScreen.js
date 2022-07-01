@@ -66,13 +66,11 @@ function HomeJumbotron() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="25.621"
                 height="25.621"
-                viewBox="0 0 30.621 30.621"
-              >
+                viewBox="0 0 30.621 30.621">
                 <g
                   id="Icon_feather-search"
                   data-name="Icon feather-search"
-                  transform="translate(-3 -3)"
-                >
+                  transform="translate(-3 -3)">
                   <path
                     id="Path_7"
                     data-name="Path 7"
@@ -114,8 +112,7 @@ function HomeJumbotron() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="18.215"
                   height="12.868"
-                  viewBox="0 0 18.215 12.868"
-                >
+                  viewBox="0 0 18.215 12.868">
                   <path
                     id="Icon_material-network-check"
                     data-name="Icon material-network-check"
@@ -134,8 +131,7 @@ function HomeJumbotron() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="10.752"
                   height="15.36"
-                  viewBox="0 0 10.752 15.36"
-                >
+                  viewBox="0 0 10.752 15.36">
                   <path
                     id="Icon_material-location-on"
                     data-name="Icon material-location-on"
@@ -154,8 +150,7 @@ function HomeJumbotron() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="18.42"
                   height="15.071"
-                  viewBox="0 0 18.42 15.071"
-                >
+                  viewBox="0 0 18.42 15.071">
                   <path
                     id="Icon_material-school"
                     data-name="Icon material-school"
@@ -174,8 +169,7 @@ function HomeJumbotron() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="20.832"
                   height="13.257"
-                  viewBox="0 0 20.832 13.257"
-                >
+                  viewBox="0 0 20.832 13.257">
                   <path
                     id="Icon_material-people"
                     data-name="Icon material-people"
@@ -194,8 +188,7 @@ function HomeJumbotron() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="20.832"
                   height="13.257"
-                  viewBox="0 0 20.832 13.257"
-                >
+                  viewBox="0 0 20.832 13.257">
                   <path
                     id="Icon_material-people"
                     data-name="Icon material-people"
@@ -227,8 +220,7 @@ function HomeScreenRoleFilter({ label, ...props }) {
           xmlns="http://www.w3.org/2000/svg"
           width="21.761"
           height="21.761"
-          viewBox="0 0 21.761 21.761"
-        >
+          viewBox="0 0 21.761 21.761">
           <path
             id="Icon_awesome-check-circle"
             data-name="Icon awesome-check-circle"
@@ -254,8 +246,7 @@ function HomeScreenFilterSelect({ options, svg, ...props }) {
       onBlur={() => {
         setFocus(false);
       }}
-      type="button"
-    >
+      type="button">
       {svg}
       <Select options={options} isMulti {...props} menuIsOpen={focus} />
     </button>
@@ -281,8 +272,7 @@ function HomeContentCard({}) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="14.196"
                   height="14.196"
-                  viewBox="0 0 14.196 14.196"
-                >
+                  viewBox="0 0 14.196 14.196">
                   <path
                     id="Icon_awesome-thumbs-up"
                     data-name="Icon awesome-thumbs-up"
@@ -297,8 +287,7 @@ function HomeContentCard({}) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="15.049"
                   height="10.033"
-                  viewBox="0 0 15.049 10.033"
-                >
+                  viewBox="0 0 15.049 10.033">
                   <path
                     id="Icon_awesome-eye"
                     data-name="Icon awesome-eye"

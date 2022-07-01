@@ -6,6 +6,7 @@ import HomeScreen from "./screens/HomeScreen";
 import "./about.scss";
 import Footer from "./components/Footer";
 import Termandcondition from "./components/Termandcondition";
+import Register from "./screens/Register";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/termandcondition" element={<Termandcondition />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </>

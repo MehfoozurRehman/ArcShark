@@ -1,0 +1,47 @@
+@import "./global.scss";
+
+.register__main__container {
+  height: fit-content;
+  width: 100%;
+  position: relative;
+}
+.register__main__pic {
+  height: 700px;
+  width: 100%;
+}
+.register__main__pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.register__main__content {
+  margin-top: 4em;
+  height: 100%;
+  padding: 0 2em;
+  width: 100%;
+  //   border: 2px solid rgb(255, 0, 0);
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.register__main__content__left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.register__main__content__left__title {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+.register__main__content__left__text {
+  color: white;
+  margin: 1em 0;
+  width: 70%;
+}
