@@ -1,6 +1,7 @@
 $white: #fff;
 $primary: #5b57a4;
 $secondry: #c495c3;
+$color: #6e6e6e;
 body {
   background-color: #f3f3f3;
 }
@@ -167,6 +168,66 @@ body {
   overflow: hidden;
   font-size: 14px;
 }
+.term__and__condition__page {
+  width: 100%;
+  position: relative;
+}
+.term__and__condition__page__banner {
+  width: 100%;
+}
+.term__and__condition__page__banner img {
+  width: 100%;
+  height: 250px;
+}
+.term__and__condition__page__overlay {
+  position: absolute;
+  display: flex;
+  padding: 2em;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin-top: 2em;
+  transform: translate(-50%, -50%);
+}
+.term__condition__overlay__haeding__text {
+  color: $white;
+  font-size: 16px;
+  text-align: center;
+}
+.term__condition__overlay__haeding__big__text {
+  color: $white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 0.6em;
+}
+.term__and__condition__container {
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 4em 4em;
+}
+.term__and__condition__container__heading {
+  font-size: 22px;
+  font-weight: bold;
+}
+.term__and__condition__container__text {
+  font-size: 14px;
+  color: $color;
+  margin-top: 1em;
+}
+.term__and__condition__container__ul__text {
+  font-size: 14px;
+  color: $color;
+}
+.term__and__condition__container__ul__text li {
+  padding: 0em 1em;
+  margin-top: 0.5em;
+}
+
 @media (max-width: 1000px) {
   .footer__container__col {
     min-width: 30%;
@@ -210,5 +271,17 @@ body {
   }
   .about__heading__here__cards {
     width: 100%;
+  }
+  .term__and__condition__page__overlay__haeding {
+    margin-top: 1.3em;
+  }
+  .term__and__condition__container {
+    padding: 3em 2em;
+  }
+  .term__and__condition__container__ul__text li {
+    padding: 0em;
+  }
+  .term__and__condition__container__ul__text {
+    padding: 0em 1.5em;
   }
 }
