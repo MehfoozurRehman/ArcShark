@@ -9,6 +9,7 @@ import Termandcondition from "./components/Termandcondition";
 import Register from "./screens/Register";
 import LetsTalk from "./components/LetsTalk";
 import SocialCardPage from "./screens/SocialCardPage";
+import SignIn from "./screens/SignIn";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/letstalk" element={<LetsTalk />} />
         <Route path="/SocialCardPage" element={<SocialCardPage />} />
+        <Route path="/sign_in" element={<SignIn />} />
       </Routes>
       <Footer />
     </>

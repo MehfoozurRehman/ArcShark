@@ -149,6 +149,42 @@
     background-position: 100%;
   }
 }
+// ---------------------------SignIn--------------------------
+.sign_in__main__content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.sign__in__main__content__right {
+  justify-content: center;
+  align-items: center;
+}
+.sign__in__main__content__right__content {
+  height: 70%;
+  border-radius: 10px 10px 10px 150px;
+  position: relative;
+}
+.sign__in__main__content__right__curve {
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+  display: flex;
+  align-items: flex-end;
+}
+.sign__in__main__content__right__curve img {
+  height: 100%;
+  width: 100%;
+}
+.sign_in_main__content__left__container {
+  width: 70%;
+}
+.sign_in_main__content__left__text {
+  width: 100%;
+}
+.sign_in_main__content__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 1200px) {
   .regiester__main__content__right__content {
     width: 450px;

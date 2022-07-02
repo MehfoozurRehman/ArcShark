@@ -31,29 +31,3 @@
 .checkbox__input:hover ~ .checkbox__content .checkbox__content__indicator {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
-.register__main__content__right__checkbox__container {
-  display: flex;
-}
-.register__main__content__right__signup__button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.register__main__content__right__signup__button a {
-  background-color: #5b58a5;
-  color: white;
-  height: fit-content;
-  width: 40%;
-  padding: 0.5em;
-  text-align: center;
-  border-radius: 25px;
-  text-decoration: none;
-}
-.register__main__content__right__signin {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.register__main__content__right__signin a {
-  color: #5b58a5;
-}
