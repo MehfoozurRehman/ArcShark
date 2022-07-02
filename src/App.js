@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Termandcondition from "./components/Termandcondition";
 import Register from "./screens/Register";
 import LetsTalk from "./components/LetsTalk";
+import SocialCardPage from "./screens/SocialCardPage";
 
 export default function App() {
   return (
@@ -15,10 +16,11 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
-        <Route path="/about-us" element={<About />} />
+        <Route path="/aboutus" element={<About />} />
         <Route path="/termandcondition" element={<Termandcondition />} />
         <Route path="/register" element={<Register />} />
         <Route path="/letstalk" element={<LetsTalk />} />
+        <Route path="/SocialCardPage" element={<SocialCardPage />} />
       </Routes>
       <Footer />
     </>

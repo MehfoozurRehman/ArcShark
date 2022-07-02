@@ -386,6 +386,160 @@ body {
   margin-left: 0.5em;
   cursor: pointer;
 }
+.home__content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home__content__card__entry {
+  width: 29%;
+  margin: 2%;
+  position: relative;
+  border-radius: 10px;
+  height: 100%;
+  background-color: $white;
+  padding: 2em;
+  text-decoration: none;
+}
+.home__content__entry__content {
+  display: flex;
+  justify-content: center;
+  margin-top: -3.5em;
+  margin-bottom: 1.5em;
+}
+.home__content__card__entry__user__detail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.home__content__card__entry__name__heading {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+.home__content__card__entry__name__subheading {
+  display: flex;
+  justify-content: center;
+  color: $color;
+  font-size: 16px;
+  margin-top: 0.5em;
+}
+.home__content__card__entry__location svg {
+  stroke: $primary;
+}
+.home__content__card__entry__location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.home__content__card__entry__location__country__name {
+  margin-left: 0.5em;
+}
+.home__content__card__entry__follower {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  width: 100%;
+  margin: 0em 1em;
+  color: #2b2b2b;
+  margin-top: 2em;
+  font-size: 14px;
+}
+.home__content__card__entry__follower__entry__counter {
+  font-size: 18px;
+  font-weight: bold;
+}
+.home__content__card__entry__follower__entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__content__card__entry__social__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+.home__content__card__entry__social__content img {
+  width: 35px;
+  height: 35px;
+  margin: 0em 0.4em;
+}
+.home__content__card__buttons {
+  margin-top: 1.5em;
+}
+.home__content__card__buttons__btn__follow {
+  padding: 0.6em 2em;
+  margin: 0em 0.5em;
+  outline: none;
+  border: 1px solid #5b57a4;
+  background-image: linear-gradient(90deg, $primary, $secondry);
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: $white;
+}
+.home__content__card__buttons__btn__hire__me {
+  padding: 0.6em 2em;
+  margin: 0em 0.5em;
+  outline: none;
+  border: 1px solid #5b57a4;
+  background-color: $white;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.home__content__card__entry:hover {
+  background-image: linear-gradient(120deg, $primary, $secondry);
+}
+.home__content__card__entry:hover .home__content__card__entry__name__heading {
+  color: $white;
+}
+.home__content__card__entry:hover
+  .home__content__card__entry__name__subheading {
+  color: $white;
+}
+.home__content__card__entry:hover
+  .home__content__card__entry__location__country__name {
+  color: $white;
+}
+.home__content__card__entry:hover .home__content__card__entry__follower__entry {
+  color: $white;
+}
+.home__content__card__entry:hover
+  .home__content__card__buttons
+  .home__content__card__buttons__btn__follow {
+  background: $white;
+  color: black;
+}
+.home__content__card__entry:hover
+  .home__content__card__buttons
+  .home__content__card__buttons__btn__follow:hover {
+  background-image: linear-gradient(120deg, $primary, $secondry);
+  color: $white;
+}
+
+.home__content__card__entry:hover
+  .home__content__card__buttons
+  .home__content__card__buttons__btn__hire__me:hover {
+  background-image: linear-gradient(120deg, $primary, $secondry);
+  color: $white;
+}
+@media (max-width: 1200px) {
+  .home__content__card__entry {
+    width: 46%;
+  }
+}
 @media (max-width: 1000px) {
   .footer__container__col {
     min-width: 30%;
@@ -403,6 +557,14 @@ body {
 @media (max-width: 950px) {
   .letstalk__banner__overlay__section {
     width: 100%;
+  }
+}
+@media (max-width: 880px) {
+  .home__content__card__entry {
+    width: 60%;
+  }
+  .home__content {
+    justify-content: center;
   }
 }
 @media (max-width: 800px) {
@@ -435,7 +597,11 @@ body {
   .letstalk__banner__overlay__content__right {
     padding: 0em 0em;
   }
+  .home__content__card__entry {
+    margin: 2%;
+  }
 }
+
 @media (max-width: 700px) {
   .about__overlay__content {
     flex-direction: column;
@@ -448,6 +614,12 @@ body {
   }
   .about__overlay__content__right {
     width: 100%;
+  }
+  .home__content__card__entry {
+    width: 80%;
+  }
+  .home__content__card__entry {
+    margin: 3%;
   }
 }
 @media (max-width: 600px) {
@@ -470,6 +642,15 @@ body {
   .term__and__condition__container__ul__text {
     padding: 0em 1.5em;
   }
+  .home__content__card__entry {
+    width: 100%;
+  }
+  .home__content__card__entry {
+    margin: 3%;
+  }
 }
 @media (max-width: 480px) {
+  .home__content__card__entry {
+    margin: 4%;
+  }
 }

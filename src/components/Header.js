@@ -63,8 +63,8 @@ export default function Header() {
                   id="Icon_ionic-ios-mail-unread"
                   data-name="Icon ionic-ios-mail-unread"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="31.734"
-                  height="23.19"
+                  width="25"
+                  height="20"
                   viewBox="0 0 31.734 23.19"
                 >
                   <path
@@ -111,9 +111,7 @@ export default function Header() {
                         Clear All
                       </button>
                     </div>
-                    <div className="header__content__right__panel__content">
-                      
-                    </div>
+                    <div className="header__content__right__panel__content"></div>
                   </div>
                 </OutsideClickHandler>
               ) : null}
@@ -127,8 +125,8 @@ export default function Header() {
                   id="Icon_ionic-ios-notifications"
                   data-name="Icon ionic-ios-notifications"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="21.121"
-                  height="26.416"
+                  width="20"
+                  height="23"
                   viewBox="0 0 21.121 26.416"
                 >
                   <path
