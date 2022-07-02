@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SignInBG from "../assets/signin__bg.png";
 import Logo from "../assets/logo.svg";
-import Input from "../components/InputComp/Input";
+// import Input from "../components/InputComp/Input";
 import Checkbox from "../components/CheckBox/CheckBox";
 import fbIcon from "../assets/FbIcon.png";
 import AppleIcon from "../assets/appleIcon.png";
@@ -12,7 +12,7 @@ function SignIn() {
   const [isChecked, setIschecked] = useState(false);
 
   return (
-    <div className="register__main__container">
+    <div className="register__main__container sign__in__main__container">
       <div className="register__main__pic">
         <img src={SignInBG} alt="Architecture with clouds" />
       </div>
@@ -37,10 +37,21 @@ function SignIn() {
         </div>
         <div className="register__main__content__right sign__in__main__content__right">
           <div className="regiester__main__content__right__content sign__in__main__content__right__content">
-            <div className="register__main__content__right__title">Sign In</div>
+            <div className="register__main__content__right__title sign__in__main__content__right__title">
+              Sign In
+            </div>
             <form action="" className="regiester__main__content__right__form">
-              <Input type="email" placeholder="Email" />
-              <Input type="password" placeholder="Password" />
+              <div className="input__container sign__in__input__container">
+                <input type="email" placeholder="Email" name="email" required />
+              </div>
+              <div className="input__container sign__in__input__container">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+              </div>
               <div className="register__main__content__right__checkbox__container">
                 <Checkbox
                   value={isChecked}

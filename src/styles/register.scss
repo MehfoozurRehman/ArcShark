@@ -99,6 +99,7 @@
 }
 .register__main__content__right__checkbox__container {
   display: flex;
+  align-items: center;
   margin-top: 1em;
 }
 .register__main__content__right__signup__button {
@@ -185,6 +186,23 @@
   align-items: center;
   justify-content: center;
 }
+.sign__in__input__container input {
+  border-color: white;
+  caret-color: white;
+  color: white;
+}
+.sign__in__input__container input :focus {
+  border-bottom: 1px solid white;
+}
+.sign__in__input__container input::placeholder {
+  color: white;
+}
+.sign__in__main__content__right__title::after {
+  bottom: -5px;
+  width: 80px;
+}
+
+// --------------------Scss-------------------------
 @media (max-width: 1200px) {
   .regiester__main__content__right__content {
     width: 450px;
@@ -212,9 +230,15 @@
     width: 90%;
     height: 90%;
   }
+  .sign__in__main__content__right {
+    height: 60%;
+  }
   .register__main__container {
     height: 1000px;
     // margin-bottom: 100px;
+  }
+  .sign__in__main__container {
+    height: 900px;
   }
   .register__main__content {
     height: 100%;
