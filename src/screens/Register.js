@@ -83,7 +83,8 @@ function Register() {
                 />
                 <label
                   htmlFor="terms"
-                  className="register__main__content__right__label">
+                  className="register__main__content__right__label"
+                >
                   I agree to the <a href="#">Terms & Conditions</a>
                 </label>
               </div>
