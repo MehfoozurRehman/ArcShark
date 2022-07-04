@@ -22,7 +22,7 @@ export default function App() {
         <Route path="/termandcondition" element={<Termandcondition />} />
         <Route path="/register" element={<Register />} />
         <Route path="/letstalk" element={<LetsTalk />} />
-        <Route path="/SocialCardPage" element={<SocialCardPage />} />
+        <Route path="/jobs" element={<SocialCardPage />} />
         <Route path="/sign_in" element={<SignIn />} />
         <Route path="/welcome" element={<Welcome />} />
       </Routes>

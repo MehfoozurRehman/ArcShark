@@ -2,9 +2,10 @@ import React, { useLayoutEffect, useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import { X, Menu } from "react-feather";
 import { logo, user } from "../assets";
+import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [isUser, setIsUser] = useState(true);
+  const [isUser, setIsUser] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [isMessagePanelOpen, setIsMessagePanelOpen] = useState(false);
   const [isNotificationPanelOpen, setIsNotificationPanelOpen] = useState(false);
@@ -26,21 +27,21 @@ export default function Header() {
     <div className="header">
       <div className="header__content">
         <div className="header__content__left">
-          <a href="#" className="header__content__left__logo">
+          <Link to="/" className="header__content__left__logo">
             <img
               src={logo}
               alt="arcsharklogo"
               className="header__content__left__logo__img"
             />
-          </a>
+          </Link>
           {isNavOpen ? (
             <div className="header__content__left__nav">
-              <a href="#" className="header__content__left__nav__link">
+              <Link to="/" className="header__content__left__nav__link">
                 Discover
-              </a>
-              <a href="#" className="header__content__left__nav__link">
+              </Link>
+              <Link to="/jobs" className="header__content__left__nav__link">
                 Jobs
-              </a>
+              </Link>
             </div>
           ) : null}
         </div>
@@ -206,18 +207,18 @@ export default function Header() {
             </>
           ) : (
             <>
-              <a
-                href="#"
+              <Link
+                to="/sign_in"
                 className="header__content__right__button header__content__right__button__primary"
               >
                 Sign In
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/register"
                 className="header__content__right__button header__content__right__button__secondary"
               >
                 Sign Up
-              </a>
+              </Link>
             </>
           )}
           <button
