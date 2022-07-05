@@ -66,7 +66,8 @@ function SignIn() {
                 />
                 <label
                   htmlFor="terms"
-                  className="register__main__content__right__label">
+                  className="register__main__content__right__label"
+                >
                   Remember Me
                 </label>
               </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Welcomejumbotronpic from "../assets/Welcome.png";
 import Logo from "../assets/logo.svg";
 
@@ -11,7 +11,10 @@ function Register() {
       <div className="welcome__main__content">
         <div className="welcome__main__content__left">
           <form action="" className="welcome__main__content__left__form">
-            <div className="welcome__main__content__left__card"></div>
+            <div className="welcome__main__content__left__card">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              beatae!
+            </div>
           </form>
         </div>
         <div className="welcome__main__content__right">

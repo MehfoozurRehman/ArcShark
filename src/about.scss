@@ -572,7 +572,8 @@ body {
   align-items: center;
 }
 .welcome__main__content__left__form {
-  background-color: rgb(0, 0, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: rgba(224, 224, 224, 0.6);
   max-width: 60%;
   padding: 2em;
@@ -601,7 +602,78 @@ body {
   margin: 1em 0;
   width: 70%;
 }
-
+.postjob__page__banner {
+  width: 100%;
+  height: 650px;
+}
+.postjob__page__banner img {
+  width: 100%;
+}
+.home__content__postjob {
+  margin-top: -7em;
+  flex-wrap: wrap;
+}
+.home__content__postjob {
+  display: flex;
+}
+.postjob__card__entry {
+  width: 31%;
+  margin: 1%;
+  position: relative;
+  border-radius: 10px;
+  height: 100%;
+  background-color: $white;
+  padding: 2em;
+  text-decoration: none;
+}
+.postjob__card__entry__user__detail {
+  display: flex;
+  flex-direction: column;
+}
+.postjob__card__entry__user__detail__name__heading {
+  display: flex;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+.postjob__card__entry__name__subheading {
+  display: flex;
+  color: $color;
+  font-size: 16px;
+  margin-top: 0.5em;
+}
+.postjob__card__entry__name__subheading__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5em;
+}
+.postjob__card__entry__name__subheading__icon svg {
+  margin-right: 0.5em;
+}
+.postjob__card__entry__text {
+  color: $color;
+  font-size: 14px;
+  padding: 1em 0em;
+}
+.home__content__card__entry__company__name {
+  display: flex;
+  align-items: center;
+}
+.home__content__card__entry__company__name__heading {
+  margin-left: 1em;
+  color: black;
+}
+.home__content__card__entry__company__name__heading__location svg {
+  margin-right: 0.5em;
+}
+.home__content__card__entry__company__name__heading__location {
+  display: flex;
+  align-items: center;
+}
+.home__content__card__entry__company__name__heading__location__text {
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 1200px) {
   .home__content__card__entry {
     width: 46%;
