@@ -60,7 +60,7 @@ export default function Footer() {
             >
               Terms & Condtions
             </Link>
-            <Link to="/" className="footer__container__col__text">
+            <Link to="/privacypolicy" className="footer__container__col__text">
               Privacy Policy
             </Link>
             <Link to="/aboutus" className="footer__container__col__text">

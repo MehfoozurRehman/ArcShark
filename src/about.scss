@@ -177,7 +177,7 @@ body {
 }
 .term__and__condition__page__banner img {
   width: 100%;
-  height: 250px;
+  height: 300px;
 }
 .term__and__condition__page__overlay {
   position: absolute;
@@ -226,6 +226,64 @@ body {
 .term__and__condition__container__ul__text li {
   padding: 0em 1em;
   margin-top: 0.5em;
+}
+.privacy__poilicy__page {
+  width: 100%;
+  position: relative;
+}
+.privacy__poilicy__page__banner {
+  width: 100%;
+}
+.privacy__poilicy__page__banner img {
+  width: 100%;
+  height: 300px;
+}
+.privacy__poilicy__page__overlay {
+  position: absolute;
+  display: flex;
+  padding: 2em;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin-top: 2em;
+  transform: translate(-50%, -50%);
+}
+.privacy__poilicy__page__overlay__haeding__text {
+  color: $white;
+  font-size: 16px;
+  text-align: center;
+}
+.privacy__poilicy__page__overlay__haeding__big__text {
+  color: $white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 0.6em;
+}
+.privacy__poilicy__page__container {
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 4em 4em;
+}
+.privacy__poilicy__page__container__heading {
+  font-size: 22px;
+  font-weight: bold;
+}
+.privacy__poilicy__page__container__text {
+  font-size: 14px;
+  color: $color;
+  margin-top: 1em;
+}
+.privacy__poilicy__container__ul__text {
+  font-size: 14px;
+  color: $color;
+}
+.privacy__poilicy__container__ul__text li {
+  padding: 0em;
 }
 .letstalk__banner {
   width: 100%;
@@ -617,22 +675,28 @@ body {
   width: 100%;
 }
 .home__content__postjob {
-  margin-top: -7em;
   flex-wrap: wrap;
-}
-.home__content__postjob {
+  max-width: 1440px;
+  margin: 0px auto;
+  margin-top: -7em;
   display: flex;
+  padding: 1em;
 }
+
 .postjob__card__entry {
   width: 31%;
   margin: 1%;
   position: relative;
   border-radius: 10px;
   height: 100%;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  padding: 2em;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 3em;
   text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
 }
 .postjob__card__entry__user__detail {
   display: flex;
@@ -662,6 +726,38 @@ body {
   color: $color;
   font-size: 14px;
   padding: 1em 0em;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0em;
+}
+.postjob__card__entry:hover {
+  background-color: $primary;
+}
+.postjob__card__entry:hover .postjob__card__entry__user__detail__name__heading {
+  color: $white;
+}
+.postjob__card__entry:hover .postjob__card__entry__name__subheading {
+  color: $white;
+}
+.postjob__card__entry:hover .postjob__card__entry__name__subheading__icon svg {
+  color: $white;
+  fill: $white;
+}
+.postjob__card__entry:hover .postjob__card__entry__text {
+  color: $white;
+}
+.postjob__card__entry:hover
+  .home__content__card__entry__company__name__heading {
+  color: $white;
+}
+.home__content__card__entry__company__name__heading__location svg {
+  color: $primary;
+}
+.postjob__card__entry:hover
+  .home__content__card__entry__company__name__heading
+  svg {
+  color: $white;
 }
 .home__content__card__entry__company__name {
   display: flex;
@@ -670,6 +766,7 @@ body {
 .home__content__card__entry__company__name__heading {
   margin-left: 1em;
   color: black;
+  text-align: left;
 }
 .home__content__card__entry__company__name__heading__location svg {
   margin-right: 0.5em;
@@ -677,6 +774,7 @@ body {
 .home__content__card__entry__company__name__heading__location {
   display: flex;
   align-items: center;
+  margin-top: 0.5em;
 }
 .home__content__card__entry__company__name__heading__location__text {
   display: flex;
@@ -699,6 +797,9 @@ body {
   }
   .about__heading__here__sec__cards__row {
     justify-content: center;
+  }
+  .postjob__card__entry {
+    width: 48%;
   }
 }
 @media (max-width: 950px) {
@@ -768,6 +869,17 @@ body {
   .home__content__card__entry {
     margin: 3%;
   }
+  .postjob__card__entry {
+    width: 100%;
+  }
+  .term__and__condition__page__banner img {
+    width: 170%;
+    margin-left: -50%;
+  }
+  .privacy__poilicy__page__banner img {
+    width: 170%;
+    margin-left: -50%;
+  }
 }
 @media (max-width: 600px) {
   .footer__container__col {
@@ -780,13 +892,26 @@ body {
   .term__and__condition__page__overlay__haeding {
     margin-top: 1.3em;
   }
+  .privacy__poilicy__page__overlay__haeding {
+    margin-top: 1.3em;
+  }
+
   .term__and__condition__container {
+    padding: 3em 2em;
+  }
+  .privacy__poilicy__page__container {
     padding: 3em 2em;
   }
   .term__and__condition__container__ul__text li {
     padding: 0em;
   }
   .term__and__condition__container__ul__text {
+    padding: 0em 1.5em;
+  }
+  .privacy__poilicy__container__ul__text li {
+    padding: 0em;
+  }
+  .privacy__poilicy__container__ul__text {
     padding: 0em 1.5em;
   }
   .home__content__card__entry {
