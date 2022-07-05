@@ -395,19 +395,21 @@ body {
   justify-content: space-between;
 }
 .home__content__card__entry {
-  width: 29%;
-  margin: 2%;
+  width: 30%;
+  margin: 1.5%;
   position: relative;
   border-radius: 10px;
   height: 100%;
-  background-color: $white;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 2em;
   text-decoration: none;
 }
 .home__content__entry__content {
   display: flex;
   justify-content: center;
-  margin-top: -3.5em;
+  margin-top: -3.8em;
   margin-bottom: 1.5em;
 }
 .home__content__card__entry__user__detail {
@@ -427,20 +429,25 @@ body {
   justify-content: center;
   color: $color;
   font-size: 16px;
-  margin-top: 0.5em;
+  margin-top: 0.8em;
+}
+.home__content__card__entry:hover .home__content__card__entry__location svg {
+  color: $white;
 }
 .home__content__card__entry__location svg {
-  stroke: $primary;
+  color: #5b58a5;
 }
+
 .home__content__card__entry__location {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  margin-top: 0.5em;
+  margin-top: 0.3em;
 }
 .home__content__card__entry__location__country__name {
   margin-left: 0.5em;
+  color: #5b58a5;
 }
 .home__content__card__entry__follower {
   display: flex;
@@ -449,7 +456,7 @@ body {
   width: 100%;
   margin: 0em 1em;
   color: #2b2b2b;
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 14px;
 }
 .home__content__card__entry__follower__entry__counter {
@@ -467,7 +474,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 .home__content__card__entry__social__content img {
   width: 35px;
@@ -475,7 +482,7 @@ body {
   margin: 0em 0.4em;
 }
 .home__content__card__buttons {
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 .home__content__card__buttons__btn__follow {
   padding: 0.6em 2em;
@@ -622,7 +629,8 @@ body {
   position: relative;
   border-radius: 10px;
   height: 100%;
-  background-color: $white;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   padding: 2em;
   text-decoration: none;
 }
