@@ -17,7 +17,7 @@ import PrivacyPolicy from "./screens/PrivacyPolicy";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
-    useState(true);
+    useState(false);
 
   return (
     <>

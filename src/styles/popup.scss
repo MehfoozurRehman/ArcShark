@@ -96,7 +96,10 @@
 }
 
 @media (max-width: 700px) {
+  .popup__content {
+    padding: 2.5em 25px;
+  }
   .popup__content__children__wrapper {
-    max-height: 400px;
+    max-height: 70vh;
   }
 }

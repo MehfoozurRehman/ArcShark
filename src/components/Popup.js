@@ -33,6 +33,7 @@ function Popup({
                 ? "popup__content__header popup__content__header__center"
                 : "popup__content__header"
             }
+            style={info ? null : { marginBottom: 0 }}
           >
             <div className="popup__content__header__heading">{heading}</div>
             {info ? (

@@ -1,0 +1,79 @@
+.post__job__pupup__details {
+  display: flex;
+  justify-content: space-between;
+}
+.post__job__pupup__details__left {
+  width: 75%;
+  border-right: 1px solid black;
+  padding-right: 1em;
+  margin-right: 2em;
+}
+.post__job__pupup__details__left__info {
+  margin-bottom: 1em;
+}
+.post__job__pupup__details__left__company {
+  display: flex;
+  align-items: center;
+}
+.post__job__pupup__details__left__company__logo {
+  margin-right: 1em;
+}
+.post__job__pupup__details__left__company__content {
+  display: flex;
+  flex-direction: column;
+}
+.post__job__pupup__details__left__company__content__heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.1em;
+}
+.post__job__pupup__details__left__company__content__location {
+  display: flex;
+  align-items: center;
+  color: #5b58a5;
+}
+.post__job__pupup__details__left__company__content__location svg {
+  margin-right: 0.5em;
+}
+.post__job__pupup__details__right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post__job__pupup__details__right__entry {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.post__job__pupup__details__right__entry__heading {
+  font-size: 14px;
+  color: black;
+}
+.post__job__pupup__details__right__entry__info {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+.post__job__pupup__details__right__entry:last-child {
+  margin-bottom: 0em;
+}
+@media (max-width: 700px) {
+  .post__job__pupup__details {
+    flex-direction: column;
+  }
+  .post__job__pupup__details__left {
+    margin-right: 0em;
+    width: 100%;
+    border: none;
+    margin-bottom: 1.5em;
+  }
+  .post__job__pupup__details__right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .post__job__pupup__details__right__entry {
+    width: 50%;
+  }
+}
