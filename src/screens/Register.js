@@ -7,7 +7,7 @@ import fbIcon from "../assets/FbIcon.png";
 import AppleIcon from "../assets/appleIcon.png";
 import GoogleIcon from "../assets/google.png";
 
-function Register() {
+export default function Register() {
   const [isChecked, setIschecked] = useState(false);
 
   return (
@@ -118,5 +118,3 @@ function Register() {
     </div>
   );
 }
-
-export default Register;

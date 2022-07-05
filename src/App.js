@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import About from "./screens/About";
 import HomeScreen from "./screens/HomeScreen";
-import "./about.scss";
 import Footer from "./components/Footer";
 import Termandcondition from "./components/Termandcondition";
 import Register from "./screens/Register";
@@ -12,6 +11,7 @@ import SocialCardPage from "./screens/SocialCardPage";
 import SignIn from "./screens/SignIn";
 import Welcome from "./screens/Welcome";
 import Postjob from "./screens/Postjob";
+import "./about.scss";
 
 export default function App() {
   return (

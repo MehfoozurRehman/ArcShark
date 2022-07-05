@@ -1,29 +1,29 @@
 import React from "react";
-import Postjobbanner from "../assets/Postjobsbanner.png";
 import { user } from "../assets";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 
 export default function Postjob() {
   return (
     <>
-      <div className="postjob__page__banner">
-        <img src={Postjobbanner} alt="" />
-        <div className="postjob__page__banner__overlay"></div>
-      </div>
+      <HomeJumbotron noFilter={true} location={true} />
       <div className="home__content__postjob">
-        <HomeContentCard />
-        <HomeContentCard />
-        <HomeContentCard />
-        <HomeContentCard />
-        <HomeContentCard />
-        <HomeContentCard />
-        <HomeContentCard />
-        <HomeContentCard />
-        <HomeContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
+        <PostjobContentCard />
       </div>
     </>
   );
 }
-function HomeContentCard({}) {
+function PostjobContentCard({}) {
   return (
     <a href="#" className="postjob__card__entry">
       <div className="postjob__card__entry__user__detail">

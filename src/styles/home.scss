@@ -186,6 +186,109 @@
   .css-tj5bde-Svg:hover {
   background-color: rgb(255, 71, 71) !important;
 }
+
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry {
+  display: flex;
+  align-items: center;
+  padding: 0em 1em;
+  padding-left: 1.8em;
+  border-radius: 50px;
+  background-color: transparent;
+  margin-top: 0.1em;
+  margin-right: 0em;
+  text-align: left;
+  border: 1px solid $white;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  * {
+  font-size: 14px !important;
+  cursor: pointer;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  svg {
+  margin-right: 0.5em;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-1s2u09g-control {
+  background-color: transparent !important;
+  border: none !important;
+  min-height: 42px;
+  box-shadow: none !important;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-1pahdxg-control {
+  background-color: transparent !important;
+  border: none !important;
+  min-height: 42px;
+  box-shadow: none !important;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-14el2xx-placeholder {
+  color: $white !important;
+  white-space: nowrap;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-qc6sy-singleValue {
+  color: $white !important;
+  white-space: nowrap;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  input {
+  color: $white !important;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-1okebmr-indicatorSeparator {
+  display: none !important;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-tj5bde-Svg {
+  fill: $white !important;
+  cursor: pointer;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-1rhbuit-multiValue {
+  background-color: transparent !important;
+  color: $white !important;
+  border: 1px solid $white;
+  padding: 0.2em 0.5em;
+  border-radius: 50px;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-1rhbuit-multiValue:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-1rhbuit-multiValue
+  * {
+  background-color: transparent !important;
+  color: $white !important;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-1rhbuit-multiValue
+  .css-tj5bde-Svg {
+  margin-right: 0em;
+}
+.home__jumbotron__overlay__form__top
+  .home__jumbotron__overlay__form__bottom__entry
+  .css-1rhbuit-multiValue
+  .css-tj5bde-Svg:hover {
+  background-color: rgb(255, 71, 71) !important;
+}
+
 .home__content {
   position: relative;
   z-index: 999;

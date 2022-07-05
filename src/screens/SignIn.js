@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import SignInBG from "../assets/signin__bg.png";
 import Logo from "../assets/logo.svg";
-// import Input from "../components/InputComp/Input";
 import Checkbox from "../components/CheckBox/CheckBox";
 import fbIcon from "../assets/FbIcon.png";
 import AppleIcon from "../assets/appleIcon.png";
 import GoogleIcon from "../assets/google.png";
 import Curve from "../assets/sign__in__curve.png";
+import { signinbg } from "../assets";
 
 function SignIn() {
   const [isChecked, setIschecked] = useState(false);
@@ -14,7 +13,7 @@ function SignIn() {
   return (
     <div className="register__main__container sign__in__main__container">
       <div className="register__main__pic">
-        <img src={SignInBG} alt="Architecture with clouds" />
+        <img src={signinbg} alt="Architecture with clouds" />
       </div>
       <div className="register__main__content sign_in__main__content">
         <div className="register__main__content__left sign_in_main__content__left">

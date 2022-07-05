@@ -2,7 +2,7 @@ import React from "react";
 import Welcomejumbotronpic from "../assets/Welcome.png";
 import Logo from "../assets/logo.svg";
 
-function Register() {
+export default function Register() {
   return (
     <div className="welcome__main__container">
       <div className="welcome__main__pic">
@@ -40,5 +40,3 @@ function Register() {
     </div>
   );
 }
-
-export default Register;
