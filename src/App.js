@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import About from "./screens/About";
@@ -12,10 +12,21 @@ import SignIn from "./screens/SignIn";
 import Welcome from "./screens/Welcome";
 import Postjob from "./screens/Postjob";
 import "./about.scss";
+import PostJobDetailsPopup from "./components/PostJobDetailsPopup";
 
 export default function App() {
+  const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
+    useState(true);
+
   return (
     <>
+      {postJobDetailsPopupVisible ? (
+        <PostJobDetailsPopup
+          onClose={() => {
+            setPostJobDetailsPopupVisible(false);
+          }}
+        />
+      ) : null}
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
