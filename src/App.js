@@ -14,6 +14,7 @@ import TermsAndCondition from "./screens/TermsAndCondition";
 import "./about.scss";
 import PostJobDetailsPopup from "./components/PostJobDetailsPopup";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
+import Forget from "./screens/Forget";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/sign_in" element={<SignIn />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/postjob" element={<Postjob />} />
+        <Route path="/forget" element={<Forget />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
