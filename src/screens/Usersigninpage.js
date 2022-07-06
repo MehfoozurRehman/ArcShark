@@ -1,5 +1,6 @@
 import React from "react";
 import { user, usersigninpage } from "../assets";
+import { HomeContentCard } from "../components/HomeContentCard";
 
 export default function Usersigninpage() {
   return (
@@ -408,10 +409,107 @@ export default function Usersigninpage() {
                 </div>
               </div>
             </div>
-            <div className="userdash__overlay__content__right"></div>
+
+            <div className="userdash__right__container">
+              <div className="userdash__overlay__content__right__header">
+                <div className="userdash__overlay__content__right__header__entry">
+                  <div className="userdash__overlay__content__right__header__entry__btn">
+                    Work Experience
+                  </div>
+                  <div className="userdash__overlay__content__right__header__entry__btn">
+                    Education
+                  </div>
+                  <div className="userdash__overlay__content__right__header__entry__btn">
+                    Skills
+                  </div>
+                  <div className="userdash__overlay__content__right__header__entry__btn">
+                    Awards
+                  </div>
+                  <div className="userdash__overlay__content__right__header__entry__btn">
+                    Languages
+                  </div>
+                </div>
+                <div className="userdash__overlay__content__right__header__entry__card">
+                  {newFunction()}
+                  {newFunction()}
+                  {newFunction()}
+                  {newFunction()}
+                </div>
+              </div>
+              <div className="userdash__overlay__content__right">
+                <div className="home__content" style={{ marginTop: 0 }}>
+                  <HomeContentCard
+                    hovertext={
+                      "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
+                    }
+                  />
+                  <HomeContentCard
+                    hovertext={
+                      "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
+                    }
+                  />
+                  <HomeContentCard
+                    hovertext={
+                      "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
+                    }
+                  />
+                  <HomeContentCard
+                    hovertext={
+                      "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
+                    }
+                  />
+                  <HomeContentCard
+                    hovertext={
+                      "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
+                    }
+                  />
+                  <HomeContentCard
+                    hovertext={
+                      "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
+                    }
+                  />
+                  <HomeContentCard
+                    hovertext={
+                      "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
+                    }
+                  />
+                  <HomeContentCard
+                    hovertext={
+                      "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
+                    }
+                  />
+                  <HomeContentCard
+                    hovertext={
+                      "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
+                    }
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </>
+  );
+}
+function newFunction() {
+  return (
+    <div className="userdash__overlay__content__right__header__entry__data">
+      <div className="userdash__overlay__content__right__header__entry__data__heading">
+        Marshmello Inc
+      </div>
+      <div className="userdash__overlay__content__right__header__entry__data__web">
+        www.umbrella.com
+      </div>
+      <div className="userdash__overlay__content__right__header__entry__data__city">
+        Lahore
+      </div>
+      <div className="userdash__overlay__content__right__header__entry__data__heading">
+        CEO
+      </div>
+      <div className="userdash__overlay__content__right__header__entry__data__city">
+        2018 - 2020
+      </div>
+    </div>
   );
 }
