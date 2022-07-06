@@ -11,14 +11,16 @@ import SignIn from "./screens/SignIn";
 import Welcome from "./screens/Welcome";
 import Postjob from "./screens/Postjob";
 import TermsAndCondition from "./screens/TermsAndCondition";
-import "./about.scss";
 import PostJobDetailsPopup from "./components/PostJobDetailsPopup";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
 import Forget from "./screens/Forget";
+import PostJobDetailsApplyPopup from "./components/PostJobDetailsApplyPopup";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
     useState(false);
+  const [postJobDetailsApplyPopupVisible, setPostJobDetailsApplyPopupVisible] =
+    useState(true);
 
   return (
     <>
@@ -26,6 +28,13 @@ export default function App() {
         <PostJobDetailsPopup
           onClose={() => {
             setPostJobDetailsPopupVisible(false);
+          }}
+        />
+      ) : null}
+      {postJobDetailsApplyPopupVisible ? (
+        <PostJobDetailsApplyPopup
+          onClose={() => {
+            setPostJobDetailsApplyPopupVisible(false);
           }}
         />
       ) : null}
