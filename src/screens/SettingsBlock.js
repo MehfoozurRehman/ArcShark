@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function SettingsJobPosting() {
+export default function SettingsBlock() {
   return (
     <>
       <div className="dashbaord__content__main__header">
         <div className="dashbaord__content__main__header__heading">
-          Job Postings
+          Block / Report
         </div>
       </div>
       <div className="dashbaord__content__main__table">

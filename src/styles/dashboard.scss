@@ -133,6 +133,53 @@
   background-color: $primary;
   color: white;
 }
+.dashbaord__content__main__table {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2em;
+  overflow-x: auto;
+}
+.dashbaord__content__main__table__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.dashbaord__content__main__table__header__entry {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  min-width: 120px;
+}
+.dashbaord__content__main__table__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.dashbaord__content__main__table__list__entry {
+  flex: 1;
+  text-align: center;
+  min-width: 120px;
+}
+.dashbaord__content__main__table__list__entry__button {
+  height: 38px;
+
+  padding: 0em 2em;
+  border: none;
+  border-radius: 50px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.dashbaord__content__main__table__list__entry__button__primary {
+  background-color: $primary;
+  color: white;
+}
+.dashbaord__content__main__table__list__entry__button__primary:hover {
+  transition: 300ms ease-in-out;
+  background-color: #2d2b77;
+}
 @media (max-width: 1200px) {
   .dashbaord__content__main__content {
     max-width: 100%;
