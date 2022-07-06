@@ -430,12 +430,32 @@ export default function Usersigninpage() {
                   </div>
                 </div>
                 <div className="userdash__overlay__content__right__header__entry__card">
-                  {newFunction()}
+                  <newFunction />
                   {newFunction()}
                   {newFunction()}
                   {newFunction()}
                 </div>
+                <div className="userdash__overlay__content__right__header__entry__card">
+                  {newEducation()}
+                  {newEducation()}
+                  {newEducation()}
+                  {newEducation()}
+                </div>
+                <div className="userdash__overlay__content__right__header__entry__card">
+                  {newSkills()}
+                  {newSkills()}
+                  {newSkills()}
+                  {newSkills()}
+                  {newSkills()}
+                </div>
+                <div className="userdash__overlay__content__right__header__entry__card">
+                  {newAwards()}
+                  {newAwards()}
+                  {newAwards()}
+                  {newAwards()}
+                </div>
               </div>
+              <div className="userdash__overlay__content__right__header__entry__card"></div>
               <div className="userdash__overlay__content__right">
                 <div className="home__content" style={{ marginTop: 0 }}>
                   <HomeContentCard
@@ -509,6 +529,56 @@ function newFunction() {
       </div>
       <div className="userdash__overlay__content__right__header__entry__data__city">
         2018 - 2020
+      </div>
+    </div>
+  );
+}
+function newEducation() {
+  return (
+    <div className="userdash__overlay__content__right__header__entry__data">
+      <div className="userdash__overlay__content__right__header__entry__data__heading">
+        Slow University
+      </div>
+      <div className="userdash__overlay__content__right__header__entry__data__web">
+        United States
+      </div>
+
+      <div className="userdash__overlay__content__right__header__entry__data__city">
+        slow.com
+      </div>
+      <div className="userdash__overlay__content__right__header__entry__data__heading">
+        BS( architecture )
+      </div>
+      <div className="userdash__overlay__content__right__header__entry__data__city">
+        June 2018 - July 2020
+      </div>
+    </div>
+  );
+}
+function newSkills() {
+  return (
+    <div className="userdash__overlay__content__right__header__entry__data">
+      <div className="userdash__overlay__content__right__header__entry__data__heading">
+        Skill Name
+      </div>
+    </div>
+  );
+}
+function newAwards() {
+  return (
+    <div className="userdash__overlay__content__right__header__entry__data">
+      <div className="userdash__overlay__content__right__header__entry__data__heading">
+        Award Name
+      </div>
+      <div className="userdash__overlay__content__right__header__entry__data__web">
+        2018
+      </div>
+
+      <div className="userdash__overlay__content__right__header__entry__data__heading">
+        Organization Name
+      </div>
+      <div className="userdash__overlay__content__right__header__entry__data__city">
+        www.org.com
       </div>
     </div>
   );
