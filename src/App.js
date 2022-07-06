@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import About from "./screens/About";
@@ -18,6 +18,7 @@ import PostJobDetailsApplyPopup from "./components/PostJobDetailsApplyPopup";
 import FreelanceProjectInquiryPopup from "./components/FreelanceProjectInquiryPopup";
 import BlockUserPopup from "./components/BlockUserPopup";
 import Usersigninpage from "./screens/Usersigninpage";
+import NewMessagePopup from "./components/NewMessagePopup";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
@@ -29,6 +30,7 @@ export default function App() {
     setFreelanceProjectInquiryPopupVisible,
   ] = useState(false);
   const [blockUserPopupVisible, setBlockUserPopupVisible] = useState(false);
+  const [newMessagePopupVisible, setNewMessagePopupVisible] = useState(false);
 
   return (
     <>
@@ -60,7 +62,13 @@ export default function App() {
           }}
         />
       ) : null}
-
+      {newMessagePopupVisible ? (
+        <NewMessagePopup
+          onClose={() => {
+            setNewMessagePopupVisible(false);
+          }}
+        />
+      ) : null}
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
