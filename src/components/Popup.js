@@ -11,6 +11,7 @@ function Popup({
   headerCenter,
   large,
   noBoilerplate,
+  small,
 }) {
   useEffect(() => {
     document.body.style.overflowY = "hidden";
@@ -22,7 +23,10 @@ function Popup({
 
   return (
     <div className="popup">
-      <div className="popup__content" style={large ? { maxWidth: 1000 } : null}>
+      <div
+        className="popup__content"
+        style={large ? { maxWidth: 1000 } : small ? { maxWidth: 600 } : null}
+      >
         <button className="popup__content__close" onClick={onClose}>
           <X size={20} color="currentColor" />
         </button>

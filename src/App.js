@@ -19,6 +19,7 @@ import FreelanceProjectInquiryPopup from "./components/FreelanceProjectInquiryPo
 import BlockUserPopup from "./components/BlockUserPopup";
 import Usersigninpage from "./screens/Usersigninpage";
 import NewMessagePopup from "./components/NewMessagePopup";
+import HireTalentPopup from "./components/HireTalentPopup";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
@@ -31,6 +32,7 @@ export default function App() {
   ] = useState(false);
   const [blockUserPopupVisible, setBlockUserPopupVisible] = useState(false);
   const [newMessagePopupVisible, setNewMessagePopupVisible] = useState(false);
+  const [hireTalentPopupVisible, setHireTalentPopupVisible] = useState(false);
 
   return (
     <>
@@ -69,6 +71,14 @@ export default function App() {
           }}
         />
       ) : null}
+      {hireTalentPopupVisible ? (
+        <HireTalentPopup
+          onClose={() => {
+            setHireTalentPopupVisible(false);
+          }}
+        />
+      ) : null}
+
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
