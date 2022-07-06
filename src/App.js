@@ -15,12 +15,13 @@ import PostJobDetailsPopup from "./components/PostJobDetailsPopup";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
 import Forget from "./screens/Forget";
 import PostJobDetailsApplyPopup from "./components/PostJobDetailsApplyPopup";
+import FreelanceProjectInquiryPopup from "./components/FreelanceProjectInquiryPopup";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
     useState(false);
   const [postJobDetailsApplyPopupVisible, setPostJobDetailsApplyPopupVisible] =
-    useState(true);
+    useState(false);
 
   return (
     <>
@@ -38,6 +39,7 @@ export default function App() {
           }}
         />
       ) : null}
+      <FreelanceProjectInquiryPopup />
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
