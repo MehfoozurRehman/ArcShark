@@ -21,6 +21,7 @@ import Usersigninpage from "./screens/Usersigninpage";
 import NewMessagePopup from "./components/NewMessagePopup";
 import HireTalentPopup from "./components/HireTalentPopup";
 import ShareWork from "./screens/ShareWork";
+import Forgetotp from "./screens/forgetotp";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
@@ -95,6 +96,7 @@ export default function App() {
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/usersigninpage" element={<Usersigninpage />} />
         <Route path="/sharework" element={<ShareWork />} />
+        <Route path="/forgetotp" element={<Forgetotp />} />
       </Routes>
       <Footer />
     </>
