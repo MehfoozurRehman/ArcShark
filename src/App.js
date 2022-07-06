@@ -22,6 +22,10 @@ export default function App() {
     useState(false);
   const [postJobDetailsApplyPopupVisible, setPostJobDetailsApplyPopupVisible] =
     useState(false);
+  const [
+    freelanceProjectInquiryPopupVisible,
+    setFreelanceProjectInquiryPopupVisible,
+  ] = useState(false);
 
   return (
     <>
@@ -39,7 +43,14 @@ export default function App() {
           }}
         />
       ) : null}
-      <FreelanceProjectInquiryPopup />
+      {freelanceProjectInquiryPopupVisible ? (
+        <FreelanceProjectInquiryPopup
+          onClose={() => {
+            setFreelanceProjectInquiryPopupVisible(false);
+          }}
+        />
+      ) : null}
+
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
