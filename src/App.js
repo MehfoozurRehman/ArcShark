@@ -111,7 +111,7 @@ export default function App() {
           <Route path="award" element={<EditProfileAwards />} />
           <Route path="education" element={<EditProfileEducation />} />
           <Route path="skills" element={<EditProfileSkills />} />
-          <Route path="language" element={<EditProfileLanguage />} />
+          <Route path="languages" element={<EditProfileLanguage />} />
         </Route>
         <Route path="/settings" element={<Settings />}>
           <Route path="" element={<EditProfileBasicDetails />} />

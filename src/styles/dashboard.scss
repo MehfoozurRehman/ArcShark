@@ -113,6 +113,26 @@
 .dashbaord__content__main__content__col:first-child {
   margin-right: 1em;
 }
+.dashbaord__content__main__content__row__button {
+  width: 100%;
+  height: 70px;
+  border: 2px dashed $primary;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: $primary;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.dashbaord__content__main__content__row__button:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: white;
+}
 @media (max-width: 1200px) {
   .dashbaord__content__main__content {
     max-width: 100%;
