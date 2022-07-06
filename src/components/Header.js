@@ -5,7 +5,7 @@ import { logo, user } from "../assets";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [isUser, setIsUser] = useState(false);
+  const [isUser, setIsUser] = useState(true);
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [isMessagePanelOpen, setIsMessagePanelOpen] = useState(false);
   const [isNotificationPanelOpen, setIsNotificationPanelOpen] = useState(false);
@@ -48,12 +48,12 @@ export default function Header() {
         <div className="header__content__right">
           {isUser ? (
             <>
-              <a
-                href="#"
+              <Link
+                to="/sharework"
                 className="header__content__right__button header__content__right__button__outline"
               >
                 Share your work
-              </a>
+              </Link>
               <button
                 className="header__content__right__button__icon"
                 onClick={() => {
@@ -215,7 +215,7 @@ export default function Header() {
               </Link>
               <Link
                 to="/register"
-                className="header__content__right__button header__content__right__button__$secondary"
+                className="header__content__right__button header__content__right__button__secondary"
               >
                 Sign Up
               </Link>
