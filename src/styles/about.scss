@@ -795,6 +795,9 @@
   margin: 0px auto;
   padding: 0em 2em;
 }
+.userdash__overlay__left {
+  width: 30%;
+}
 .userdash__overlay__content__left {
   width: 300px;
   padding: 1.5em;
@@ -821,6 +824,12 @@
 .userdash__overlay__content__left__header__links__entry {
   display: flex;
   align-items: center;
+  font-size: 14px;
+  margin: 0.5em 0em;
+}
+.userdash__overlay__content__left__header__links__entry a {
+  text-decoration: none;
+  color: black;
 }
 .userdash__overlay__content__left__header__links {
   margin: 1em 0em;
@@ -884,23 +893,24 @@
   margin-right: 0.4em;
 }
 .userdash__overlay__content__left__ounter__section {
-  margin-top: 1em;
+  margin: 1.5em 0em;
 }
 .userdash__overlay__content__left__ounter__section__folower {
   display: flex;
   align-items: center;
+  margin: 0.5em 0em;
 }
 .userdash__overlay__content__left__ounter__section__folower__entry {
   margin-left: 1em;
 }
 .userdash__overlay__content__left__ounter__section__folower__svg {
   background-color: #aaa7da;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .userdash__overlay__content__left__ounter__section__folower__svg svg {
   color: $white;
@@ -909,9 +919,11 @@
   font-size: 16px;
   font-weight: bold;
 }
+.userdash__overlay__content__left__ounter__section__folower__entry__counter__text {
+  font-size: 14px;
+}
 .userdash__overlay__content__left__about__me {
   width: 100%;
-  padding: 1em 0em;
 }
 .userdash__overlay__content__left__about__me__heading {
   font-size: 18px;
@@ -948,10 +960,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
-  height: 40px;
+
   border-radius: 20px;
   cursor: pointer;
+  background: none;
   border: none;
   transition: all 0.3s ease-in-out;
   color: black;
@@ -960,8 +972,7 @@
   transition: 0.3s all ease-in-out;
 }
 .userdash__overlay__content__left__footer__buttons button:hover {
-  background-color: $primary;
-  color: $white;
+  color: $primary;
 }
 .userdash__overlay__content__left__footer__buttons button:last-child::before {
   position: absolute;
@@ -973,6 +984,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.userdash__overlay__content__right {
+  width: 70%;
 }
 @media (max-width: 1200px) {
   .home__content__card__entry {
