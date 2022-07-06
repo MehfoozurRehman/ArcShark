@@ -16,12 +16,12 @@ export default function Settings() {
           <div className="dashbaord__content__sidebar__heading">
             Edit Profile
           </div>
-          <SidebarLink to="/settings">Basic Details</SidebarLink>
-          <SidebarLink to="/settings/experiance">Work Experience</SidebarLink>
-          <SidebarLink to="/settings/award">Awards</SidebarLink>
-          <SidebarLink to="/settings/education">Education</SidebarLink>
-          <SidebarLink to="/settings/skills">Skills</SidebarLink>
-          <SidebarLink to="/settings/languages">Languages</SidebarLink>
+          <SidebarLink to="/settings">Edit profile</SidebarLink>
+          <SidebarLink to="/settings/changepassword">
+            Change Password
+          </SidebarLink>
+          <SidebarLink to="/settings/jobposting">Job Postings</SidebarLink>
+          <SidebarLink to="/settings/block">Block / Report</SidebarLink>
         </div>
         <div className="dashbaord__content__main">
           <Outlet />

@@ -30,6 +30,9 @@ import EditProfileAwards from "./screens/EditProfileAwards";
 import EditProfileEducation from "./screens/EditProfileEducation";
 import EditProfileSkills from "./screens/EditProfileSkills";
 import EditProfileLanguage from "./screens/EditProfileLanguage";
+import SettingsEditProfile from "./screens/SettingsEditProfile";
+import SettingsChangePassword from "./screens/SettingsChangePassword";
+import SettingsJobPosting from "./screens/SettingsJobPosting";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
@@ -114,8 +117,10 @@ export default function App() {
           <Route path="languages" element={<EditProfileLanguage />} />
         </Route>
         <Route path="/settings" element={<Settings />}>
-          <Route path="" element={<EditProfileBasicDetails />} />
-          <Route path="experiance" element={<EditProfileWorkExperience />} />
+          <Route path="" element={<SettingsEditProfile />} />
+          <Route path="changepassword" element={<SettingsChangePassword />} />
+          <Route path="jobposting" element={<SettingsJobPosting />} />
+          <Route path="block" element={<SettingsJobPosting />} />
         </Route>
       </Routes>
       <Footer />
