@@ -24,6 +24,12 @@ import ShareWork from "./screens/ShareWork";
 import Forgetotp from "./screens/forgetotp";
 import EditProfile from "./screens/EditProfile";
 import EditProfileBasicDetails from "./screens/EditProfileBasicDetails";
+import EditProfileWorkExperience from "./screens/EditProfileWorkExperience";
+import Settings from "./screens/Settings";
+import EditProfileAwards from "./screens/EditProfileAwards";
+import EditProfileEducation from "./screens/EditProfileEducation";
+import EditProfileSkills from "./screens/EditProfileSkills";
+import EditProfileLanguage from "./screens/EditProfileLanguage";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
@@ -101,7 +107,15 @@ export default function App() {
         <Route path="/forgetotp" element={<Forgetotp />} />
         <Route path="/editprofile" element={<EditProfile />}>
           <Route path="" element={<EditProfileBasicDetails />} />
-          <Route path="experiance" element={<EditProfileBasicDetails />} />
+          <Route path="experiance" element={<EditProfileWorkExperience />} />
+          <Route path="award" element={<EditProfileAwards />} />
+          <Route path="education" element={<EditProfileEducation />} />
+          <Route path="skills" element={<EditProfileSkills />} />
+          <Route path="language" element={<EditProfileLanguage />} />
+        </Route>
+        <Route path="/settings" element={<Settings />}>
+          <Route path="" element={<EditProfileBasicDetails />} />
+          <Route path="experiance" element={<EditProfileWorkExperience />} />
         </Route>
       </Routes>
       <Footer />
