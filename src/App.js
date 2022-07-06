@@ -32,7 +32,7 @@ export default function App() {
   ] = useState(false);
   const [blockUserPopupVisible, setBlockUserPopupVisible] = useState(false);
   const [newMessagePopupVisible, setNewMessagePopupVisible] = useState(false);
-  const [hireTalentPopupVisible, setHireTalentPopupVisible] = useState(false);
+  const [hireTalentPopupVisible, setHireTalentPopupVisible] = useState(true);
 
   return (
     <>
