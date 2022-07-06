@@ -1,7 +1,7 @@
 import React from "react";
 import { project } from "../assets";
 
-export function HomeContentCard({}) {
+export function HomeContentCard({ hovertext }) {
   return (
     <a href="#" className="home__content__entry">
       <img src={project} alt="project" className="home__content__entry__img" />
@@ -51,13 +51,7 @@ export function HomeContentCard({}) {
             </div>
           </div>
         </div>
-        <div className="home__content__entry__overlay__info">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s
-        </div>
+        <div className="home__content__entry__overlay__info">{hovertext}</div>
       </div>
     </a>
   );
