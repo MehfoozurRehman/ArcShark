@@ -781,7 +781,7 @@
 }
 .userdash__pagepage__banner {
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 .userdash__pagepage__banner__img {
   width: 100%;
@@ -799,7 +799,7 @@
   width: 300px;
   padding: 1.5em;
   border-radius: 15px;
-  margin-top: -7em;
+  margin-top: -13.5em;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   background-color: rgba(255, 255, 255, 0.5);
@@ -832,6 +832,146 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.userdash__overlay__content__left__button__follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+.userdash__overlay__content__left__button__follow:hover {
+  background-color: $primary;
+  color: $white;
+}
+.userdash__overlay__content__left__button__follow:hover svg {
+  stroke: #ffff;
+  color: #ffff;
+}
+.userdash__overlay__content__left__button__message {
+  transition: all 0.3s ease-in-out;
+}
+.userdash__overlay__content__left__button__message:hover {
+  background-color: $primary;
+  color: $white;
+}
+.userdash__overlay__content__left__button__message:hover svg {
+  stroke: #ffff;
+  color: #ffff;
+  fill: #ffff;
+}
+.userdash__overlay__content__left__button__follow svg {
+  margin-right: 0.4em;
+  color: #5b57a4;
+}
+.userdash__overlay__content__left__button__message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+.userdash__overlay__content__left__button__message svg {
+  margin-right: 0.4em;
+}
+.userdash__overlay__content__left__ounter__section {
+  margin-top: 1em;
+}
+.userdash__overlay__content__left__ounter__section__folower {
+  display: flex;
+  align-items: center;
+}
+.userdash__overlay__content__left__ounter__section__folower__entry {
+  margin-left: 1em;
+}
+.userdash__overlay__content__left__ounter__section__folower__svg {
+  background-color: #aaa7da;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+.userdash__overlay__content__left__ounter__section__folower__svg svg {
+  color: $white;
+}
+.userdash__overlay__content__left__ounter__section__folower__entry__counter {
+  font-size: 16px;
+  font-weight: bold;
+}
+.userdash__overlay__content__left__about__me {
+  width: 100%;
+  padding: 1em 0em;
+}
+.userdash__overlay__content__left__about__me__heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0.5em 0em;
+}
+.userdash__overlay__content__left__about__me__text {
+  font-size: 16px;
+  width: 100%;
+}
+.userdash__overlay__content__left__social__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 2em;
+  margin-top: 1em;
+}
+.userdash__overlay__content__left__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+.userdash__overlay__content__left__footer__heading {
+  font-size: 16px;
+}
+.userdash__overlay__content__left__footer__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+.userdash__overlay__content__left__footer__buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  color: black;
+  margin: 0em 1em;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+.userdash__overlay__content__left__footer__buttons button:hover {
+  background-color: $primary;
+  color: $white;
+}
+.userdash__overlay__content__left__footer__buttons button:last-child::before {
+  position: absolute;
+  content: "";
+  background-color: grey;
+  height: 100%;
+  width: 1px;
+  left: -15px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 @media (max-width: 1200px) {

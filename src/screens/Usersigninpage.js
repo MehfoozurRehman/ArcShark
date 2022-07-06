@@ -71,8 +71,333 @@ export default function Usersigninpage() {
                 </div>
               </div>
               <div className="userdash__overlay__content__left__button">
-                <button></button>
-                <button></button>
+                <button className="userdash__overlay__content__left__button__follow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19.254"
+                    height="19.254"
+                    viewBox="0 0 19.254 19.254"
+                  >
+                    <g
+                      id="Group_540"
+                      data-name="Group 540"
+                      transform="translate(0 -1.002)"
+                    >
+                      <path
+                        id="Icon_awesome-plus-circle"
+                        data-name="Icon awesome-plus-circle"
+                        d="M10.19.563a9.627,9.627,0,1,0,9.627,9.627A9.625,9.625,0,0,0,10.19.563Zm5.59,10.714a.467.467,0,0,1-.466.466H11.742v3.571a.467.467,0,0,1-.466.466H9.1a.467.467,0,0,1-.466-.466V11.742H5.065a.467.467,0,0,1-.466-.466V9.1a.467.467,0,0,1,.466-.466H8.637V5.065A.467.467,0,0,1,9.1,4.6h2.174a.467.467,0,0,1,.466.466V8.637h3.571a.467.467,0,0,1,.466.466Z"
+                        transform="translate(-0.563 0.439)"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </svg>
+                  Follow
+                </button>
+                <button className="userdash__overlay__content__left__button__message">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14.878"
+                    height="14.878"
+                    viewBox="0 0 14.878 14.878"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="linear-gradient"
+                        x1="0.5"
+                        x2="0.5"
+                        y2="1"
+                        gradientUnits="objectBoundingBox"
+                      >
+                        <stop offset="0" stop-color="#5b57a4" />
+                        <stop offset="1" stop-color="#c495c3" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      id="Icon_material-message"
+                      data-name="Icon material-message"
+                      d="M16.39,3H4.488a1.486,1.486,0,0,0-1.48,1.488L3,17.878,5.976,14.9H16.39a1.492,1.492,0,0,0,1.488-1.488V4.488A1.492,1.492,0,0,0,16.39,3ZM14.9,11.927H5.976V10.439H14.9Zm0-2.232H5.976V8.207H14.9Zm0-2.232H5.976V5.976H14.9Z"
+                      transform="translate(-3 -3)"
+                      fill="url(#linear-gradient)"
+                    />
+                  </svg>
+                  Message
+                </button>
+              </div>
+              <div className="userdash__overlay__content__left__ounter__section">
+                <div className="userdash__overlay__content__left__ounter__section__folower">
+                  <div className="userdash__overlay__content__left__ounter__section__folower__svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17.95"
+                      height="18.642"
+                      viewBox="0 0 17.95 18.642"
+                    >
+                      <g
+                        id="Group_541"
+                        data-name="Group 541"
+                        transform="translate(-270.067 -476.975)"
+                      >
+                        <g
+                          id="Group_516"
+                          data-name="Group 516"
+                          transform="translate(270.067 476.975)"
+                        >
+                          <path
+                            id="Path_1491"
+                            data-name="Path 1491"
+                            d="M370.309,52.157a5.351,5.351,0,0,0-3,9.275,1.385,1.385,0,0,1-.151.016c-2.562,0-5.124.006-7.685,0a2.656,2.656,0,0,1-2.557-2.956c.1-.844.15-1.694.237-2.541a20.184,20.184,0,0,1,.3-2.528,3.466,3.466,0,0,1,3.435-2.6.724.724,0,0,1,.49.211,3.1,3.1,0,0,0,1.969,1.049,4.692,4.692,0,0,0,2.55-.231,2.459,2.459,0,0,0,1.084-.774.845.845,0,0,1,.849-.257,3.558,3.558,0,0,1,2.424,1.253A.88.88,0,0,1,370.309,52.157Z"
+                            transform="translate(-356.893 -42.809)"
+                            fill="currentColor"
+                          />
+                          <path
+                            id="Path_1492"
+                            data-name="Path 1492"
+                            d="M368.05,41.549a3.747,3.747,0,0,1-3.919-3.223,3.89,3.89,0,0,1,2.313-4.459,4.1,4.1,0,0,1,4.178.561,3.873,3.873,0,0,1,1.392,3.6,3.784,3.784,0,0,1-1.381,2.673A3.928,3.928,0,0,1,368.05,41.549Z"
+                            transform="translate(-360.737 -33.543)"
+                            fill="currentColor"
+                          />
+                          <path
+                            id="Path_1493"
+                            data-name="Path 1493"
+                            d="M382.409,64.536a3.987,3.987,0,1,1,3.987-3.982A3.98,3.98,0,0,1,382.409,64.536Zm-.666-3.321c0,.225,0,.418,0,.612a.667.667,0,1,0,1.33,0c0-.2,0-.4,0-.614.22,0,.419,0,.618,0a.666.666,0,1,0-.009-1.329c-.2,0-.4,0-.609,0,0-.211,0-.4,0-.582a.67.67,0,1,0-1.331,0c0,.19,0,.381,0,.583-.228,0-.428,0-.628,0a.666.666,0,1,0,.008,1.329C381.321,61.217,381.52,61.214,381.743,61.214Z"
+                            transform="translate(-368.446 -45.896)"
+                            fill="currentColor"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="userdash__overlay__content__left__ounter__section__folower__entry">
+                    <div className="userdash__overlay__content__left__ounter__section__folower__entry__counter">
+                      3072
+                    </div>
+                    <div>Followers</div>
+                  </div>
+                </div>
+                <div className="userdash__overlay__content__left__ounter__section__folower">
+                  <div className="userdash__overlay__content__left__ounter__section__folower__svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 19.024 12.297"
+                    >
+                      <g
+                        id="Group_539"
+                        data-name="Group 539"
+                        transform="translate(-268.488 -543.964)"
+                      >
+                        <g
+                          id="Group_517"
+                          data-name="Group 517"
+                          transform="translate(268.488 543.964)"
+                        >
+                          <path
+                            id="Path_1494"
+                            data-name="Path 1494"
+                            d="M426.669,45.3a2.551,2.551,0,0,1-.716,1.084,16.723,16.723,0,0,1-4.736,3.794,9,9,0,0,1-3.363,1.016,8.29,8.29,0,0,1-4.083-.706,14.146,14.146,0,0,1-4.131-2.815c-.576-.551-1.113-1.143-1.647-1.734a1.236,1.236,0,0,1-.04-1.677,17.022,17.022,0,0,1,4.673-4.018,9.788,9.788,0,0,1,3.559-1.251,8.02,8.02,0,0,1,4.015.536,13.339,13.339,0,0,1,4.249,2.729c.655.609,1.258,1.276,1.862,1.939a3.1,3.1,0,0,1,.358.657Zm-9.515,3.868a4.09,4.09,0,1,0-4.08-4.1A4.083,4.083,0,0,0,417.154,49.165Z"
+                            transform="translate(-407.645 -38.925)"
+                            fill="currentColor"
+                          />
+                          <path
+                            id="Path_1495"
+                            data-name="Path 1495"
+                            d="M429.661,48.9a2.93,2.93,0,1,0-5.861-.021C423.8,50.5,429.658,50.512,429.661,48.9Z"
+                            transform="translate(-417.361 -42.742)"
+                            fill="currentColor"
+                          />
+                          <path
+                            id="Path_1496"
+                            data-name="Path 1496"
+                            d="M428.405,53.5a2.931,2.931,0,1,1,2.932-2.92A2.933,2.933,0,0,1,428.405,53.5Z"
+                            transform="translate(-419.037 -44.418)"
+                            fill="currentColor"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="userdash__overlay__content__left__ounter__section__folower__entry">
+                    <div className="userdash__overlay__content__left__ounter__section__folower__entry__counter">
+                      1,221
+                    </div>
+                    <div>Project Views</div>
+                  </div>
+                </div>
+                <div className="userdash__overlay__content__left__ounter__section__folower">
+                  <div className="userdash__overlay__content__left__ounter__section__folower__svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 17.001 17.001"
+                    >
+                      <path
+                        id="Icon_awesome-thumbs-up"
+                        data-name="Icon awesome-thumbs-up"
+                        d="M3.453,7.438H.8a.8.8,0,0,0-.8.8V16.2a.8.8,0,0,0,.8.8H3.453a.8.8,0,0,0,.8-.8V8.235A.8.8,0,0,0,3.453,7.438ZM2.125,15.673a.8.8,0,1,1,.8-.8A.8.8,0,0,1,2.125,15.673ZM12.751,2.7c0,1.408-.862,2.2-1.1,3.139h3.378A1.984,1.984,0,0,1,17,7.773a2.4,2.4,0,0,1-.645,1.634l0,0a2.774,2.774,0,0,1-.309,2.639,2.626,2.626,0,0,1-.544,2.482,1.763,1.763,0,0,1-.2,1.482c-.678.974-2.357.987-3.778.987h-.094a9.532,9.532,0,0,1-3.97-1.053A5.226,5.226,0,0,0,5.7,15.41a.4.4,0,0,1-.391-.4v-7.1a.4.4,0,0,1,.118-.283c1.315-1.3,1.881-2.676,2.959-3.756a4.021,4.021,0,0,0,.843-1.956C9.381,1.3,9.69,0,10.36,0,11.157,0,12.751.266,12.751,2.7Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div className="userdash__overlay__content__left__ounter__section__folower__entry">
+                    <div className="userdash__overlay__content__left__ounter__section__folower__entry__counter">
+                      2,3123
+                    </div>
+                    <div>Appreciations </div>
+                  </div>
+                </div>
+              </div>
+              <div className="userdash__overlay__content__left__about__me">
+                <div className="userdash__overlay__content__left__about__me__heading">
+                  About Us
+                </div>
+                <div className="userdash__overlay__content__left__about__me__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </div>
+              </div>
+              <div className="userdash__overlay__content__left__social__content">
+                <div>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26.14"
+                      height="25.982"
+                      viewBox="0 0 26.14 25.982"
+                    >
+                      <g
+                        id="Group_540"
+                        data-name="Group 540"
+                        transform="translate(-292.928 -898)"
+                      >
+                        <path
+                          id="Icon_awesome-facebook"
+                          data-name="Icon awesome-facebook"
+                          d="M26.7,13.633A13.07,13.07,0,1,0,11.59,26.545V17.411H8.27V13.633h3.32v-2.88c0-3.275,1.95-5.085,4.937-5.085a20.114,20.114,0,0,1,2.926.255V9.138H17.8a1.889,1.889,0,0,0-2.13,2.041v2.453H19.3l-.58,3.778H15.675v9.134A13.075,13.075,0,0,0,26.7,13.633Z"
+                          transform="translate(292.365 897.438)"
+                          fill="#1877f2"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25.778"
+                      height="25.778"
+                      viewBox="0 0 25.778 25.778"
+                    >
+                      <g
+                        id="Group_541"
+                        data-name="Group 541"
+                        transform="translate(-351.428 -898.5)"
+                      >
+                        <g
+                          id="Icon_feather-instagram"
+                          data-name="Icon feather-instagram"
+                          transform="translate(349.928 897)"
+                        >
+                          <path
+                            id="Path_9"
+                            data-name="Path 9"
+                            d="M8.694,3H20.083a5.694,5.694,0,0,1,5.694,5.694V20.083a5.694,5.694,0,0,1-5.694,5.694H8.694A5.694,5.694,0,0,1,3,20.083V8.694A5.694,5.694,0,0,1,8.694,3Z"
+                            fill="none"
+                            stroke="#e90505"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                          />
+                          <path
+                            id="Path_10"
+                            data-name="Path 10"
+                            d="M21.127,15.822a4.556,4.556,0,1,1-3.838-3.838,4.556,4.556,0,0,1,3.838,3.838Z"
+                            transform="translate(-2.182 -2.151)"
+                            fill="none"
+                            stroke="#e90505"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                          />
+                          <path
+                            id="Path_11"
+                            data-name="Path 11"
+                            d="M26.25,9.75h0"
+                            transform="translate(-5.597 -1.625)"
+                            fill="none"
+                            stroke="#e90505"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28.25"
+                      height="22.944"
+                      viewBox="0 0 28.25 22.944"
+                    >
+                      <g
+                        id="Group_542"
+                        data-name="Group 542"
+                        transform="translate(-409.928 -900)"
+                      >
+                        <path
+                          id="Icon_awesome-twitter"
+                          data-name="Icon awesome-twitter"
+                          d="M25.346,9.1c.018.251.018.5.018.753,0,7.654-5.826,16.473-16.473,16.473A16.361,16.361,0,0,1,0,23.726a11.977,11.977,0,0,0,1.4.072,11.6,11.6,0,0,0,7.188-2.474,5.8,5.8,0,0,1-5.413-4.015,7.3,7.3,0,0,0,1.093.09,6.123,6.123,0,0,0,1.524-.2,5.791,5.791,0,0,1-4.643-5.682v-.072a5.831,5.831,0,0,0,2.617.735A5.8,5.8,0,0,1,1.972,4.438,16.457,16.457,0,0,0,13.91,10.5a6.536,6.536,0,0,1-.143-1.326,5.8,5.8,0,0,1,10.02-3.961,11.4,11.4,0,0,0,3.675-1.4A5.774,5.774,0,0,1,24.916,7a11.607,11.607,0,0,0,3.334-.9,12.446,12.446,0,0,1-2.9,2.993Z"
+                          transform="translate(409.928 896.619)"
+                          fill="#00acee"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="31.496"
+                      height="22.146"
+                      viewBox="0 0 31.496 22.146"
+                    >
+                      <g
+                        id="Group_543"
+                        data-name="Group 543"
+                        transform="translate(-471.927 -900)"
+                      >
+                        <path
+                          id="Icon_awesome-youtube"
+                          data-name="Icon awesome-youtube"
+                          d="M31.888,7.965a3.958,3.958,0,0,0-2.785-2.8C26.647,4.5,16.8,4.5,16.8,4.5s-9.849,0-12.305.662a3.958,3.958,0,0,0-2.785,2.8A41.516,41.516,0,0,0,1.05,15.6a41.516,41.516,0,0,0,.658,7.63,3.9,3.9,0,0,0,2.785,2.758c2.456.662,12.305.662,12.305.662s9.849,0,12.305-.662a3.9,3.9,0,0,0,2.785-2.758,41.516,41.516,0,0,0,.658-7.63,41.516,41.516,0,0,0-.658-7.63ZM13.577,20.278V10.912L21.809,15.6l-8.232,4.683Z"
+                          transform="translate(470.877 895.5)"
+                          fill="#eb2424"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div className="userdash__overlay__content__left__footer">
+                <div className="userdash__overlay__content__left__footer__heading">
+                  Member Since 2002
+                </div>
+                <div className="userdash__overlay__content__left__footer__buttons">
+                  <button>Block</button>
+                  <button>Report</button>
+                </div>
               </div>
             </div>
             <div className="userdash__overlay__content__right"></div>
