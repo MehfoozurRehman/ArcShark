@@ -39,7 +39,7 @@ export default function App() {
           }}
         />
       ) : null}
-      <FreelanceProjectInquiryPopup />
+      {/* <FreelanceProjectInquiryPopup /> */}
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />

@@ -17,6 +17,11 @@ export default function FreelanceProjectInquiryPopup({ onClose }) {
         type="text"
         options={["$0 - $100", "$100 - $200", "$200 - $300"]}
       />
+      <TextInput
+        placeholder="Your Budget"
+        type="text"
+        options={["$0 - $100", "$100 - $200", "$200 - $300"]}
+      />
     </Popup>
   );
 }
