@@ -1,10 +1,3 @@
-$white: #fff;
-$primary: #5b57a4;
-$secondry: #c495c3;
-$color: #6e6e6e;
-body {
-  background-color: #f3f3f3;
-}
 .about__overlay {
   width: 100%;
   position: relative;
@@ -117,7 +110,7 @@ body {
   margin-top: 0.3em;
 }
 .about__heading__here__cards:hover {
-  background-image: linear-gradient($secondry, $primary);
+  background-image: linear-gradient($secondary, $primary);
 }
 .about__heading__here__cards:hover .about__heading__here__cards__heading {
   color: white;
@@ -467,7 +460,7 @@ body {
 .home__content__entry__content {
   display: flex;
   justify-content: center;
-  margin-top: -3.8em;
+  margin-top: -4em;
   margin-bottom: 1.5em;
 }
 .home__content__card__entry__user__detail {
@@ -488,6 +481,9 @@ body {
   color: $color;
   font-size: 16px;
   margin-top: 0.8em;
+}
+.home__content__card__entry:hover {
+  background-color: $primary;
 }
 .home__content__card__entry:hover .home__content__card__entry__location svg {
   color: $white;
@@ -547,7 +543,7 @@ body {
   margin: 0em 0.5em;
   outline: none;
   border: 1px solid #5b57a4;
-  background-image: linear-gradient(90deg, $primary, $secondry);
+  background-image: linear-gradient(90deg, $primary, $secondary);
   border-radius: 15px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -565,7 +561,7 @@ body {
 }
 
 .home__content__card__entry:hover {
-  background-image: linear-gradient(120deg, $primary, $secondry);
+  background-image: linear-gradient(120deg, $primary, $secondary);
 }
 .home__content__card__entry:hover .home__content__card__entry__name__heading {
   color: $white;
@@ -590,14 +586,14 @@ body {
 .home__content__card__entry:hover
   .home__content__card__buttons
   .home__content__card__buttons__btn__follow:hover {
-  background-image: linear-gradient(120deg, $primary, $secondry);
+  background-image: linear-gradient(120deg, $primary, secondary);
   color: $white;
 }
 
 .home__content__card__entry:hover
   .home__content__card__buttons
   .home__content__card__buttons__btn__hire__me:hover {
-  background-image: linear-gradient(120deg, $primary, $secondry);
+  background-image: linear-gradient(120deg, $primary, secondary);
   color: $white;
 }
 .welcome__main__container {
@@ -724,7 +720,7 @@ body {
 }
 .postjob__card__entry__text {
   color: $color;
-  font-size: 14px;
+
   padding: 1em 0em;
   text-align: left;
   display: flex;
@@ -778,6 +774,64 @@ body {
 }
 .home__content__card__entry__company__name__heading__location__text {
   display: flex;
+  align-items: center;
+}
+.userdash__page {
+  width: 100%;
+}
+.userdash__pagepage__banner {
+  width: 100%;
+  height: 300px;
+}
+.userdash__pagepage__banner__img {
+  width: 100%;
+  height: 100%;
+}
+.userdash__overlay {
+  width: 100%;
+}
+.userdash__overlay__content {
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 0em 2em;
+}
+.userdash__overlay__content__left {
+  width: 300px;
+  padding: 1.5em;
+  border-radius: 15px;
+  margin-top: -7em;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.userdash__overlay__content__left__header {
+  display: flex;
+  align-items: center;
+}
+.userdash__overlay__content__left__header__avatar__name {
+  margin-left: 1em;
+}
+.userdash__overlay__content__left__header__avatar__name__heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+.userdash__overlay__content__left__header__avatar__name__heading__text {
+  font-size: 14px;
+}
+.userdash__overlay__content__left__header__links__entry {
+  display: flex;
+  align-items: center;
+}
+.userdash__overlay__content__left__header__links {
+  margin: 1em 0em;
+}
+.userdash__overlay__content__left__header__links__entry svg {
+  margin-right: 1.5em;
+}
+.userdash__overlay__content__left__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 1200px) {

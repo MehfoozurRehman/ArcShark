@@ -9,6 +9,7 @@ export function HomeJumbotron({ noFilter, location }) {
     { value: "strawberry", label: "Strawberry" },
     { value: "vanilla", label: "Vanilla" },
   ];
+
   return (
     <div className="home__jumbotron">
       <img src={homebanner} alt="homebanner" className="home__jumbotron__img" />

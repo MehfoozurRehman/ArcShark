@@ -215,7 +215,7 @@ export default function Header() {
               </Link>
               <Link
                 to="/register"
-                className="header__content__right__button header__content__right__button__secondary"
+                className="header__content__right__button header__content__right__button__$secondary"
               >
                 Sign Up
               </Link>

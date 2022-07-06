@@ -17,6 +17,7 @@ import Forget from "./screens/Forget";
 import PostJobDetailsApplyPopup from "./components/PostJobDetailsApplyPopup";
 import FreelanceProjectInquiryPopup from "./components/FreelanceProjectInquiryPopup";
 import BlockUserPopup from "./components/BlockUserPopup";
+import Usersigninpage from "./screens/Usersigninpage";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
@@ -73,6 +74,7 @@ export default function App() {
         <Route path="/postjob" element={<Postjob />} />
         <Route path="/forget" element={<Forget />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/usersigninpage" element={<Usersigninpage />} />
       </Routes>
       <Footer />
     </>

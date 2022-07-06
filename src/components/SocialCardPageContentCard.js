@@ -12,7 +12,7 @@ export function SocialCardPageContentCard({}) {
   return (
     <a href="#" className="home__content__card__entry">
       <div className="home__content__entry__content">
-        <img src={user} width={60} height={60} alt="user" />
+        <img src={user} width={70} height={70} alt="user" />
       </div>
       <div className="home__content__card__entry__user__detail">
         <div className="home__content__card__entry__name__heading">
