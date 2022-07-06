@@ -25,9 +25,15 @@ export default function Forget() {
   <path id="Path_642" data-name="Path 642" d="M16.406,2.561H2.344l7.031,6.4ZM0,2.561A2.467,2.467,0,0,1,2.344,0H16.406A2.467,2.467,0,0,1,18.75,2.561V12.807a2.467,2.467,0,0,1-2.344,2.561H2.344A2.467,2.467,0,0,1,0,12.807Z" fill="#dfacfc" fill-rule="evenodd"/>
 </svg>
 
-             <input className='forget__password__overlay__left__input' type="email" placeholder='Email'  />
+             <input className='forget__password__overlay__left__input' type="email" placeholder='hello@gmail.com'  />
+            
 
             </div>
+               <a className='forget__password__overlay__left__input__resend' href="">Re-send Code </a>
+               <div className='forget__password__overlay__left__input__4_inputs'>
+                <input type="text" />
+
+               </div>
         
             <button className='forget__password__overlay__left__sendpassword' >Send Password</button>
              </div>
@@ -38,6 +44,7 @@ export default function Forget() {
                 <div className="forget__password__overlay__right_lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 
             </div>
+            
 
         </div>
 
