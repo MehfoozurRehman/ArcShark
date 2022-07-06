@@ -16,6 +16,7 @@ import PrivacyPolicy from "./screens/PrivacyPolicy";
 import Forget from "./screens/Forget";
 import PostJobDetailsApplyPopup from "./components/PostJobDetailsApplyPopup";
 import FreelanceProjectInquiryPopup from "./components/FreelanceProjectInquiryPopup";
+import BlockUserPopup from "./components/BlockUserPopup";
 
 export default function App() {
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
@@ -26,6 +27,7 @@ export default function App() {
     freelanceProjectInquiryPopupVisible,
     setFreelanceProjectInquiryPopupVisible,
   ] = useState(false);
+  const [blockUserPopupVisible, setBlockUserPopupVisible] = useState(false);
 
   return (
     <>
@@ -47,6 +49,13 @@ export default function App() {
         <FreelanceProjectInquiryPopup
           onClose={() => {
             setFreelanceProjectInquiryPopupVisible(false);
+          }}
+        />
+      ) : null}
+      {blockUserPopupVisible ? (
+        <BlockUserPopup
+          onClose={() => {
+            setBlockUserPopupVisible(false);
           }}
         />
       ) : null}
