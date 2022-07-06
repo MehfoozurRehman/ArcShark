@@ -1,4 +1,5 @@
 import React from "react";
+import { Plus } from "react-feather";
 import SelectInput from "../components/SelectInput";
 import TextareaInput from "../components/TextareaInput";
 import TextInput from "../components/TextInput";
@@ -16,14 +17,14 @@ export default function EditProfileEducation() {
       </div>
       <div className="dashbaord__content__main__content">
         <div className="dashbaord__content__main__content__row">
-          <TextInput placeholder="First Name" />
+          <TextInput placeholder="School or University" />
         </div>
         <div className="dashbaord__content__main__content__row">
           <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="First Name" />
+            <TextInput placeholder="Degree" />
           </div>
           <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Last Name" />
+            <TextInput placeholder="Website" />
           </div>
         </div>
         <div className="dashbaord__content__main__content__row">
@@ -50,50 +51,20 @@ export default function EditProfileEducation() {
         </div>
         <div className="dashbaord__content__main__content__row">
           <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Website" />
+            <TextInput placeholder="Start from" />
           </div>
           <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Occupation" />
+            <TextInput placeholder="Ended at" />
           </div>
         </div>
         <div className="dashbaord__content__main__content__row">
-          <TextInput placeholder="About" />
+          <TextareaInput placeholder="Details" />
         </div>
         <div className="dashbaord__content__main__content__row">
-          <TextareaInput placeholder="Description" />
-        </div>
-        <div className="dashbaord__content__main__content__row">Socials</div>
-        <div className="dashbaord__content__main__content__row">
-          <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Facebook" />
-          </div>
-          <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Instagram" />
-          </div>
-        </div>
-        <div className="dashbaord__content__main__content__row">
-          <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Twitter" />
-          </div>
-          <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Youtube" />
-          </div>
-        </div>
-        <div className="dashbaord__content__main__content__row">
-          <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Dribble" />
-          </div>
-          <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Behance" />
-          </div>
-        </div>
-        <div className="dashbaord__content__main__content__row">
-          <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Telegram" />
-          </div>
-          <div className="dashbaord__content__main__content__col">
-            <TextInput placeholder="Pintrest" />
-          </div>
+          <button className="dashbaord__content__main__content__row__button">
+            <Plus size={20} color="currentColor" />
+            Add Education
+          </button>
         </div>
       </div>
     </>
