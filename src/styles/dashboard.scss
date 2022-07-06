@@ -1,5 +1,6 @@
 .dashbaord__jumbotron {
   width: 100%;
+  height: 400px;
 }
 .dashbaord__content {
   width: 100%;
@@ -7,8 +8,9 @@
   padding: 0em 2em;
   position: relative;
   margin: 0em auto;
-  margin-top: -10em;
+  margin-top: -15em;
   display: flex;
+  margin-bottom: 5em;
 }
 .dashbaord__content__sidebar {
   flex: 1;
@@ -19,6 +21,7 @@
   -webkit-backdrop-filter: blur(8px);
   padding: 2em;
   border-radius: 10px;
+  height: fit-content;
 }
 .dashbaord__content__sidebar__heading {
   font-size: 20px;
@@ -44,16 +47,18 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   height: 55px;
-  padding: 0em 1em;
+  padding: 0em 1.2em;
   display: flex;
   align-items: center;
   border-radius: 10px;
   font-weight: bold;
+  font-size: 14px;
 }
 .dashbaord__content__sidebar__link__input:hover
   ~ .dashbaord__content__sidebar__link__content,
 .dashbaord__content__sidebar__link__input:checked
   ~ .dashbaord__content__sidebar__link__content {
+  transition: 300ms ease-in-out;
   background-color: $primary;
   color: white;
 }
@@ -64,4 +69,75 @@
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+}
+.dashbaord__content__main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.dashbaord__content__main__header__heading {
+  font-size: 25px;
+  font-weight: bold;
+}
+.dashbaord__content__main__header__button {
+  background-color: $primary;
+  color: white;
+  height: 40px;
+  border-radius: 50px;
+  padding: 0em 2em;
+  border: none;
+  cursor: pointer;
+}
+.dashbaord__content__main__header__button:hover {
+  transition: 300ms ease-in-out;
+  background-color: #2d2b77;
+}
+.dashbaord__content__main__content {
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.dashbaord__content__main__content__row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 18px;
+  font-weight: bold;
+}
+.dashbaord__content__main__content__col {
+  flex: 1;
+}
+.dashbaord__content__main__content__col:first-child {
+  margin-right: 1em;
+}
+@media (max-width: 1200px) {
+  .dashbaord__content__main__content {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .dashbaord__content__main__content__row {
+    flex-direction: column;
+  }
+  .dashbaord__content__main__content__col:first-child {
+    margin-right: 0em;
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 800px) {
+  .dashbaord__content {
+    flex-direction: column;
+  }
+  .dashbaord__content__sidebar {
+    margin-right: 0em;
+    margin-bottom: 1em;
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .dashbaord__content {
+    padding: 0em;
+  }
 }
