@@ -6,49 +6,49 @@ export function ProfileMainTopContentSkills({ slidesPerPage }) {
     <Swiper slidesPerView={slidesPerPage} spaceBetween={20}>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
-          <div className=".user__profile__content__main__top__content__entry__info">
+          <div className="user__profile__content__main__top__content__entry__heading">
             Skill Name
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
-          <div className=".user__profile__content__main__top__content__entry__info">
+          <div className="user__profile__content__main__top__content__entry__heading">
             Skill Name
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
-          <div className=".user__profile__content__main__top__content__entry__info">
+          <div className="user__profile__content__main__top__content__entry__heading">
             Skill Name
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
-          <div className=".user__profile__content__main__top__content__entry__info">
+          <div className="user__profile__content__main__top__content__entry__heading">
             Skill Name
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
-          <div className=".user__profile__content__main__top__content__entry__info">
+          <div className="user__profile__content__main__top__content__entry__heading">
             Skill Name
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
-          <div className=".user__profile__content__main__top__content__entry__info">
+          <div className="user__profile__content__main__top__content__entry__heading">
             Skill Name
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
-          <div className=".user__profile__content__main__top__content__entry__info">
+          <div className="user__profile__content__main__top__content__entry__heading">
             Skill Name
           </div>
         </div>
