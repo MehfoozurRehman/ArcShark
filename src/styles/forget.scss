@@ -14,15 +14,20 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0 auto;
-  top: 0;
+  top: 50%;
+  left: 50%;
   padding: 4em;
   align-items: center;
+  max-width: 1440px;
+  transform: translate(-50%, -50%);
 }
 
 .forget__password__overlay__left {
-  width: 38%;
+  width: 40%;
+  min-width: 35%;
+  margin: 0em 1em;
   display: flex;
   justify-content: end;
   padding: 2.5em;
@@ -36,7 +41,7 @@
 }
 .forget__password__overlay__left__heading {
   color: white;
-  font-size: 29px;
+  font-size: 25px;
   font-weight: bold;
   padding: 1em 0em;
   position: relative;
@@ -52,14 +57,29 @@
   position: absolute;
   border-radius: 50px;
 }
-
+.forget__password__overlay__left__input {
+  padding: 0.5em 1em;
+}
+.forget__password__overlay__left__input::placeholder {
+  color: #dfacfc;
+}
+.forget__password__overlay__left__input__resend {
+  display: flex;
+  justify-content: end;
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
 .forget__password__overlay__left__svg_input {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em 0em;
+  border-bottom: 2px solid #b18dcb;
+  padding: 0;
 }
-
+.forget__password__overlay__left__svg {
+  border: none;
+}
 .forget__password__overlay__left__sendpassword {
   padding: 13px 3.8em;
   display: flex;
@@ -69,12 +89,12 @@
   border-radius: 50px;
   cursor: pointer;
   margin: 0 auto;
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 .forget__password__overlay__left__input {
   border: 1px solid transparent;
-  border-bottom: 2px solid #b18dcb;
+  border: none;
   background-color: transparent;
   border-radius: none;
   color: white;
@@ -85,13 +105,13 @@
 .forget__password__overlay__right {
   width: 50%;
   display: flex;
-  justify-content: end;
-  padding-left: 12em;
+  justify-content: center;
   flex-direction: column;
+  max-width: 40%;
 }
 .forget__password__overlay__right_heading {
   color: white;
-  font-size: 29px;
+  font-size: 25px;
   font-weight: bold;
   padding: 10px 0em;
 }
@@ -101,86 +121,13 @@
   width: 90%;
   max-width: 90%;
 }
-@media (max-width: 1280px) {
-  .forget__password__overlay__right_lorem {
-    width: 100%;
-  }
-  .forget__password__overlay__right {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
-  .forget__password__overlay__right {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    padding-left: 6em;
-    flex-direction: column;
-  }
-}
-@media (max-width: 990px) {
-  .forget__password__overlay__right {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    padding-left: 2em;
-    flex-direction: column;
-  }
-  .forget__password__overlay__left {
-    width: 50%;
-  }
-}
-@media (max-width: 930px) {
-  .forget__password__overlay {
-    padding: 2em;
-  }
-}
-@media (max-width: 810px) {
-  .forget__password__overlay {
-    padding: 1em;
-  }
-  .forget__password__overlay__left {
-    width: 50%;
-  }
-}
-@media (max-width: 740px) {
-  .forget__password__overlay {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
-  }
-  .forget__password__overlay__left {
-    margin: 1em;
-    width: 140%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5em;
-  }
 
-  .forget__password__overlay__right {
-    z-index: -99;
+@media (max-width: 870px) {
+  .forget__password__overlay {
+    flex-direction: column;
+    justify-content: center;
   }
-}
-
-@media (max-width: 620px) {
-  .forget__password__overlay__left {
-    // margin: 1em;
-    width: 150%;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    margin-left: 1em;
-  }
-}
-@media (max-width: 560px) {
-  .forget__password__overlay__left {
-    // margin: 1em;
-    width: 1000%;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    //  margin-left: 1em;
+  .forget__password_backimage {
+    height: 1000px;
   }
 }
