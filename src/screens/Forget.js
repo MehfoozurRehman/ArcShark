@@ -1,5 +1,6 @@
 import React from "react";
 import passwordback from "../assets/passback.png";
+import { cornerbg } from "../assets";
 
 export default function Forget() {
   return (
@@ -13,6 +14,7 @@ export default function Forget() {
       </div>
       <div className="forget__password__overlay">
         <div className="forget__password__overlay__left">
+          <img className="cornerbg__img" src={cornerbg} alt="" />
           <div className="forget__password__overlay__left_box">
             <div className="forget__password__overlay__left__heading">
               Forgot Password

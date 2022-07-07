@@ -1,118 +1,146 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export function ProfileMainTopContentEducation({}) {
+export function ProfileMainTopContentEducation({ slidesPerPage }) {
   return (
-    <Swiper slidesPerView={4} spaceBetween={20}>
+    <Swiper slidesPerView={slidesPerPage} spaceBetween={20}>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Slow University
+          </div>
+          <div className="user__profile__content__main__top__content__entry__info__extra">
+            United States
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            slow.com
           </div>
+
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            BS( architecture )
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            June 2018 - July 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Slow University
+          </div>
+          <div className="user__profile__content__main__top__content__entry__info__extra">
+            United States
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            slow.com
           </div>
+
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            BS( architecture )
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            June 2018 - July 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Slow University
+          </div>
+          <div className="user__profile__content__main__top__content__entry__info__extra">
+            United States
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            slow.com
           </div>
+
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            BS( architecture )
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            June 2018 - July 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Slow University
+          </div>
+          <div className="user__profile__content__main__top__content__entry__info__extra">
+            United States
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            slow.com
           </div>
+
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            BS( architecture )
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            June 2018 - July 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Slow University
+          </div>
+          <div className="user__profile__content__main__top__content__entry__info__extra">
+            United States
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            slow.com
           </div>
+
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            BS( architecture )
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            June 2018 - July 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Slow University
+          </div>
+          <div className="user__profile__content__main__top__content__entry__info__extra">
+            United States
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            slow.com
           </div>
+
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            BS( architecture )
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            June 2018 - July 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Slow University
+          </div>
+          <div className="user__profile__content__main__top__content__entry__info__extra">
+            United States
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            slow.com
           </div>
+
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            BS( architecture )
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            June 2018 - July 2020
           </div>
         </div>
       </SwiperSlide>

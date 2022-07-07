@@ -1,118 +1,55 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export function ProfileMainTopContentLanguages({}) {
+export function ProfileMainTopContentLanguages({ slidesPerPage }) {
   return (
-    <Swiper slidesPerView={4} spaceBetween={20}>
+    <Swiper slidesPerView={slidesPerPage} spaceBetween={20}>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
-          </div>
-          <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            English
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
-          </div>
-          <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            French
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
-          </div>
-          <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            Chinese
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
-          </div>
-          <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            Urdu
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
-          </div>
-          <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            African
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
-          </div>
-          <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            German
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
-          </div>
-          <div className="user__profile__content__main__top__content__entry__heading">
-            education
-          </div>
-          <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            Dutch
           </div>
         </div>
       </SwiperSlide>

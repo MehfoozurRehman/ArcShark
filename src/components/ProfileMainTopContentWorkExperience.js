@@ -1,118 +1,118 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export function ProfileMainTopContentWorkExperience({}) {
+export function ProfileMainTopContentWorkExperience({ slidesPerPage }) {
   return (
-    <Swiper slidesPerView={4} spaceBetween={20}>
+    <Swiper slidesPerView={slidesPerPage} spaceBetween={20}>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Marshmello Inc
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            www.helogujjar.com
           </div>
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            CEO
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            2018 - 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Marshmello Inc
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            www.helogujjar.com
           </div>
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            CEO
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            2018 - 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Marshmello Inc
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            www.helogujjar.com
           </div>
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            CEO
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            2018 - 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Marshmello Inc
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            www.helogujjar.com
           </div>
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            CEO
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            2018 - 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Marshmello Inc
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            www.helogujjar.com
           </div>
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            CEO
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            2018 - 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Marshmello Inc
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            www.helogujjar.com
           </div>
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            CEO
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            2018 - 2020
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="user__profile__content__main__top__content__entry">
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            Marshmello Inc
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            www.helogujjar.com
           </div>
           <div className="user__profile__content__main__top__content__entry__heading">
-            education
+            CEO
           </div>
           <div className="user__profile__content__main__top__content__entry__info">
-            131313
+            2018 - 2020
           </div>
         </div>
       </SwiperSlide>
