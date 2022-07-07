@@ -15,8 +15,13 @@ export default function ShareWork() {
       />
       <div className="share__work__container__overlay__wrapper">
         <div className="share__work__container__overlay">
-          <div className="share__work__container__overlay__heading">
-            Share Your Work
+          <div className="share__work__container__overlay__header">
+            <div className="share__work__container__overlay__heading">
+              Share Your Work
+            </div>
+            <button className="share__work__container__overlay__header__button">
+              Upload
+            </button>
           </div>
           <div className="share__work__container__overlay__top">
             <div className="share__work__container__overlay__left">

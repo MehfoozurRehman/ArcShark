@@ -26,6 +26,26 @@
   flex-direction: column;
   justify-content: center;
 }
+.share__work__container__overlay__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.share__work__container__overlay__header__button {
+  background-color: #cb76cb;
+  color: white;
+  height: 40px;
+  border-radius: 50px;
+  padding: 0em 2em;
+  border: none;
+  cursor: pointer;
+}
+.share__work__container__overlay__header__button:hover {
+  transition: 300ms ease-in-out;
+  background-color: #aa4caa;
+}
 .share__work__container__overlay__heading {
   font-size: 25px;
   font-weight: bold;
