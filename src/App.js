@@ -108,6 +108,7 @@ export default function App() {
           element={
             <Postjob
               setPostJobDetailsPopupVisible={setPostJobDetailsPopupVisible}
+              setHireTalentPopupVisible={setHireTalentPopupVisible}
             />
           }
         />

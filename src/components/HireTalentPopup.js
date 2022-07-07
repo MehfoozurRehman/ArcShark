@@ -25,7 +25,7 @@ export default function HireTalentPopup({ onClose }) {
               First, what company is this job for?
             </div>
             <div className="popup__form__row">
-              <TextInput placeholder="To" type="text" />
+              <TextInput placeholder="Company Name" type="text" />
             </div>
           </div>
         </Popup>
@@ -69,7 +69,7 @@ export default function HireTalentPopup({ onClose }) {
         <Popup
           heading="Hire the Talent You Need"
           info="Start Hiring From Millions Of Creative Professionals"
-          buttonLabel="Next"
+          buttonLabel="Submit"
           onClose={onClose}
           onClick={onClose}
           headerCenter
@@ -79,12 +79,12 @@ export default function HireTalentPopup({ onClose }) {
             <div className="popup__form__row">
               <SelectInput
                 placeholder="Keywords"
-                isMulit
                 options={[
                   { value: "chocolate", label: "Chocolate" },
                   { value: "strawberry", label: "Strawberry" },
                   { value: "vanilla", label: "Vanilla" },
                 ]}
+                isMulti
               />
             </div>
             <div className="popup__form__row">

@@ -14,7 +14,6 @@ export default function SelectInput({ placeholder, ...props }) {
           ...theme,
           colors: {
             ...theme.colors,
-            primary25: "#524eb8",
             primary: "#5b58a5",
             neutral0: "white",
             neutral30: "white",

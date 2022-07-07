@@ -9,6 +9,8 @@ export function HomeJumbotron({
   location,
   selectedRole,
   setSelectedRole,
+  bg,
+  onPostJob,
 }) {
   const options = [
     { value: "chocolate", label: "Chocolate" },
@@ -19,12 +21,26 @@ export function HomeJumbotron({
   return (
     <div className="home__jumbotron">
       <img
-        src={selectedRole === "People" ? Socialbanner : homebanner}
-        alt={selectedRole === "People" ? "Socialbanner" : "homebanner"}
+        src={bg ? bg : selectedRole === "People" ? Socialbanner : homebanner}
+        alt={
+          bg ? bg : selectedRole === "People" ? "Socialbanner" : "homebanner"
+        }
         className="home__jumbotron__img"
       />
       <div className="home__jumbotron__overlay">
         <form className="home__jumbotron__overlay__form">
+          {onPostJob ? (
+            <button
+              className="home__jumbotron__overlay__form__button"
+              type="button"
+              onClick={() => {
+                onPostJob(true);
+              }}
+            >
+              + Post Job
+            </button>
+          ) : null}
+
           <div className="home__jumbotron__overlay__form__top">
             <div className="home__jumbotron__overlay__form__top__input">
               <svg
