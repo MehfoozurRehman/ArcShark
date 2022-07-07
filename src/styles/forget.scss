@@ -110,6 +110,24 @@
   flex-direction: column;
   max-width: 40%;
 }
+.forget__password__overlay__left__input__4_inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em
+}
+.first{
+  width: 15%;
+ height: 70px;
+  margin-left: 2em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 2em;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
 .forget__password__overlay__right_heading {
   color: white;
   font-size: 25px;
@@ -133,6 +151,7 @@
   .forget__password__overlay{
     width: 100%;
   }
+ 
 }
 
 @media (max-width: 820px) {
@@ -144,9 +163,6 @@
   }
 .forget__password__overlay{
     padding: 2em;
-  }
-  .forget__password__overlay__right_lorem{
-    // min-width: 200px;
   }
 }
 

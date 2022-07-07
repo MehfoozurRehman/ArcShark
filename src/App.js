@@ -20,7 +20,7 @@ import Profile from "./screens/Profile";
 import NewMessagePopup from "./components/NewMessagePopup";
 import HireTalentPopup from "./components/HireTalentPopup";
 import ShareWork from "./screens/ShareWork";
-import Forgetotp from "./screens/forgetotp";
+import Forgetotp from "./screens/Forgetotp";
 import EditProfile from "./screens/EditProfile";
 import EditProfileBasicDetails from "./screens/EditProfileBasicDetails";
 import EditProfileWorkExperience from "./screens/EditProfileWorkExperience";
