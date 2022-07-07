@@ -98,16 +98,21 @@ export default function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/termandcondition" element={<TermsAndCondition />} />
-        <Route path="/register" element={<Register setIsUser={setIsUser} />} />
-        <Route path="/letstalk" element={<LetsTalk />} />
-        <Route path="/sign_in" element={<SignIn setIsUser={setIsUser} />} />
-        <Route path="/welcome" element={<Welcome />} />
-        <Route path="/postjob" element={<Postjob />} />
-        <Route path="/forget" element={<Forget />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/register" element={<Register setIsUser={setIsUser} />} />
+        <Route path="/sign_in" element={<SignIn setIsUser={setIsUser} />} />
+        <Route path="/letstalk" element={<LetsTalk />} />
+        <Route path="/welcome" element={<Welcome />} />
+        <Route
+          path="/postjob"
+          element={
+            <Postjob
+              setPostJobDetailsPopupVisible={setPostJobDetailsPopupVisible}
+            />
+          }
+        />
         <Route path="/usersigninpage" element={<Usersigninpage />} />
         <Route path="/sharework" element={<ShareWork />} />
-        <Route path="/forgetotp" element={<Forgetotp />} />
         <Route path="/editprofile" element={<EditProfile />}>
           <Route path="" element={<EditProfileBasicDetails />} />
           <Route path="experiance" element={<EditProfileWorkExperience />} />
@@ -122,6 +127,8 @@ export default function App() {
           <Route path="jobposting" element={<SettingsJobPosting />} />
           <Route path="block" element={<SettingsBlock />} />
         </Route>
+        <Route path="/forget" element={<Forget />} />
+        <Route path="/forgetotp" element={<Forgetotp />} />
       </Routes>
       <Footer />
     </>

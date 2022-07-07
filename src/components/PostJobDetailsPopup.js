@@ -6,7 +6,7 @@ export default function PostJobDetailsPopup({ onClose }) {
   return (
     <Popup
       heading="Graphic Designer"
-      buttonLabel="Post a job"
+      buttonLabel="Apply"
       onClose={onClose}
       onClick={onClose}
     >
@@ -66,26 +66,26 @@ export default function PostJobDetailsPopup({ onClose }) {
           </div>
           <div className="post__job__pupup__details__right__entry">
             <div className="post__job__pupup__details__right__entry__heading">
-              Job Type
+              Job Location
             </div>
             <div className="post__job__pupup__details__right__entry__info">
-              Full Time
+              Pakistan, punjab
             </div>
           </div>
           <div className="post__job__pupup__details__right__entry">
             <div className="post__job__pupup__details__right__entry__heading">
-              Job Type
+              On Site Required
             </div>
             <div className="post__job__pupup__details__right__entry__info">
-              Full Time
+              Yes
             </div>
           </div>
           <div className="post__job__pupup__details__right__entry">
             <div className="post__job__pupup__details__right__entry__heading">
-              Job Type
+              Job posted
             </div>
             <div className="post__job__pupup__details__right__entry__info">
-              Full Time
+              05/25/2022
             </div>
           </div>
         </div>
