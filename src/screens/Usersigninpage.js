@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export default function Usersigninpage() {
-  const [slidesPerPage, setSlidesPerPage] = useState(3.5);
+  const [slidesPerPage, setSlidesPerPage] = useState(4);
   useEffect(() => {
     if (window.innerWidth <= 600) {
       setSlidesPerPage(1);
