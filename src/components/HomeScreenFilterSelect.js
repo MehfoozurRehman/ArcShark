@@ -15,7 +15,18 @@ export function HomeScreenFilterSelect({ options, svg, ...props }) {
       type="button"
     >
       {svg}
-      <Select options={options} isMulti {...props} menuIsOpen={focus} />
+      <Select
+        options={options}
+        {...props}
+        menuIsOpen={focus}
+        theme={(theme) => ({
+          ...theme,
+          colors: {
+            ...theme.colors,
+            primary: "#5b58a5",
+          },
+        })}
+      />
     </button>
   );
 }

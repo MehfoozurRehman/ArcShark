@@ -70,6 +70,7 @@
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  min-height: 800px;
 }
 .dashbaord__content__main__header {
   display: flex;

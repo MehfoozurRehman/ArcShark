@@ -148,7 +148,17 @@
   min-height: 42px;
   box-shadow: none !important;
 }
+.home__jumbotron__overlay__form__bottom__entry .css-x4pvcj-control {
+  background-color: transparent !important;
+  border: none !important;
+  min-height: 42px;
+  box-shadow: none !important;
+}
 .home__jumbotron__overlay__form__bottom__entry .css-14el2xx-placeholder {
+  color: $white !important;
+  white-space: nowrap;
+}
+.home__jumbotron__overlay__form__bottom__entry .css-qc6sy-singleValue {
   color: $white !important;
   white-space: nowrap;
 }

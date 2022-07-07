@@ -733,6 +733,9 @@
 .postjob__card__entry:hover .postjob__card__entry__user__detail__name__heading {
   color: $white;
 }
+.postjob__card__entry:hover .postjob__card__entry__name__subheading__icon svg {
+  fill: white;
+}
 .postjob__card__entry:hover .postjob__card__entry__name__subheading {
   color: $white;
 }

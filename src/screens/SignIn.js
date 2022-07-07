@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.svg";
-import Checkbox from "../components/CheckBox/CheckBox";
+import Checkbox from "../components/CheckBox";
 import fbIcon from "../assets/FbIcon.png";
 import AppleIcon from "../assets/appleIcon.png";
 import GoogleIcon from "../assets/google.png";
@@ -40,7 +40,7 @@ function SignIn({ setIsUser }) {
             <div className="register__main__content__right__title sign__in__main__content__right__title">
               Sign In
             </div>
-            <form action="" className="regiester__main__content__right__form">
+            <form className="regiester__main__content__right__form">
               <div className="input__container sign__in__input__container">
                 <input type="email" placeholder="Email" name="email" required />
               </div>

@@ -6,7 +6,11 @@ export default function LetsTalk() {
     <>
       <div className="letstalk__banner">
         <div className="letstalk__banner__section">
-          <img src={letstalkimg} className="letstalk__banner__img" alt="" />
+          <img
+            src={letstalkimg}
+            className="letstalk__banner__img"
+            alt="letstalkimg"
+          />
         </div>
         <div className="letstalk__banner__overlay">
           <div className="letstalk__banner__overlay__heading__top">

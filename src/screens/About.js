@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <div className="about__overlay">
-        <img src={aboutbanner} className="about__banner" alt="" />
+        <img src={aboutbanner} className="about__banner" alt="aboutbanner" />
         <div className="about__overlay__content">
           <div className="about__overlay__content__left">
             <div className="about__overlay__content__left__text">
@@ -66,8 +66,8 @@ export default function About() {
         <div className="about__heading__here__sec__wrapper">
           <img
             src={AboutHeadingWrapper}
+            alt="AboutHeadingWrapper"
             className="about__heading__here__sec__wrapper__img"
-            alt=""
           />
         </div>
         <div className="about__heading__here__sec__cards__row">

@@ -10,7 +10,7 @@ export default function Register() {
       </div>
       <div className="welcome__main__content">
         <div className="welcome__main__content__left">
-          <form action="" className="welcome__main__content__left__form">
+          <form className="welcome__main__content__left__form">
             <div className="welcome__main__content__left__card">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
               beatae!

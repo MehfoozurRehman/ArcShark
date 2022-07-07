@@ -36,7 +36,7 @@ export default function Usersigninpage() {
           <img
             className="userdash__pagepage__banner__img"
             src={usersigninpage}
-            alt=""
+            alt="usersigninpage"
           />
         </div>
         <div className="userdash__overlay">
@@ -692,25 +692,5 @@ export default function Usersigninpage() {
         </div>
       </div>
     </>
-  );
-}
-
-function newAwards() {
-  return (
-    <div className="userdash__overlay__content__right__header__entry__data">
-      <div className="userdash__overlay__content__right__header__entry__data__heading">
-        Award Name
-      </div>
-      <div className="userdash__overlay__content__right__header__entry__data__web">
-        2018
-      </div>
-
-      <div className="userdash__overlay__content__right__header__entry__data__heading">
-        Organization Name
-      </div>
-      <div className="userdash__overlay__content__right__header__entry__data__city">
-        www.org.com
-      </div>
-    </div>
   );
 }

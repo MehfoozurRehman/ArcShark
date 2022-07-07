@@ -1,5 +1,4 @@
 import React from "react";
-import "./Input.scss";
 
 function Input({ placeholder, type }) {
   return (

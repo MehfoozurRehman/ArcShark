@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import RegisterJumbotronPic from "../assets/registerJumbotron.png";
 import Logo from "../assets/logo.svg";
-import Input from "../components/InputComp/Input";
-import Checkbox from "../components/CheckBox/CheckBox";
+import Input from "../components/Input";
+import Checkbox from "../components/CheckBox";
 import fbIcon from "../assets/FbIcon.png";
 import AppleIcon from "../assets/appleIcon.png";
 import GoogleIcon from "../assets/google.png";
@@ -38,7 +38,7 @@ export default function Register({ setIsUser }) {
             <div className="register__main__content__right__title">
               Create an Account
             </div>
-            <form action="" className="regiester__main__content__right__form">
+            <form className="regiester__main__content__right__form">
               <div className="register__main__content__right__row">
                 <div className="register__main__content__right__column">
                   <Input type="text" placeholder="FirstName" />

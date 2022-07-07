@@ -37,24 +37,12 @@ function PostjobContentCard({}) {
               width="20.029"
               height="20.131"
               viewBox="0 0 20.029 20.131"
+              fill="#5b57a4"
             >
-              <defs>
-                <linearGradient
-                  id="linear-gradient"
-                  x1="0.5"
-                  x2="0.5"
-                  y2="1"
-                  gradientUnits="objectBoundingBox"
-                >
-                  <stop offset="0" stop-color="#5b57a4" />
-                  <stop offset="1" stop-color="#c495c3" />
-                </linearGradient>
-              </defs>
               <path
                 id="Icon_awesome-shopping-bag"
                 data-name="Icon awesome-shopping-bag"
                 d="M15.737,6.291V5.033C15.737,2.258,13.17,0,10.014,0S4.292,2.258,4.292,5.033V6.291H0V16.986a3.382,3.382,0,0,0,3.577,3.146H16.452a3.382,3.382,0,0,0,3.577-3.146V6.291ZM7.153,5.033a2.709,2.709,0,0,1,2.861-2.516,2.709,2.709,0,0,1,2.861,2.516V6.291H7.153Zm7.153,4.718a1.015,1.015,0,0,1-1.073-.944,1.082,1.082,0,0,1,2.146,0A1.015,1.015,0,0,1,14.306,9.751Zm-8.584,0A1.015,1.015,0,0,1,4.65,8.807a1.015,1.015,0,0,1,1.073-.944A1.015,1.015,0,0,1,6.8,8.807,1.015,1.015,0,0,1,5.723,9.751Z"
-                fill="url(#linear-gradient)"
               />
             </svg>
             Part-time
@@ -65,19 +53,8 @@ function PostjobContentCard({}) {
               width="20.627"
               height="18.141"
               viewBox="0 0 20.627 18.141"
+              fill="#5b57a4"
             >
-              <defs>
-                <linearGradient
-                  id="linear-gradient"
-                  x1="0.5"
-                  x2="0.5"
-                  y2="1"
-                  gradientUnits="objectBoundingBox"
-                >
-                  <stop offset="0" stop-color="#5b57a4" />
-                  <stop offset="1" stop-color="#c495c3" />
-                </linearGradient>
-              </defs>
               <g
                 id="Group_539"
                 data-name="Group 539"
@@ -88,7 +65,6 @@ function PostjobContentCard({}) {
                   data-name="Icon ionic-ios-time"
                   d="M13.689,3.375c-5.7,0-10.314,4.06-10.314,9.071s4.616,9.071,10.314,9.071S24,17.456,24,12.446,19.386,3.375,13.689,3.375Zm.694,9.855a.658.658,0,0,1-.694.611H8.928a.616.616,0,1,1,0-1.221h4.066V6.864a.7.7,0,0,1,1.388,0Z"
                   transform="translate(160.022 -2.375)"
-                  fill="url(#linear-gradient)"
                 />
               </g>
             </svg>
@@ -105,7 +81,7 @@ function PostjobContentCard({}) {
 
         <div className="home__content__card__entry__company__name">
           <div className="home__content__card__entry__company__name__avatar">
-            <img src={user} alt="" />
+            <img src={user} alt="user" />
           </div>
           <div className="home__content__card__entry__company__name__heading">
             <div>Company Name</div>

@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
     <>
       <div className="privacy__poilicy__page">
         <div className="privacy__poilicy__page__banner">
-          <img src={TermandCondition} alt="" />
+          <img src={TermandCondition} alt="TermandCondition" />
         </div>
         <div className="privacy__poilicy__page__overlay">
           <div className="privacy__poilicy__page__overlay__haeding">

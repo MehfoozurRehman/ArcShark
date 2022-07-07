@@ -2,9 +2,10 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import { X, Menu } from "react-feather";
 import { logo, user } from "../assets";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header({ isUser, setIsUser }) {
+  const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [isMessagePanelOpen, setIsMessagePanelOpen] = useState(false);
   const [isNotificationPanelOpen, setIsNotificationPanelOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function Header({ isUser, setIsUser }) {
               <Link to="/" className="header__content__left__nav__link">
                 Discover
               </Link>
-              <Link to="/jobs" className="header__content__left__nav__link">
+              <Link to="/postjob" className="header__content__left__nav__link">
                 Jobs
               </Link>
             </div>
@@ -116,7 +117,13 @@ export default function Header({ isUser, setIsUser }) {
                         Clear All
                       </button>
                     </div>
-                    <div className="header__content__right__panel__content"></div>
+                    <div className="header__content__right__panel__content">
+                      <PanelEntry />
+                      <PanelEntry />
+                      <PanelEntry />
+                      <PanelEntry />
+                      <PanelEntry />
+                    </div>
                   </div>
                 </OutsideClickHandler>
               ) : null}
@@ -201,10 +208,17 @@ export default function Header({ isUser, setIsUser }) {
                       >
                         Profile
                       </Link>
+                      <Link
+                        to="/settings"
+                        className="header__content__right__panel__content__button"
+                      >
+                        Settings
+                      </Link>
                       <button
                         className="header__content__right__panel__content__button"
                         onClick={() => {
                           setIsUser(false);
+                          navigate("/");
                         }}
                       >
                         Logout

@@ -1,5 +1,4 @@
 import React from "react";
-import "./CheckBox.scss";
 
 const CheckBox = ({
   onChange,
@@ -28,7 +27,8 @@ const CheckBox = ({
             value
               ? { background: checkedColor, color: iconColor, ...style }
               : { background: unCheckedColor, ...style }
-          }>
+          }
+        >
           {value ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,8 @@ const CheckBox = ({
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              class="feather feather-check">
+              class="feather feather-check"
+            >
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
           ) : null}
@@ -50,7 +51,8 @@ const CheckBox = ({
         ) : (
           <div
             className="checkbox__content__label"
-            style={{ color: labelColor }}>
+            style={{ color: labelColor }}
+          >
             {label}
           </div>
         )}

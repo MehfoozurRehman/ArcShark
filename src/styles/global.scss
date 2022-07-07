@@ -157,7 +157,7 @@ body {
   position: absolute;
   top: 4.5em;
   right: 0em;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -173,11 +173,11 @@ body {
 .header__content__right__panel__header__heading {
   font-size: 22px;
   font-weight: bold;
-  color: white;
+  color: black;
 }
 .header__content__right__panel__header__button {
   background-color: transparent;
-  color: white;
+  color: black;
   border: none;
   cursor: pointer;
 }
@@ -203,7 +203,7 @@ body {
 .header__content__right__panel__content__entry {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   padding: 1em;
   margin-bottom: 1em;
@@ -211,40 +211,51 @@ body {
 }
 .header__content__right__panel__content__entry__heading {
   font-size: 15px;
-  color: $white;
+  color: black;
   font-weight: bold;
   margin-bottom: 0.3em;
 }
 .header__content__right__panel__content__entry__info {
   font-size: 14px;
-  color: $white;
+  color: black;
 }
 .header__content__right__panel__content__entry:hover {
   transition: 300ms ease-in-out;
   background: linear-gradient(45deg, $primary, $secondary);
+}
+.header__content__right__panel__content__entry:hover
+  .header__content__right__panel__content__entry__heading {
+  color: white;
+}
+.header__content__right__panel__content__entry:hover
+  .header__content__right__panel__content__entry__info {
+  color: white;
 }
 .header__content__right__panel__content__button {
   width: 100px;
   border-radius: 50px;
   height: 35px;
   background-color: transparent;
-  border: 1px solid $white;
-  color: white;
+  border: 1px solid black;
+  color: black;
   padding: 0em;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
-}
-.header__content__right__panel__content__button:first-child {
   margin-bottom: 1em;
+}
+.header__content__right__panel__content__button:last-child {
+  margin-bottom: 0em;
 }
 .header__content__right__panel__content__button:hover {
   transition: 300ms ease-in-out;
   background-color: $primary;
+  border-color: white;
+  color: white;
 }
 .header__content__right__panel__message {
   right: -2em;
@@ -304,4 +315,53 @@ body {
   .header__content {
     padding: 1.5em;
   }
+}
+.input__container {
+  width: 100%;
+}
+
+.input__container input {
+  border: none;
+  padding: 1em;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 1px solid gray;
+  transition: all 0.3s ease-in-out;
+}
+.input__container input:focus {
+  border-bottom: 1px solid black;
+}
+.checkbox {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+.checkbox__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox__content {
+  display: flex;
+  align-items: center;
+}
+.checkbox__content__indicator {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5em;
+  background: linear-gradient(180deg, #5b58a5, #cb76cb);
+  border-radius: 15px;
+  border: 1px solid #5b58a5;
+}
+.checkbox__content__label {
+  font-size: 14px;
+}
+.checkbox__input:hover ~ .checkbox__content .checkbox__content__indicator {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }

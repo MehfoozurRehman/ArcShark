@@ -6,7 +6,7 @@ export default function TermsAndCondition() {
     <>
       <div className="term__and__condition__page">
         <div className="term__and__condition__page__banner">
-          <img src={TermandCondition} alt="" />
+          <img src={TermandCondition} alt="TermandCondition" />
         </div>
         <div className="term__and__condition__page__overlay">
           <div className="term__and__condition__page__overlay__haeding">
