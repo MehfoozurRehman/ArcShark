@@ -1,11 +1,10 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import { X, Menu } from "react-feather";
 import { logo, user } from "../assets";
 import { Link } from "react-router-dom";
 
-export default function Header() {
-  const [isUser, setIsUser] = useState(true);
+export default function Header({ isUser, setIsUser }) {
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [isMessagePanelOpen, setIsMessagePanelOpen] = useState(false);
   const [isNotificationPanelOpen, setIsNotificationPanelOpen] = useState(false);
@@ -22,6 +21,11 @@ export default function Header() {
     navStatus();
     window.addEventListener("resize", navStatus);
   }, []);
+  useEffect(() => {
+    setIsMessagePanelOpen(false);
+    setIsNotificationPanelOpen(false);
+    setIsUserPanelOpen(false);
+  }, [isUser]);
 
   return (
     <div className="header">
@@ -191,13 +195,18 @@ export default function Header() {
                 >
                   <div className="header__content__right__panel header__content__right__panel__user">
                     <div className="header__content__right__panel__content">
-                      <a
-                        href="#"
+                      <Link
+                        to="/editprofile"
                         className="header__content__right__panel__content__button"
                       >
                         Profile
-                      </a>
-                      <button className="header__content__right__panel__content__button">
+                      </Link>
+                      <button
+                        className="header__content__right__panel__content__button"
+                        onClick={() => {
+                          setIsUser(false);
+                        }}
+                      >
                         Logout
                       </button>
                     </div>

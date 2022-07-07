@@ -6,8 +6,9 @@ import AppleIcon from "../assets/appleIcon.png";
 import GoogleIcon from "../assets/google.png";
 import Curve from "../assets/sign__in__curve.png";
 import { signinbg } from "../assets";
+import { Link } from "react-router-dom";
 
-function SignIn() {
+function SignIn({ setIsUser }) {
   const [isChecked, setIschecked] = useState(false);
 
   return (
@@ -72,7 +73,14 @@ function SignIn() {
               </div>
             </form>
             <div className="register__main__content__right__signup__button">
-              <a href="#">Sign In</a>
+              <Link
+                to="/"
+                onClick={() => {
+                  setIsUser(true);
+                }}
+              >
+                Sign In
+              </Link>
             </div>
 
             <div className="register__main__content__right__icons">

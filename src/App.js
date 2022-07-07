@@ -36,6 +36,7 @@ import SettingsJobPosting from "./screens/SettingsJobPosting";
 import SettingsBlock from "./screens/SettingsBlock";
 
 export default function App() {
+  const [isUser, setIsUser] = useState(true);
   const [postJobDetailsPopupVisible, setPostJobDetailsPopupVisible] =
     useState(false);
   const [postJobDetailsApplyPopupVisible, setPostJobDetailsApplyPopupVisible] =
@@ -93,15 +94,15 @@ export default function App() {
         />
       ) : null}
 
-      <Header />
+      <Header isUser={isUser} setIsUser={setIsUser} />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/termandcondition" element={<TermsAndCondition />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/register" element={<Register setIsUser={setIsUser} />} />
         <Route path="/letstalk" element={<LetsTalk />} />
         <Route path="/jobs" element={<SocialCardPage />} />
-        <Route path="/sign_in" element={<SignIn />} />
+        <Route path="/sign_in" element={<SignIn setIsUser={setIsUser} />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/postjob" element={<Postjob />} />
         <Route path="/forget" element={<Forget />} />
