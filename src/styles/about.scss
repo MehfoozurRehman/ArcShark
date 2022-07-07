@@ -1048,14 +1048,15 @@
 }
 .userdash__overlay__content__right__header__entry__card {
   display: flex;
-  width: fit-content;
+  width: 100%;
+  max-width: 1000px;
   border-radius: 15px;
   margin-top: 0.5em;
 }
 
 .userdash__overlay__content__right__header__entry__data {
   background-color: #ffff;
-  width: 100%;
+  width: 240px;
   padding: 1em;
   border-radius: 15px;
   margin-right: 0.5em;
@@ -1064,12 +1065,21 @@
   font-size: 14px;
   font-weight: bold;
 }
+.userdash__overlay__content__right__header__entry__data__heading__study {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.userdash__overlay__content__right__header__entry__data__web__organiztion {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
 .userdash__overlay__content__right__header__entry__data__web {
-  font-size: 15px;
+  font-size: 14px;
 }
 .userdash__overlay__content__right__header__entry__data__city {
   font-size: 14px;
-  margin-bottom: 0.5em;
 }
 @media (max-width: 1200px) {
   .home__content__card__entry {

@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { user, usersigninpage } from "../assets";
 import { HomeContentCard } from "../components/HomeContentCard";
+import NavigationTabs from "../components/NavigationTabs";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 export default function Usersigninpage() {
+  const [slidesPerPage, setSlidesPerPage] = useState(3.5);
+  useEffect(() => {
+    if (window.innerWidth <= 600) {
+      setSlidesPerPage(1);
+    } else if (window.innerWidth <= 800) {
+      setSlidesPerPage(1.5);
+    } else if (window.innerWidth <= 900) {
+      setSlidesPerPage(3);
+    } else if (window.innerWidth <= 1000) {
+      setSlidesPerPage(4);
+    }
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 600) {
+        setSlidesPerPage(1);
+      } else if (window.innerWidth <= 800) {
+        setSlidesPerPage(1.5);
+      } else if (window.innerWidth <= 900) {
+        setSlidesPerPage(3);
+      } else if (window.innerWidth <= 1000) {
+        setSlidesPerPage(4);
+      }
+    });
+  }, []);
   return (
     <>
       <div className=" userdash__page">
@@ -430,29 +456,185 @@ export default function Usersigninpage() {
                   </div>
                 </div>
                 <div className="userdash__overlay__content__right__header__entry__card">
-                  <newFunction />
-                  {newFunction()}
-                  {newFunction()}
-                  {newFunction()}
+                  <Swiper
+                    spaceBetween={10}
+                    slidesPerView={slidesPerPage}
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                  >
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Marshmello Inc"}
+                        Webiste={"www.umbrella.com"}
+                        Location={"Lahore"}
+                        Ceo={"CEO"}
+                        Date={"2018 - 2020"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Marshmello Inc"}
+                        Webiste={"www.umbrella.com"}
+                        Location={"Lahore"}
+                        Ceo={"CEO"}
+                        Date={"2018 - 2020"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Marshmello Inc"}
+                        Webiste={"www.umbrella.com"}
+                        Location={"Lahore"}
+                        Ceo={"CEO"}
+                        Date={"2018 - 2020"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Marshmello Inc"}
+                        Webiste={"www.umbrella.com"}
+                        Location={"Lahore"}
+                        Ceo={"CEO"}
+                        Date={"2018 - 2020"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Marshmello Inc"}
+                        Webiste={"www.umbrella.com"}
+                        Location={"Lahore"}
+                        Ceo={"CEO"}
+                        Date={"2018 - 2020"}
+                      />
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
                 <div className="userdash__overlay__content__right__header__entry__card">
-                  {newEducation()}
-                  {newEducation()}
-                  {newEducation()}
-                  {newEducation()}
+                  <Swiper
+                    spaceBetween={10}
+                    slidesPerView={slidesPerPage}
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                  >
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Location={"United States"}
+                        Study={"BS( architecture )"}
+                        Website={" slow.com"}
+                        Date={"June 2018 - July 2020"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Location={"United States"}
+                        Study={"BS( architecture )"}
+                        Website={" slow.com"}
+                        Date={"June 2018 - July 2020"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Location={"United States"}
+                        Study={"BS( architecture )"}
+                        Website={" slow.com"}
+                        Date={"June 2018 - July 2020"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Location={"United States"}
+                        Study={"BS( architecture )"}
+                        Website={"slow.com"}
+                        Date={"June 2018 - July 2020"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Location={"United States"}
+                        Study={"BS( architecture )"}
+                        Website={"slow.com"}
+                        Date={"June 2018 - July 2020"}
+                      />
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
                 <div className="userdash__overlay__content__right__header__entry__card">
-                  {newSkills()}
-                  {newSkills()}
-                  {newSkills()}
-                  {newSkills()}
-                  {newSkills()}
+                  <Swiper
+                    spaceBetween={10}
+                    slidesPerView={slidesPerPage}
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                  >
+                    <SwiperSlide>
+                      <NavigationTabs Heading={"Skill Name"} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs Heading={"Skill Name"} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs Heading={"Skill Name"} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs Heading={"Skill Name"} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs Heading={"Skill Name"} />
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
                 <div className="userdash__overlay__content__right__header__entry__card">
-                  {newAwards()}
-                  {newAwards()}
-                  {newAwards()}
-                  {newAwards()}
+                  <Swiper
+                    spaceBetween={3}
+                    slidesPerView={slidesPerPage}
+                    onSlideChange={() => console.log("slide change")}
+                    onSwiper={(swiper) => console.log(swiper)}
+                  >
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Year={"2018"}
+                        Organization={"Organization Name"}
+                        Website={"www.org.com"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Year={"2018"}
+                        Organization={"Organization Name"}
+                        Website={"www.org.com"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Year={"2018"}
+                        Organization={"Organization Name"}
+                        Website={"www.org.com"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Year={"2018"}
+                        Organization={"Organization Name"}
+                        Website={"www.org.com"}
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <NavigationTabs
+                        Heading={"Slow University"}
+                        Year={"2018"}
+                        Organization={"Organization Name"}
+                        Website={"www.org.com"}
+                      />
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
               </div>
               <div className="userdash__overlay__content__right__header__entry__card"></div>
@@ -512,58 +694,7 @@ export default function Usersigninpage() {
     </>
   );
 }
-function newFunction() {
-  return (
-    <div className="userdash__overlay__content__right__header__entry__data">
-      <div className="userdash__overlay__content__right__header__entry__data__heading">
-        Marshmello Inc
-      </div>
-      <div className="userdash__overlay__content__right__header__entry__data__web">
-        www.umbrella.com
-      </div>
-      <div className="userdash__overlay__content__right__header__entry__data__city">
-        Lahore
-      </div>
-      <div className="userdash__overlay__content__right__header__entry__data__heading">
-        CEO
-      </div>
-      <div className="userdash__overlay__content__right__header__entry__data__city">
-        2018 - 2020
-      </div>
-    </div>
-  );
-}
-function newEducation() {
-  return (
-    <div className="userdash__overlay__content__right__header__entry__data">
-      <div className="userdash__overlay__content__right__header__entry__data__heading">
-        Slow University
-      </div>
-      <div className="userdash__overlay__content__right__header__entry__data__web">
-        United States
-      </div>
 
-      <div className="userdash__overlay__content__right__header__entry__data__city">
-        slow.com
-      </div>
-      <div className="userdash__overlay__content__right__header__entry__data__heading">
-        BS( architecture )
-      </div>
-      <div className="userdash__overlay__content__right__header__entry__data__city">
-        June 2018 - July 2020
-      </div>
-    </div>
-  );
-}
-function newSkills() {
-  return (
-    <div className="userdash__overlay__content__right__header__entry__data">
-      <div className="userdash__overlay__content__right__header__entry__data__heading">
-        Skill Name
-      </div>
-    </div>
-  );
-}
 function newAwards() {
   return (
     <div className="userdash__overlay__content__right__header__entry__data">
