@@ -22,6 +22,7 @@
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  height: fit-content;
 }
 .user__profile__content__sidebar__profile {
   display: flex;
@@ -173,7 +174,106 @@
 }
 .user__profile__content__main {
   flex: 1;
-  background-color: brown;
+  width: calc(100% - 300px - 1em);
+}
+.user__profile__content__main__top {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  margin-bottom: 1em;
+}
+.user__profile__content__main__top__tabs {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  width: fit-content;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+}
+.user__profile__content__main__top__tabs__entry {
+  position: relative;
+}
+.user__profile__content__main__top__tabs__entry__input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0;
+}
+.user__profile__content__main__top__tabs__entry__content {
+  background-color: white;
+  height: 40px;
+  padding: 0em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.user__profile__content__main__top__tabs__entry__input:hover
+  ~ .user__profile__content__main__top__tabs__entry__content,
+.user__profile__content__main__top__tabs__entry__input:checked
+  ~ .user__profile__content__main__top__tabs__entry__content {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: white;
+}
+.user__profile__content__main__top__content {
+  width: 100%;
+}
+.user__profile__content__main__top__content__entry {
+  background-color: white;
+  padding: 1.2em 2em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.user__profile__content__main__top__content__entry__heading {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.user__profile__content__main__top__content__entry__info {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 1em;
+}
+.user__profile__content__main__top__content__entry__info:last-child {
+  margin-bottom: 0em;
+}
+.user__profile__content__main__bottom {
+  padding: 2em;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+@media (max-width: 1150px) {
+  .user__profile__content__main__top__tabs {
+    background-color: transparent;
+    margin-bottom: 0em;
+  }
+  .user__profile__content__main__top__tabs__entry {
+    margin-bottom: 1em;
+    margin-right: 0.5em;
+  }
+  .user__profile__content__main__bottom .home__content .home__content__entry {
+    width: 48%;
+  }
+}
+@media (max-width: 1050px) {
+  .user__profile__content__main__bottom .home__content .home__content__entry {
+    width: 100%;
+  }
 }
 @media (max-width: 800px) {
   .user__profile__content {
@@ -183,5 +283,16 @@
     max-width: 100%;
     margin-right: 0em;
     margin-bottom: 1em;
+  }
+  .user__profile__content__main {
+    width: 100%;
+  }
+  .user__profile__content__main__bottom .home__content .home__content__entry {
+    width: 48%;
+  }
+}
+@media (max-width: 760px) {
+  .user__profile__content__main__bottom .home__content .home__content__entry {
+    width: 100%;
   }
 }

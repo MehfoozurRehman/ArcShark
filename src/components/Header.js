@@ -203,7 +203,7 @@ export default function Header({ isUser, setIsUser }) {
                   <div className="header__content__right__panel header__content__right__panel__user">
                     <div className="header__content__right__panel__content">
                       <Link
-                        to="/editprofile"
+                        to="/profile"
                         className="header__content__right__panel__content__button"
                       >
                         Profile
