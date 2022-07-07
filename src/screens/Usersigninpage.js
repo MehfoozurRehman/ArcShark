@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { user, usersigninpage } from "../assets";
-import { HomeContentCard } from "../components/HomeContentCard";
+import { ProjectCard } from "../components/ProjectCard";
 import NavigationTabs from "../components/NavigationTabs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -640,47 +640,47 @@ export default function Usersigninpage() {
               <div className="userdash__overlay__content__right__header__entry__card"></div>
               <div className="userdash__overlay__content__right">
                 <div className="home__content" style={{ marginTop: 0 }}>
-                  <HomeContentCard
+                  <ProjectCard
                     hovertext={
                       "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
                     }
                   />
-                  <HomeContentCard
+                  <ProjectCard
                     hovertext={
                       "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
                     }
                   />
-                  <HomeContentCard
+                  <ProjectCard
                     hovertext={
                       "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
                     }
                   />
-                  <HomeContentCard
+                  <ProjectCard
                     hovertext={
                       "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
                     }
                   />
-                  <HomeContentCard
+                  <ProjectCard
                     hovertext={
                       "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
                     }
                   />
-                  <HomeContentCard
+                  <ProjectCard
                     hovertext={
                       "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
                     }
                   />
-                  <HomeContentCard
+                  <ProjectCard
                     hovertext={
                       "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
                     }
                   />
-                  <HomeContentCard
+                  <ProjectCard
                     hovertext={
                       "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
                     }
                   />
-                  <HomeContentCard
+                  <ProjectCard
                     hovertext={
                       "Lorem Ipsum is simply dummy text of the printing and typesettin industry Lorem Ipsum has been the industry standard dummy text ever since the Lorem ipsum dolor sit amet consectetur adipisicing elit Quidem, sint."
                     }

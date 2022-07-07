@@ -1,9 +1,14 @@
 import React from "react";
-import { homebanner } from "../assets";
+import { homebanner, Socialbanner } from "../assets";
 import { HomeScreenFilterSelect } from "./HomeScreenFilterSelect";
 import { HomeScreenRoleFilter } from "./HomeScreenRoleFilter";
 
-export function HomeJumbotron({ noFilter, location }) {
+export function HomeJumbotron({
+  noFilter,
+  location,
+  selectedRole,
+  setSelectedRole,
+}) {
   const options = [
     { value: "chocolate", label: "Chocolate" },
     { value: "strawberry", label: "Strawberry" },
@@ -12,7 +17,11 @@ export function HomeJumbotron({ noFilter, location }) {
 
   return (
     <div className="home__jumbotron">
-      <img src={homebanner} alt="homebanner" className="home__jumbotron__img" />
+      <img
+        src={selectedRole === "People" ? Socialbanner : homebanner}
+        alt={selectedRole === "People" ? "Socialbanner" : "homebanner"}
+        className="home__jumbotron__img"
+      />
       <div className="home__jumbotron__overlay">
         <form action="" className="home__jumbotron__overlay__form">
           <div className="home__jumbotron__overlay__form__top">
@@ -81,8 +90,16 @@ export function HomeJumbotron({ noFilter, location }) {
               />
             ) : (
               <>
-                <HomeScreenRoleFilter label="People" defaultChecked />
-                <HomeScreenRoleFilter label="Projects" />
+                <HomeScreenRoleFilter
+                  label="People"
+                  selectedRole={selectedRole}
+                  setSelectedRole={setSelectedRole}
+                />
+                <HomeScreenRoleFilter
+                  label="Projects"
+                  selectedRole={selectedRole}
+                  setSelectedRole={setSelectedRole}
+                />
               </>
             )}
           </div>

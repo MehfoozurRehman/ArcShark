@@ -8,7 +8,7 @@ import instagrameicon from "../assets/instag.png";
 import youtubeicon from "../assets/youtube.png";
 import pinteresticon from "../assets/pinterest.png";
 
-export function SocialCardPageContentCard({}) {
+export function UserCard({}) {
   return (
     <a href="#" className="home__content__card__entry">
       <div className="home__content__entry__content">

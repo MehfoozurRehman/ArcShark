@@ -1,12 +1,22 @@
 import React from "react";
 
-export function HomeScreenRoleFilter({ label, ...props }) {
+export function HomeScreenRoleFilter({
+  selectedRole,
+  setSelectedRole,
+  label,
+  ...props
+}) {
   return (
     <div className="home__jumbotron__overlay__form__top__role">
       <input
         type="radio"
         name="home__jumbotron__overlay__form__top__role"
         className="home__jumbotron__overlay__form__top__role__input"
+        defaultChecked={selectedRole === label}
+        checked={selectedRole === label}
+        onChange={() => {
+          setSelectedRole(label);
+        }}
         {...props}
       />
       <div className="home__jumbotron__overlay__form__top__role__content">

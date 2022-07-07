@@ -6,7 +6,6 @@ import HomeScreen from "./screens/HomeScreen";
 import Footer from "./components/Footer";
 import Register from "./screens/Register";
 import LetsTalk from "./components/LetsTalk";
-import SocialCardPage from "./screens/SocialCardPage";
 import SignIn from "./screens/SignIn";
 import Welcome from "./screens/Welcome";
 import Postjob from "./screens/Postjob";
@@ -101,7 +100,6 @@ export default function App() {
         <Route path="/termandcondition" element={<TermsAndCondition />} />
         <Route path="/register" element={<Register setIsUser={setIsUser} />} />
         <Route path="/letstalk" element={<LetsTalk />} />
-        <Route path="/jobs" element={<SocialCardPage />} />
         <Route path="/sign_in" element={<SignIn setIsUser={setIsUser} />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/postjob" element={<Postjob />} />

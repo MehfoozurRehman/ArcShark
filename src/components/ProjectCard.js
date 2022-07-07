@@ -1,7 +1,7 @@
 import React from "react";
 import { project } from "../assets";
 
-export function HomeContentCard({ hovertext }) {
+export function ProjectCard({ hovertext }) {
   return (
     <a href="#" className="home__content__entry">
       <img src={project} alt="project" className="home__content__entry__img" />
