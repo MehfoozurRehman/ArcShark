@@ -16,7 +16,7 @@ import Forget from "./screens/Forget";
 import PostJobDetailsApplyPopup from "./components/PostJobDetailsApplyPopup";
 import FreelanceProjectInquiryPopup from "./components/FreelanceProjectInquiryPopup";
 import BlockUserPopup from "./components/BlockUserPopup";
-import Usersigninpage from "./screens/Usersigninpage";
+import Profile from "./screens/Profile";
 import NewMessagePopup from "./components/NewMessagePopup";
 import HireTalentPopup from "./components/HireTalentPopup";
 import ShareWork from "./screens/ShareWork";
@@ -112,7 +112,8 @@ export default function App() {
             />
           }
         />
-        <Route path="/usersigninpage" element={<Usersigninpage />} />
+        <Route path="/profile" element={<Profile user={true} />} />
+        <Route path="/details" element={<Profile />} />
         <Route path="/sharework" element={<ShareWork />} />
         <Route path="/editprofile" element={<EditProfile />}>
           <Route path="" element={<EditProfileBasicDetails />} />
