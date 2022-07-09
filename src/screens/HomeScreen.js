@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ProjectCard } from "../components/ProjectCard";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { UserCard } from "../components/UserCard";
+import ProjectDetails from "./ProjectDetails";
 
 export default function HomeScreen() {
   const [selectedRole, setSelectedRole] = useState("People");
@@ -9,6 +10,7 @@ export default function HomeScreen() {
   const projects = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <>
+      <ProjectDetails />
       <HomeJumbotron
         selectedRole={selectedRole}
         setSelectedRole={setSelectedRole}
