@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ProfileSidebarLinks({}) {
+export function ProfileSidebarLinks() {
   return (
     <div className="user__profile__content__sidebar__links">
       <div className="user__profile__content__sidebar__links__entry">

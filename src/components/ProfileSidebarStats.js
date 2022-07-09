@@ -1,7 +1,7 @@
 import React from "react";
 import { ProfileSidebarStatsEntry } from "./ProfileSidebarStatsEntry";
 
-export function ProfileSidebarStats({}) {
+export function ProfileSidebarStats() {
   return (
     <div className="user__profile__content__sidebar__stats">
       <ProfileSidebarStatsEntry

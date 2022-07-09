@@ -218,7 +218,7 @@ export default function ProjectDetails({ onClose }) {
   );
 }
 
-function CommentsEntry({}) {
+function CommentsEntry() {
   return (
     <div className="project__details__container__content__form__left__comments__entry">
       <img

@@ -37,7 +37,7 @@
 .about__overlay__content__right {
   width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .about__overlay__content__right__content {
   width: 600px;
@@ -377,7 +377,7 @@
 .letstalk__banner__overlay__content__left__button {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   min-width: 270px;
   margin-top: 1em;
@@ -429,7 +429,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 1em 0em;
   margin-top: 1.5em;
 }
@@ -1132,7 +1132,7 @@
   }
   .letstalk__banner__overlay__content__right {
     width: 100%;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 0em 2em;
   }
   .letstalk__banner__overlay {
@@ -1155,7 +1155,7 @@
 @media (max-width: 700px) {
   .about__overlay__content {
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: 0em;
     margin-top: -1em;
   }

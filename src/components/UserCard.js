@@ -10,7 +10,7 @@ import pinteresticon from "../assets/pinterest.png";
 import { Zoom } from "react-reveal";
 import { useNavigate } from "react-router-dom";
 
-export function UserCard({}) {
+export function UserCard() {
   const navigate = useNavigate();
   return (
     <Zoom>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Plus } from "react-feather";
 
-export function ImageUploaderMulti({}) {
+export function ImageUploaderMulti() {
   return (
     <div className="share__work__container__overlay__right__upload">
       <input

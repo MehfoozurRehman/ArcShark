@@ -1,7 +1,7 @@
 import React from "react";
 import { user as userPic } from "../assets";
 
-export function ProfileSidebarProfile({}) {
+export function ProfileSidebarProfile() {
   return (
     <div className="user__profile__content__sidebar__profile">
       <img

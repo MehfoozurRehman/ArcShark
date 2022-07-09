@@ -1,6 +1,6 @@
 import React from "react";
 
-export function SettingsJobPostingListEntry({}) {
+export function SettingsJobPostingListEntry() {
   return (
     <div className="dashbaord__content__main__table__list">
       <div className="dashbaord__content__main__table__list__entry">

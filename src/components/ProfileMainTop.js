@@ -6,7 +6,7 @@ import { ProfileMainTopContentEducation } from "./ProfileMainTopContentEducation
 import { ProfileMainTopContentWorkExperience } from "./ProfileMainTopContentWorkExperience";
 import { ProfileMainTopTab } from "./ProfileMainTopTab";
 
-export function ProfileMainTop({}) {
+export function ProfileMainTop() {
   const [slidesPerPage, setSlidesPerPage] = useState(5);
   useEffect(() => {
     if (window.innerWidth <= 600) {

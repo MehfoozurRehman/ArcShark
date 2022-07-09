@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { BlockUserPopupContext } from "../App";
 
-export function ProfileSidebarAdditional({}) {
+export function ProfileSidebarAdditional() {
   const setBlockUserPopupVisible = useContext(BlockUserPopupContext);
   return (
     <div className="user__profile__content__sidebar__additional">

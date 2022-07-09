@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ProfileSidebarSocials({}) {
+export function ProfileSidebarSocials() {
   return (
     <div className="user__profile__content__sidebar__socials">
       <a href="#" className="user__profile__content__sidebar__socials__link">

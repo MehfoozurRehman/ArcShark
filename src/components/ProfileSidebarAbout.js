@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ProfileSidebarAbout({}) {
+export function ProfileSidebarAbout() {
   return (
     <div className="user__profile__content__sidebar__about">
       <div className="user__profile__content__sidebar__about__heading">
