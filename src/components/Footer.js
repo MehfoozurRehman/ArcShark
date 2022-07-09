@@ -57,7 +57,7 @@ export default function Footer() {
             <Link
               to="/termandcondition"
               onClick={() => {
-                window.scrollTo(0, 0);
+                window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               className="footer__container__col__text"
             >
@@ -66,7 +66,7 @@ export default function Footer() {
             <Link
               to="/privacypolicy"
               onClick={() => {
-                window.scrollTo(0, 0);
+                window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               className="footer__container__col__text"
             >
@@ -75,7 +75,7 @@ export default function Footer() {
             <Link
               to="/aboutus"
               onClick={() => {
-                window.scrollTo(0, 0);
+                window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               className="footer__container__col__text"
             >
@@ -232,7 +232,7 @@ export default function Footer() {
             <Link
               to="/letstalk"
               onClick={() => {
-                window.scrollTo(0, 0);
+                window.scrollTo({ top: 0, behavior: "smooth" });
               }}
               className="footer__container__col__text"
             >

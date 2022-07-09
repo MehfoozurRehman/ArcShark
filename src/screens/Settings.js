@@ -2,6 +2,7 @@ import React from "react";
 import { editprofile } from "../assets";
 import { Outlet } from "react-router-dom";
 import { SidebarLink } from "../components/SidebarLink";
+import { Reveal } from "react-reveal";
 
 export default function Settings() {
   return (
@@ -16,6 +17,7 @@ export default function Settings() {
           <div className="dashbaord__content__sidebar__heading">
             Edit Profile
           </div>
+
           <SidebarLink to="/settings">Edit profile</SidebarLink>
           <SidebarLink to="/settings/changepassword">
             Change Password
@@ -24,7 +26,9 @@ export default function Settings() {
           <SidebarLink to="/settings/block">Block / Report</SidebarLink>
         </div>
         <div className="dashbaord__content__main">
-          <Outlet />
+          <Reveal>
+            <Outlet />
+          </Reveal>
         </div>
       </div>
     </>

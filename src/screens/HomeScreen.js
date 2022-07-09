@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ProjectCard } from "../components/ProjectCard";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { UserCard } from "../components/UserCard";
+import { Reveal } from "react-reveal";
 
 export default function HomeScreen() {
   const [selectedRole, setSelectedRole] = useState("People");

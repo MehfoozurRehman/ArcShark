@@ -3,6 +3,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 import { X, Menu } from "react-feather";
 import { logo, user } from "../assets";
 import { Link, useNavigate } from "react-router-dom";
+import { Reveal } from "react-reveal";
 
 export default function Header({ isUser, setIsUser }) {
   const navigate = useNavigate();
@@ -108,23 +109,25 @@ export default function Header({ isUser, setIsUser }) {
                     setIsMessagePanelOpen(false);
                   }}
                 >
-                  <div className="header__content__right__panel header__content__right__panel__message">
-                    <div className="header__content__right__panel__header">
-                      <div className="header__content__right__panel__header__heading">
-                        Messages
+                  <Reveal>
+                    <div className="header__content__right__panel header__content__right__panel__message">
+                      <div className="header__content__right__panel__header">
+                        <div className="header__content__right__panel__header__heading">
+                          Messages
+                        </div>
+                        <button className="header__content__right__panel__header__button">
+                          Clear All
+                        </button>
                       </div>
-                      <button className="header__content__right__panel__header__button">
-                        Clear All
-                      </button>
+                      <div className="header__content__right__panel__content">
+                        <PanelEntry to="/messenger" />
+                        <PanelEntry to="/messenger" />
+                        <PanelEntry to="/messenger" />
+                        <PanelEntry to="/messenger" />
+                        <PanelEntry to="/messenger" />
+                      </div>
                     </div>
-                    <div className="header__content__right__panel__content">
-                      <PanelEntry to="/messenger" />
-                      <PanelEntry to="/messenger" />
-                      <PanelEntry to="/messenger" />
-                      <PanelEntry to="/messenger" />
-                      <PanelEntry to="/messenger" />
-                    </div>
-                  </div>
+                  </Reveal>
                 </OutsideClickHandler>
               ) : null}
               <button
@@ -163,23 +166,25 @@ export default function Header({ isUser, setIsUser }) {
                     setIsNotificationPanelOpen(false);
                   }}
                 >
-                  <div className="header__content__right__panel header__content__right__panel__notifications">
-                    <div className="header__content__right__panel__header">
-                      <div className="header__content__right__panel__header__heading">
-                        Notifications
+                  <Reveal>
+                    <div className="header__content__right__panel header__content__right__panel__notifications">
+                      <div className="header__content__right__panel__header">
+                        <div className="header__content__right__panel__header__heading">
+                          Notifications
+                        </div>
+                        <button className="header__content__right__panel__header__button">
+                          Clear All
+                        </button>
                       </div>
-                      <button className="header__content__right__panel__header__button">
-                        Clear All
-                      </button>
+                      <div className="header__content__right__panel__content">
+                        <PanelEntry />
+                        <PanelEntry />
+                        <PanelEntry />
+                        <PanelEntry />
+                        <PanelEntry />
+                      </div>
                     </div>
-                    <div className="header__content__right__panel__content">
-                      <PanelEntry />
-                      <PanelEntry />
-                      <PanelEntry />
-                      <PanelEntry />
-                      <PanelEntry />
-                    </div>
-                  </div>
+                  </Reveal>
                 </OutsideClickHandler>
               ) : null}
               <button
@@ -200,31 +205,33 @@ export default function Header({ isUser, setIsUser }) {
                     setIsUserPanelOpen(false);
                   }}
                 >
-                  <div className="header__content__right__panel header__content__right__panel__user">
-                    <div className="header__content__right__panel__content">
-                      <Link
-                        to="/profile"
-                        className="header__content__right__panel__content__button"
-                      >
-                        Profile
-                      </Link>
-                      <Link
-                        to="/settings"
-                        className="header__content__right__panel__content__button"
-                      >
-                        Settings
-                      </Link>
-                      <button
-                        className="header__content__right__panel__content__button"
-                        onClick={() => {
-                          setIsUser(false);
-                          navigate("/");
-                        }}
-                      >
-                        Logout
-                      </button>
+                  <Reveal>
+                    <div className="header__content__right__panel header__content__right__panel__user">
+                      <div className="header__content__right__panel__content">
+                        <Link
+                          to="/profile"
+                          className="header__content__right__panel__content__button"
+                        >
+                          Profile
+                        </Link>
+                        <Link
+                          to="/settings"
+                          className="header__content__right__panel__content__button"
+                        >
+                          Settings
+                        </Link>
+                        <button
+                          className="header__content__right__panel__content__button"
+                          onClick={() => {
+                            setIsUser(false);
+                            navigate("/");
+                          }}
+                        >
+                          Logout
+                        </button>
+                      </div>
                     </div>
-                  </div>
+                  </Reveal>
                 </OutsideClickHandler>
               ) : null}
             </>

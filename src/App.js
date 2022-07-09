@@ -37,6 +37,7 @@ import ProjectDetails from "./screens/ProjectDetails";
 import Messenger from "./screens/Messenger";
 
 export const ProjectDetailsVisibleContext = createContext();
+export const BlockUserPopupContext = createContext();
 
 export default function App() {
   const [isUser, setIsUser] = useState(true);
@@ -107,48 +108,56 @@ export default function App() {
       ) : null}
       <Header isUser={isUser} setIsUser={setIsUser} />
       <ProjectDetailsVisibleContext.Provider value={setProjectDetailsVisible}>
-        <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="/aboutus" element={<About />} />
-          <Route path="/termandcondition" element={<TermsAndCondition />} />
-          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-          <Route
-            path="/register"
-            element={<Register setIsUser={setIsUser} />}
-          />
-          <Route path="/sign_in" element={<SignIn setIsUser={setIsUser} />} />
-          <Route path="/letstalk" element={<LetsTalk />} />
-          <Route path="/welcome" element={<Welcome />} />
-          <Route
-            path="/postjob"
-            element={
-              <Postjob
-                setPostJobDetailsPopupVisible={setPostJobDetailsPopupVisible}
-                setHireTalentPopupVisible={setHireTalentPopupVisible}
+        <BlockUserPopupContext.Provider value={setBlockUserPopupVisible}>
+          <Routes>
+            <Route path="/" element={<HomeScreen />} />
+            <Route path="/aboutus" element={<About />} />
+            <Route path="/termandcondition" element={<TermsAndCondition />} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+            <Route
+              path="/register"
+              element={<Register setIsUser={setIsUser} />}
+            />
+            <Route path="/sign_in" element={<SignIn setIsUser={setIsUser} />} />
+            <Route path="/letstalk" element={<LetsTalk />} />
+            <Route path="/welcome" element={<Welcome />} />
+            <Route
+              path="/postjob"
+              element={
+                <Postjob
+                  setPostJobDetailsPopupVisible={setPostJobDetailsPopupVisible}
+                  setHireTalentPopupVisible={setHireTalentPopupVisible}
+                />
+              }
+            />
+            <Route path="/profile" element={<Profile user={true} />} />
+            <Route path="/details" element={<Profile />} />
+            <Route path="/sharework" element={<ShareWork />} />
+            <Route path="/editprofile" element={<EditProfile />}>
+              <Route path="" element={<EditProfileBasicDetails />} />
+              <Route
+                path="experiance"
+                element={<EditProfileWorkExperience />}
               />
-            }
-          />
-          <Route path="/profile" element={<Profile user={true} />} />
-          <Route path="/details" element={<Profile />} />
-          <Route path="/sharework" element={<ShareWork />} />
-          <Route path="/editprofile" element={<EditProfile />}>
-            <Route path="" element={<EditProfileBasicDetails />} />
-            <Route path="experiance" element={<EditProfileWorkExperience />} />
-            <Route path="award" element={<EditProfileAwards />} />
-            <Route path="education" element={<EditProfileEducation />} />
-            <Route path="skills" element={<EditProfileSkills />} />
-            <Route path="languages" element={<EditProfileLanguage />} />
-          </Route>
-          <Route path="/settings" element={<Settings />}>
-            <Route path="" element={<SettingsEditProfile />} />
-            <Route path="changepassword" element={<SettingsChangePassword />} />
-            <Route path="jobposting" element={<SettingsJobPosting />} />
-            <Route path="block" element={<SettingsBlock />} />
-          </Route>
-          <Route path="/forget" element={<Forget />} />
-          <Route path="/forgetotp" element={<Forgetotp />} />
-          <Route path="/messenger" element={<Messenger />} />
-        </Routes>
+              <Route path="award" element={<EditProfileAwards />} />
+              <Route path="education" element={<EditProfileEducation />} />
+              <Route path="skills" element={<EditProfileSkills />} />
+              <Route path="languages" element={<EditProfileLanguage />} />
+            </Route>
+            <Route path="/settings" element={<Settings />}>
+              <Route path="" element={<SettingsEditProfile />} />
+              <Route
+                path="changepassword"
+                element={<SettingsChangePassword />}
+              />
+              <Route path="jobposting" element={<SettingsJobPosting />} />
+              <Route path="block" element={<SettingsBlock />} />
+            </Route>
+            <Route path="/forget" element={<Forget />} />
+            <Route path="/forgetotp" element={<Forgetotp />} />
+            <Route path="/messenger" element={<Messenger />} />
+          </Routes>
+        </BlockUserPopupContext.Provider>
       </ProjectDetailsVisibleContext.Provider>
       <Footer />
     </>

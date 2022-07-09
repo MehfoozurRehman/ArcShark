@@ -3,6 +3,7 @@ import { MapPin } from "react-feather";
 import { homebanner, Socialbanner } from "../assets";
 import { HomeScreenFilterSelect } from "./HomeScreenFilterSelect";
 import { HomeScreenRoleFilter } from "./HomeScreenRoleFilter";
+import { Zoom } from "react-reveal";
 
 export function HomeJumbotron({
   noFilter,
@@ -30,15 +31,17 @@ export function HomeJumbotron({
       <div className="home__jumbotron__overlay">
         <form className="home__jumbotron__overlay__form">
           {onPostJob ? (
-            <button
-              className="home__jumbotron__overlay__form__button"
-              type="button"
-              onClick={() => {
-                onPostJob(true);
-              }}
-            >
-              + Post Job
-            </button>
+            <Zoom>
+              <button
+                className="home__jumbotron__overlay__form__button"
+                type="button"
+                onClick={() => {
+                  onPostJob(true);
+                }}
+              >
+                + Post Job
+              </button>
+            </Zoom>
           ) : null}
 
           <div className="home__jumbotron__overlay__form__top">

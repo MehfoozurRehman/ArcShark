@@ -30,7 +30,12 @@ export function ProfileSidebarCta({ user }) {
             </svg>
             Edit Profile
           </button>
-          <button className="user__profile__content__sidebar__cta__button user__profile__content__sidebar__cta__button__secondary">
+          <button
+            onClick={() => {
+              navigate("/messenger");
+            }}
+            className="user__profile__content__sidebar__cta__button user__profile__content__sidebar__cta__button__secondary"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14.878"
@@ -78,7 +83,12 @@ export function ProfileSidebarCta({ user }) {
               </>
             )}
           </button>
-          <button className="user__profile__content__sidebar__cta__button user__profile__content__sidebar__cta__button__secondary">
+          <button
+            onClick={() => {
+              navigate("/messenger");
+            }}
+            className="user__profile__content__sidebar__cta__button user__profile__content__sidebar__cta__button__secondary"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14.878"

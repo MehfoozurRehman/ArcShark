@@ -4,6 +4,7 @@ import TextareaInput from "../components/TextareaInput";
 import TextInput from "../components/TextInput";
 import { ImageUploaderMulti } from "../components/ImageUploaderMulti";
 import { ImageUploader } from "../components/ImageUploader";
+import { Reveal } from "react-reveal";
 
 export default function ShareWork() {
   return (
@@ -14,31 +15,33 @@ export default function ShareWork() {
         className="share__work__container__img"
       />
       <div className="share__work__container__overlay__wrapper">
-        <div className="share__work__container__overlay">
-          <div className="share__work__container__overlay__header">
-            <div className="share__work__container__overlay__heading">
-              Share Your Work
-            </div>
-            <button className="share__work__container__overlay__header__button">
-              Share
-            </button>
-          </div>
-          <div className="share__work__container__overlay__top">
-            <div className="share__work__container__overlay__left">
-              <div className="share__work__container__overlay__left__top">
-                <TextInput placeholder="Project Name" />
+        <Reveal>
+          <div className="share__work__container__overlay">
+            <div className="share__work__container__overlay__header">
+              <div className="share__work__container__overlay__heading">
+                Share Your Work
               </div>
-              <div className="share__work__container__overlay__left__bottom">
-                <TextareaInput placeholder="Project Short Description" />
-                <TextareaInput placeholder="Project Long Description" />
+              <button className="share__work__container__overlay__header__button">
+                Share
+              </button>
+            </div>
+            <div className="share__work__container__overlay__top">
+              <div className="share__work__container__overlay__left">
+                <div className="share__work__container__overlay__left__top">
+                  <TextInput placeholder="Project Name" />
+                </div>
+                <div className="share__work__container__overlay__left__bottom">
+                  <TextareaInput placeholder="Project Short Description" />
+                  <TextareaInput placeholder="Project Long Description" />
+                </div>
+              </div>
+              <div className="share__work__container__overlay__right">
+                <ImageUploader />
               </div>
             </div>
-            <div className="share__work__container__overlay__right">
-              <ImageUploader />
-            </div>
+            <ImageUploaderMulti />
           </div>
-          <ImageUploaderMulti />
-        </div>
+        </Reveal>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { X, Plus } from "react-feather";
 import { user } from "../assets";
+import { Reveal } from "react-reveal";
 
 function openImage(url) {
   window.open(url, "_blank");
@@ -40,14 +41,16 @@ export default function ProjectDetails({ onClose }) {
         <div className="project__details__container__content__info__main">
           <div className="project__details__container__content__info__main__images">
             {imageArray.map((image) => (
-              <img
-                src={image}
-                alt="unsplash"
-                className="project__details__container__content__img"
-                onClick={() => {
-                  openImage(image);
-                }}
-              />
+              <Reveal>
+                <img
+                  src={image}
+                  alt="unsplash"
+                  className="project__details__container__content__img"
+                  onClick={() => {
+                    openImage(image);
+                  }}
+                />
+              </Reveal>
             ))}
             <div className="project__details__container__content__form">
               <div className="project__details__container__content__form__left">
@@ -138,70 +141,76 @@ export default function ProjectDetails({ onClose }) {
             </div>
           </div>
           <div className="project__details__container__content__sidebar">
-            <button className="project__details__container__content__sidebar__user">
-              <img
-                src={user}
-                alt="user"
-                className="project__details__container__content__sidebar__user__img"
-              />
-              <div className="project__details__container__content__sidebar__user__button">
-                <Plus size={18} color="currentColor" />
-              </div>
-              <div className="project__details__container__content__sidebar__user__text">
-                Follow
-              </div>
-            </button>
-            <button className="project__details__container__content__sidebar__button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="33"
-                height="30"
-                viewBox="0 0 33 30"
-              >
-                <path
-                  id="Icon_material-thumb-up"
-                  data-name="Icon material-thumb-up"
-                  d="M1.5,31.5h6v-18h-6ZM34.5,15a3.009,3.009,0,0,0-3-3H22.035L23.46,5.145l.045-.48a2.258,2.258,0,0,0-.66-1.59L21.255,1.5l-9.87,9.885A2.933,2.933,0,0,0,10.5,13.5v15a3.009,3.009,0,0,0,3,3H27a2.98,2.98,0,0,0,2.76-1.83L34.29,19.1A2.964,2.964,0,0,0,34.5,18V15.135l-.015-.015Z"
-                  transform="translate(-1.5 -1.5)"
-                  fill="currentColor"
+            <Reveal>
+              <button className="project__details__container__content__sidebar__user">
+                <img
+                  src={user}
+                  alt="user"
+                  className="project__details__container__content__sidebar__user__img"
                 />
-              </svg>
-            </button>
-            <button className="project__details__container__content__sidebar__button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="33.182"
-                height="33.182"
-                viewBox="0 0 33.182 33.182"
-              >
-                <g
-                  id="Icon_feather-edit"
-                  data-name="Icon feather-edit"
-                  transform="translate(-1.5 -1.318)"
+                <div className="project__details__container__content__sidebar__user__button">
+                  <Plus size={18} color="currentColor" />
+                </div>
+                <div className="project__details__container__content__sidebar__user__text">
+                  Follow
+                </div>
+              </button>
+            </Reveal>
+            <Reveal>
+              <button className="project__details__container__content__sidebar__button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33"
+                  height="30"
+                  viewBox="0 0 33 30"
                 >
                   <path
-                    id="Path_3189"
-                    data-name="Path 3189"
-                    d="M16.5,6H6A3,3,0,0,0,3,9V30a3,3,0,0,0,3,3H27a3,3,0,0,0,3-3V19.5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
+                    id="Icon_material-thumb-up"
+                    data-name="Icon material-thumb-up"
+                    d="M1.5,31.5h6v-18h-6ZM34.5,15a3.009,3.009,0,0,0-3-3H22.035L23.46,5.145l.045-.48a2.258,2.258,0,0,0-.66-1.59L21.255,1.5l-9.87,9.885A2.933,2.933,0,0,0,10.5,13.5v15a3.009,3.009,0,0,0,3,3H27a2.98,2.98,0,0,0,2.76-1.83L34.29,19.1A2.964,2.964,0,0,0,34.5,18V15.135l-.015-.015Z"
+                    transform="translate(-1.5 -1.5)"
+                    fill="currentColor"
                   />
-                  <path
-                    id="Path_3190"
-                    data-name="Path 3190"
-                    d="M27.75,3.75a3.182,3.182,0,0,1,4.5,4.5L18,22.5,12,24l1.5-6Z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                  />
-                </g>
-              </svg>
-            </button>
+                </svg>
+              </button>
+            </Reveal>
+            <Reveal>
+              <button className="project__details__container__content__sidebar__button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33.182"
+                  height="33.182"
+                  viewBox="0 0 33.182 33.182"
+                >
+                  <g
+                    id="Icon_feather-edit"
+                    data-name="Icon feather-edit"
+                    transform="translate(-1.5 -1.318)"
+                  >
+                    <path
+                      id="Path_3189"
+                      data-name="Path 3189"
+                      d="M16.5,6H6A3,3,0,0,0,3,9V30a3,3,0,0,0,3,3H27a3,3,0,0,0,3-3V19.5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                    />
+                    <path
+                      id="Path_3190"
+                      data-name="Path 3190"
+                      d="M27.75,3.75a3.182,3.182,0,0,1,4.5,4.5L18,22.5,12,24l1.5-6Z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </Reveal>
           </div>
         </div>
       </div>
