@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ProjectDetailsVisibleContext } from "../App";
 import { project } from "../assets";
 
 export function ProjectCard({ hovertext }) {
+  const setProjectDetailsVisible = useContext(ProjectDetailsVisibleContext);
   return (
-    <a href="#" className="home__content__entry">
+    <a
+      onClick={() => {
+        setProjectDetailsVisible(true);
+        window.scrollTo(0, 0);
+      }}
+      className="home__content__entry"
+    >
       <img src={project} alt="project" className="home__content__entry__img" />
       <div className="home__content__entry__overlay">
         <div className="home__content__entry__overlay__header">

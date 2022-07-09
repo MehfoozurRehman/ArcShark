@@ -20,7 +20,7 @@ export default function ShareWork() {
               Share Your Work
             </div>
             <button className="share__work__container__overlay__header__button">
-              Upload
+              Share
             </button>
           </div>
           <div className="share__work__container__overlay__top">

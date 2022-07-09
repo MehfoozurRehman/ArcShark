@@ -1,9 +1,7 @@
 import React from "react";
 import passwordback from "../assets/passback.png";
 
-
 export default function Forget() {
-  
   return (
     <div className="forget__password">
       <div className="forget__password_backimg">
@@ -50,13 +48,31 @@ export default function Forget() {
               Re-send Code{" "}
             </a>
             <div className="forget__password__overlay__left__input__4_inputs">
-            <input className="first" type="text" maxLength={1} onKeyUp="clickevent(this,'sec')"/>
-            <input className="first" type="text" maxLength={1} onKeyUp="clickevent(this,'sec')"/>
-            <input className="first" type="text" maxLength={1} onKeyUp="clickevent(this,'sec')"/>
-            <input className="first" type="text" maxLength={1} onKeyUp="clickevent(this,'sec')"/>
-            
+              <input
+                className="first"
+                type="text"
+                maxLength={1}
+                onKeyUp="clickevent(this,'sec')"
+              />
+              <input
+                className="first"
+                type="text"
+                maxLength={1}
+                onKeyUp="clickevent(this,'sec')"
+              />
+              <input
+                className="first"
+                type="text"
+                maxLength={1}
+                onKeyUp="clickevent(this,'sec')"
+              />
+              <input
+                className="first"
+                type="text"
+                maxLength={1}
+                onKeyUp="clickevent(this,'sec')"
+              />
             </div>
-
 
             <button className="forget__password__overlay__left__sendpassword">
               Send Password
