@@ -56,18 +56,30 @@ export default function Footer() {
             <div className="footer__container__col__logo">Useful links</div>
             <Link
               to="/termandcondition"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
               className="footer__container__col__text"
             >
               Terms & Condtions
             </Link>
-            <Link to="/privacypolicy" className="footer__container__col__text">
+            <Link
+              to="/privacypolicy"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              className="footer__container__col__text"
+            >
               Privacy Policy
             </Link>
-            <Link to="/aboutus" className="footer__container__col__text">
+            <Link
+              to="/aboutus"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              className="footer__container__col__text"
+            >
               About Us
-            </Link>
-            <Link to="/letstalk" className="footer__container__col__text">
-              Contact Us
             </Link>
           </div>
           <div className="footer__container__col">
@@ -217,7 +229,15 @@ export default function Footer() {
           </div>
           <div className="footer__container__col">
             <div className="footer__container__col__logo">Help Center</div>
-            <div className="footer__container__col__text">Contact Us</div>
+            <Link
+              to="/letstalk"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              className="footer__container__col__text"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>

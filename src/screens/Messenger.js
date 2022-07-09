@@ -1,5 +1,7 @@
 import React from "react";
-import { messengerBg, user } from "../assets";
+import { messengerBg } from "../assets";
+import { MessengerChatEntry } from "../components/MessengerChatEntry";
+import { MessengerChatUser } from "../components/MessengerChatUser";
 
 export default function Messenger() {
   const chat = [
@@ -91,52 +93,5 @@ export default function Messenger() {
         </div>
       </div>
     </>
-  );
-}
-
-function MessengerChatEntry({ isUser, data }) {
-  return (
-    <div
-      className={
-        isUser
-          ? "messenger__content__main__chat__entry messenger__content__main__chat__entry__user"
-          : "messenger__content__main__chat__entry"
-      }
-    >
-      <img
-        src={user}
-        alt="user"
-        className="messenger__content__main__chat__entry__img"
-      />
-      <div className="messenger__content__main__chat__entry__text">{data}</div>
-    </div>
-  );
-}
-
-function MessengerChatUser({ defaultChecked }) {
-  return (
-    <div className="messenger__content__sidebar__content__entry">
-      <input
-        type="radio"
-        className="messenger__content__sidebar__content__entry__input"
-        name="messenger__content__sidebar__content__entry"
-        defaultChecked={defaultChecked}
-      />
-      <div className="messenger__content__sidebar__content__entry__content">
-        <img
-          src={user}
-          alt="user"
-          className="messenger__content__sidebar__content__entry__img"
-        />
-        <div className="messenger__content__sidebar__content__entry__content__content">
-          <div className="messenger__content__sidebar__content__entry__content__heading">
-            Username
-          </div>
-          <div className="messenger__content__sidebar__content__entry__content__info">
-            Lorem ipsum dolor sit amet.
-          </div>
-        </div>
-      </div>
-    </div>
   );
 }
