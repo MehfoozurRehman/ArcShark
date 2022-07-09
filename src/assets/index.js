@@ -9,3 +9,4 @@ export { default as sharebg } from "./sharebg.png";
 export { default as editprofile } from "./editprofile.png";
 export { default as postjobbg } from "./postjobbg.png";
 export { default as cornerbg } from "./cornerbg.png";
+export { default as messengerBg } from "./messengerBg.png";

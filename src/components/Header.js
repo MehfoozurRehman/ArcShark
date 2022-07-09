@@ -118,11 +118,11 @@ export default function Header({ isUser, setIsUser }) {
                       </button>
                     </div>
                     <div className="header__content__right__panel__content">
-                      <PanelEntry />
-                      <PanelEntry />
-                      <PanelEntry />
-                      <PanelEntry />
-                      <PanelEntry />
+                      <PanelEntry to="/messenger" />
+                      <PanelEntry to="/messenger" />
+                      <PanelEntry to="/messenger" />
+                      <PanelEntry to="/messenger" />
+                      <PanelEntry to="/messenger" />
                     </div>
                   </div>
                 </OutsideClickHandler>
@@ -262,9 +262,12 @@ export default function Header({ isUser, setIsUser }) {
   );
 }
 
-function PanelEntry({}) {
+function PanelEntry({ to }) {
   return (
-    <a href="#" className="header__content__right__panel__content__entry">
+    <Link
+      to={to ? to : "/"}
+      className="header__content__right__panel__content__entry"
+    >
       <div className="header__content__right__panel__content__entry__heading">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </div>
@@ -272,6 +275,6 @@ function PanelEntry({}) {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed
         maxime veniam at sint vel inventore ex cum excepturi ullam?
       </div>
-    </a>
+    </Link>
   );
 }

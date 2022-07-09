@@ -34,6 +34,7 @@ import SettingsChangePassword from "./screens/SettingsChangePassword";
 import SettingsJobPosting from "./screens/SettingsJobPosting";
 import SettingsBlock from "./screens/SettingsBlock";
 import ProjectDetails from "./screens/ProjectDetails";
+import Messenger from "./screens/Messenger";
 
 export const ProjectDetailsVisibleContext = createContext();
 
@@ -146,6 +147,7 @@ export default function App() {
           </Route>
           <Route path="/forget" element={<Forget />} />
           <Route path="/forgetotp" element={<Forgetotp />} />
+          <Route path="/messenger" element={<Messenger />} />
         </Routes>
       </ProjectDetailsVisibleContext.Provider>
       <Footer />
