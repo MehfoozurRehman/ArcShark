@@ -1,6 +1,7 @@
 import React from "react";
 import passwordback from "../assets/passback.png";
 import { cornerbg } from "../assets";
+import { Link } from "react-router-dom";
 
 export default function Forget() {
   return (
@@ -44,9 +45,12 @@ export default function Forget() {
               />
             </div>
 
-            <button className="forget__password__overlay__left__sendpassword">
+            <Link
+              to="/forgetotp"
+              className="forget__password__overlay__left__sendpassword"
+            >
               Send Password
-            </button>
+            </Link>
           </div>
         </div>
         <div className="forget__password__overlay__right">
