@@ -17,13 +17,14 @@
 }
 .register__main__content {
   margin-top: 4em;
-  height: 100%;
+
   padding: 0 2em;
   width: 100%;
   //   border: 2px solid rgb(255, 0, 0);
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   position: absolute;
   top: 50%;
@@ -51,13 +52,14 @@
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 .regiester__main__content__right__content {
   width: 500px;
-  height: 85%;
+  height: 100%;
   // background-color: rgba(255, 255, 255, 0.9);
-  padding: 1em;
+  padding: 2em;
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -71,16 +73,20 @@
 .register__main__content__right__row {
   display: flex;
   justify-content: space-between;
+
   // flex-wrap: wrap;
 }
 .register__main__content__right__column {
-  width: 48%;
+  width: 50%;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
 .register__main__content__right__title {
   font-size: 25px;
   font-weight: bold;
   color: #5b58a5;
   position: relative;
+  margin-bottom: 1em;
 }
 .register__main__content__right__title::after {
   content: "";
@@ -105,11 +111,28 @@
 .register__main__content__right__checkbox__container {
   display: flex;
   align-items: center;
+  margin: 1em 0em;
 }
-.register__main__content__right__signup__button {
+.register__main__content__right__signup__button__div {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.register__main__content__right__signup__button {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  color: $white;
+  text-decoration: none;
+  height: 50px;
+  padding: 0.5em 1em;
+  background-image: linear-gradient(90deg, $primary, $secondary);
+  margin-bottom: 1em;
+}
+.register__main__content__right__signup__button:hover {
+  background-image: linear-gradient(90deg, $secondary, $primary);
 }
 .register__main__content__right__buttons__container__forget__password {
   background-color: transparent;
@@ -147,6 +170,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 1em;
 }
 .register__main__content__right__signin a {
   color: #5b58a5;
@@ -222,13 +246,13 @@
 }
 
 // --------------------Scss-------------------------
-@media (max-width: 1200px) {
-  .regiester__main__content__right__content {
-    width: 450px;
-    // background-color: #5b58a5;
-  }
-}
+
 @media (max-width: 1000px) {
+  .register__main__content__right {
+    width: 100%;
+    margin-top: 2em;
+  }
+
   .register__main__content__left {
     width: 100%;
     height: fit-content;
@@ -240,13 +264,8 @@
   .register__main__content__left__text {
     width: 100%;
   }
-
-  .regiester__main__content__right__content {
-    width: 90%;
-  }
-
   .register__main__content {
-    margin-top: 7em;
+    margin-top: 3em;
     align-items: center;
   }
   .register__main__pic {
@@ -261,6 +280,11 @@
     width: 100%;
   }
 }
+// @media (max-width: 800px) {
+//   .register__main__content {
+//     margin-top: 7em;
+//   }
+// }
 @media (max-width: 600px) {
   .regiester__main__content__right__content {
     width: 100%;
@@ -282,5 +306,14 @@
   }
   .sign__in__main__content__right__content {
     border-radius: 10px;
+  }
+  .register__main__content__right__row {
+    flex-direction: column;
+  }
+  .register__main__content__right__column {
+    width: 100%;
+  }
+  .register__main__pic {
+    height: 1300px;
   }
 }

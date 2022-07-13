@@ -90,9 +90,10 @@ export default function Register({ setIsUser }) {
                 </label>
               </div>
             </form>
-            <div className="register__main__content__right__signup__button">
+            <div className="register__main__content__right__signup__button__div">
               <Link
                 to="/"
+                className="register__main__content__right__signup__button"
                 onClick={() => {
                   setIsUser(true);
                 }}
