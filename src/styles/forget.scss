@@ -38,6 +38,10 @@
 }
 .forget__password__overlay__left_box {
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .forget__password__overlay__left__heading {
   color: white;
@@ -85,7 +89,7 @@
   border: none;
 }
 .forget__password__overlay__left__sendpassword {
-  padding: 0.7em 2em;
+  padding: 1em 2em;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -93,12 +97,10 @@
   border: 1px solid transparent;
   border-radius: 50px;
   cursor: pointer;
-  margin: 0 auto;
-  margin-top: 3em;
+  margin: 4em auto;
   background-color: $white;
   width: 200px;
   height: 45px;
-  margin-bottom: 4em;
   color: rgb(41, 41, 41);
 }
 .forget__password__overlay__left__sendpassword:hover {
@@ -185,7 +187,7 @@
 @media (max-width: 800px) {
   .forget__password__overlay {
     padding: 0em;
-    margin-top: 4em;
+    margin-top: 3em;
   }
   .forget__password__overlay__left {
     padding: 2.5em 1.5em;
