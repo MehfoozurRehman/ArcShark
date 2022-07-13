@@ -97,15 +97,33 @@
   font-weight: bold;
   margin: 0.5em 0;
 }
+.register__main__content__right__buttons__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
 .register__main__content__right__checkbox__container {
   display: flex;
   align-items: center;
-  margin-top: 1em;
 }
 .register__main__content__right__signup__button {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.register__main__content__right__buttons__container__forget__password {
+  background-color: transparent;
+  color: rgb(46, 46, 46, 0.86);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.register__main__content__right__buttons__container__forget__password:hover {
+  color: #5b58a5;
+  transition: 300 all ease-in-out;
 }
 .register__main__content__right__signup__button a {
   background: linear-gradient(to right, #5b58a5 0%, #cb76cb 50%, #5b58a5 100%);

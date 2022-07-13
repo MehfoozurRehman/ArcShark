@@ -52,24 +52,34 @@ function SignIn({ setIsUser }) {
                   required
                 />
               </div>
-              <div className="register__main__content__right__checkbox__container">
-                <Checkbox
-                  value={isChecked}
-                  label=""
-                  labelColor="#000"
-                  checkedColor=""
-                  unCheckedColor="transparent"
-                  iconColor="#ffffff"
-                  onChange={() => {
-                    isChecked ? setIschecked(false) : setIschecked(true);
-                  }}
-                />
-                <label
-                  htmlFor="terms"
-                  className="register__main__content__right__label"
-                >
-                  Remember Me
-                </label>
+              <div className="register__main__content__right__buttons__container">
+                <div className="register__main__content__right__checkbox__container">
+                  <Checkbox
+                    value={isChecked}
+                    label=""
+                    labelColor="#000"
+                    checkedColor=""
+                    unCheckedColor="transparent"
+                    iconColor="#ffffff"
+                    onChange={() => {
+                      isChecked ? setIschecked(false) : setIschecked(true);
+                    }}
+                  />
+                  <label
+                    htmlFor="terms"
+                    className="register__main__content__right__label"
+                  >
+                    Remember Me
+                  </label>
+                </div>
+                <div className="register__main__content__right__buttons__container__forget__password__div">
+                  <Link
+                    to="/forget"
+                    className="register__main__content__right__buttons__container__forget__password"
+                  >
+                    Forget Password
+                  </Link>
+                </div>
               </div>
             </form>
             <div className="register__main__content__right__signup__button">

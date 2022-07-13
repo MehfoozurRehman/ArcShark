@@ -585,14 +585,14 @@
 .home__content__card__entry:hover
   .home__content__card__buttons
   .home__content__card__buttons__btn__follow:hover {
-  background-image: linear-gradient(120deg, $primary, secondary);
+  background-image: linear-gradient(120deg, $primary, $secondary);
   color: $white;
 }
 
 .home__content__card__entry:hover
   .home__content__card__buttons
   .home__content__card__buttons__btn__hire__me:hover {
-  background-image: linear-gradient(120deg, $primary, secondary);
+  background-image: linear-gradient(120deg, $primary, $secondary);
   color: $white;
 }
 .welcome__main__container {
