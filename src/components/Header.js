@@ -1,7 +1,8 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import { X, Menu } from "react-feather";
-import { logo, user } from "../assets";
+import { user } from "../assets";
+import logo from "../assets/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { Reveal } from "react-reveal";
 

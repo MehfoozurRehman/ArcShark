@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logodark.png";
 
 export default function Footer() {
   return (
@@ -8,44 +9,11 @@ export default function Footer() {
         <div className="footer__container__columns">
           <div className="footer__container__col">
             <div className="footer__container__col__logo">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="172.266"
-                height="36.071"
-                viewBox="0 0 172.266 36.071"
-              >
-                <g
-                  id="Group_539"
-                  data-name="Group 539"
-                  transform="translate(-309.486 -1253.067)"
-                >
-                  <g
-                    id="Group_229"
-                    data-name="Group 229"
-                    transform="translate(309.486 1253.067)"
-                  >
-                    <text
-                      id="ARCSHARK"
-                      transform="translate(50.266 22.722)"
-                      fill="#5b58a5"
-                      font-size="21"
-                      font-family="Montserrat-Medium, Montserrat"
-                      font-weight="500"
-                    >
-                      <tspan x="0" y="0">
-                        ARCSHARK
-                      </tspan>
-                    </text>
-                    <path
-                      id="Icon_awesome-flag-checkered"
-                      data-name="Icon awesome-flag-checkered"
-                      d="M17.131,13.378v4.8c1.839.416,3.473,1.1,5.185,1.571v-4.8c-1.832-.409-3.48-1.092-5.185-1.564Zm15.73-8.665A20.57,20.57,0,0,1,24.62,6.96c-3.769,0-6.89-2.452-11.638-2.452a13.7,13.7,0,0,0-4.79.845A3.945,3.945,0,1,0,2.253,7.178v27.2a1.687,1.687,0,0,0,1.691,1.691H5.071a1.687,1.687,0,0,0,1.691-1.691v-6.65a19.641,19.641,0,0,1,8.059-1.557c3.776,0,6.89,2.452,11.638,2.452a14.72,14.72,0,0,0,8.63-2.881,2.247,2.247,0,0,0,.972-1.86V6.756A2.251,2.251,0,0,0,32.862,4.713ZM11.946,22.93A22.193,22.193,0,0,0,6.762,24.1V19.133a20.153,20.153,0,0,1,5.185-1.226Zm20.739-9.475A22.471,22.471,0,0,1,27.5,15.139v5.009a13.093,13.093,0,0,0,5.185-1.832v4.966A11.383,11.383,0,0,1,27.5,25.191V20.147a11.915,11.915,0,0,1-5.185-.394V24.5A41.1,41.1,0,0,0,17.131,23V18.175a15.659,15.659,0,0,0-5.185-.268V12.976a24.859,24.859,0,0,0-5.185,1.472V9.482a20.173,20.173,0,0,1,5.185-1.55v5.044a11.982,11.982,0,0,1,5.185.4V8.63a40.1,40.1,0,0,0,5.185,1.5v4.818a13.42,13.42,0,0,0,5.185.19V10.074a24.925,24.925,0,0,0,5.185-1.585Z"
-                      transform="translate(-0.563 0.003)"
-                      fill="#5b58a5"
-                    />
-                  </g>
-                </g>
-              </svg>
+              <img
+                src={logo}
+                alt="logo"
+                style={{ width: 150, marginBottom: 20 }}
+              />
             </div>
             <div className="footer__container__col__text">
               Lorem Ipsum is simply dummy text of the printing and typesetting
