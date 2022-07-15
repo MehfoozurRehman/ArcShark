@@ -2,12 +2,14 @@ import React, { useEffect } from "react";
 import { X, Plus } from "react-feather";
 import { user } from "../assets";
 import { Reveal } from "react-reveal";
+import { useNavigate } from "react-router-dom";
 
 function openImage(url) {
   window.open(url, "_blank");
 }
 
 export default function ProjectDetails({ onClose }) {
+  const navigate = useNavigate();
   const imageArray = [
     "https://images.unsplash.com/photo-1657311277146-7ea9e88a3701?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "https://images.unsplash.com/photo-1657299170207-d6df52b27811?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -142,7 +144,13 @@ export default function ProjectDetails({ onClose }) {
           </div>
           <div className="project__details__container__content__sidebar">
             <Reveal>
-              <button className="project__details__container__content__sidebar__user">
+              <button
+                className="project__details__container__content__sidebar__user"
+                onClick={() => {
+                  navigate("/details");
+                  onClose();
+                }}
+              >
                 <img
                   src={user}
                   alt="user"
@@ -171,43 +179,6 @@ export default function ProjectDetails({ onClose }) {
                     transform="translate(-1.5 -1.5)"
                     fill="currentColor"
                   />
-                </svg>
-              </button>
-            </Reveal>
-            <Reveal>
-              <button className="project__details__container__content__sidebar__button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="33.182"
-                  height="33.182"
-                  viewBox="0 0 33.182 33.182"
-                >
-                  <g
-                    id="Icon_feather-edit"
-                    data-name="Icon feather-edit"
-                    transform="translate(-1.5 -1.318)"
-                  >
-                    <path
-                      id="Path_3189"
-                      data-name="Path 3189"
-                      d="M16.5,6H6A3,3,0,0,0,3,9V30a3,3,0,0,0,3,3H27a3,3,0,0,0,3-3V19.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="3"
-                    />
-                    <path
-                      id="Path_3190"
-                      data-name="Path 3190"
-                      d="M27.75,3.75a3.182,3.182,0,0,1,4.5,4.5L18,22.5,12,24l1.5-6Z"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="3"
-                    />
-                  </g>
                 </svg>
               </button>
             </Reveal>

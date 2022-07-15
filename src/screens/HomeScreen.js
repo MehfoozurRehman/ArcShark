@@ -4,7 +4,7 @@ import { HomeJumbotron } from "../components/HomeJumbotron";
 import { UserCard } from "../components/UserCard";
 
 export default function HomeScreen() {
-  const [selectedRole, setSelectedRole] = useState("People");
+  const [selectedRole, setSelectedRole] = useState("Projects");
   const people = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const projects = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
