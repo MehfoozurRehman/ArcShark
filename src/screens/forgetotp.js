@@ -24,8 +24,7 @@ export default function Forget() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="18.75"
                 height="15.368"
-                viewBox="0 0 18.75 15.368"
-              >
+                viewBox="0 0 18.75 15.368">
                 <path
                   id="Path_642"
                   data-name="Path 642"
@@ -43,8 +42,7 @@ export default function Forget() {
             </div>
             <a
               className="forget__password__overlay__left__input__resend"
-              href=""
-            >
+              href="">
               Re-send Code{" "}
             </a>
             <div className="forget__password__overlay__left__input__4_inputs">
