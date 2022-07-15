@@ -9,11 +9,6 @@ import { Reveal } from "react-reveal";
 export default function ShareWork() {
   return (
     <div className="share__work__container">
-      <img
-        src={sharebg}
-        alt="sharebg"
-        className="share__work__container__img"
-      />
       <div className="share__work__container__overlay__wrapper">
         <Reveal>
           <div className="share__work__container__overlay">
