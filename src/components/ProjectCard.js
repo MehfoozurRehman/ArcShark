@@ -12,8 +12,7 @@ export function ProjectCard({ hovertext }) {
           setProjectDetailsVisible(true);
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
-        className="home__content__entry"
-      >
+        className="home__content__entry">
         <img
           src={project}
           alt="project"
@@ -34,8 +33,7 @@ export function ProjectCard({ hovertext }) {
                     xmlns="http://www.w3.org/2000/svg"
                     width="14.196"
                     height="14.196"
-                    viewBox="0 0 14.196 14.196"
-                  >
+                    viewBox="0 0 14.196 14.196">
                     <path
                       id="Icon_awesome-thumbs-up"
                       data-name="Icon awesome-thumbs-up"
@@ -50,8 +48,7 @@ export function ProjectCard({ hovertext }) {
                     xmlns="http://www.w3.org/2000/svg"
                     width="15.049"
                     height="10.033"
-                    viewBox="0 0 15.049 10.033"
-                  >
+                    viewBox="0 0 15.049 10.033">
                     <path
                       id="Icon_awesome-eye"
                       data-name="Icon awesome-eye"
@@ -65,7 +62,11 @@ export function ProjectCard({ hovertext }) {
               </div>
             </div>
           </div>
-          <div className="home__content__entry__overlay__info">{hovertext}</div>
+          <div className="home__content__entry__overlay__info">
+            {hovertext.length > 200
+              ? hovertext.substring(0, 200) + "..."
+              : hovertext}
+          </div>
         </div>
       </a>
     </Zoom>
